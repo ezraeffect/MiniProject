@@ -18,7 +18,6 @@ namespace MiniProject
         public normalCalculator()
         {
             InitializeComponent();
-            Console.WriteLine("Init Component");
             this.KeyDown += new KeyEventHandler(normalCalculator_KeyDown);
 
         }
@@ -31,11 +30,20 @@ namespace MiniProject
 
         private void normalCalculator_KeyDown(object sender, KeyEventArgs e)
         {
-            //Console.WriteLine($"KeyCode: {e.KeyCode}, KeyData: {e.KeyData}, KeyValue: {e.KeyValue}");
-            string tempString;
-            tempString = keyHandler.GetKeyString(e);
-            Console.WriteLine(tempString);
-            
+            /*string keyString;
+            int number;
+            keyString = keyHandler.GetKeyString(e);
+
+            if (int.TryParse(keyString, out number))
+            {
+                Console.WriteLine(number.ToString());
+            }   
+            else
+            {
+                Console.WriteLine("너는 아무거나 입력했을거시여");
+            }*/
+
+            textBox_view.AppendText(keyHandler.GetKeyString(e));
         }
     }
 }
