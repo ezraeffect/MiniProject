@@ -15,6 +15,7 @@ namespace MiniProject
         public normalCalculator()
         {
             InitializeComponent();
+            Console.WriteLine("안녕하세요 Main branch입니다.");
         }
     }
 }
