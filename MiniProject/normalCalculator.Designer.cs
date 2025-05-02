@@ -65,6 +65,7 @@
             // 
             this.textBox_view.Location = new System.Drawing.Point(12, 12);
             this.textBox_view.Name = "textBox_view";
+            this.textBox_view.ReadOnly = true;
             this.textBox_view.Size = new System.Drawing.Size(454, 21);
             this.textBox_view.TabIndex = 0;
             // 
@@ -73,6 +74,7 @@
             this.textBox_result.Location = new System.Drawing.Point(12, 39);
             this.textBox_result.Multiline = true;
             this.textBox_result.Name = "textBox_result";
+            this.textBox_result.ReadOnly = true;
             this.textBox_result.Size = new System.Drawing.Size(454, 56);
             this.textBox_result.TabIndex = 1;
             // 
@@ -365,12 +367,13 @@
             this.button_equal.TabIndex = 30;
             this.button_equal.Text = "=";
             this.button_equal.UseVisualStyleBackColor = true;
+            this.button_equal.Click += new System.EventHandler(this.button_equal_Click);
             // 
             // normalCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 609);
+            this.ClientSize = new System.Drawing.Size(473, 406);
             this.Controls.Add(this.button_equal);
             this.Controls.Add(this.button_writeZero);
             this.Controls.Add(this.button_toggleSign);
@@ -402,6 +405,7 @@
             this.Controls.Add(this.button_mClear);
             this.Controls.Add(this.textBox_result);
             this.Controls.Add(this.textBox_view);
+            this.KeyPreview = true;
             this.Name = "normalCalculator";
             this.Text = "normalCalculator";
             this.ResumeLayout(false);
