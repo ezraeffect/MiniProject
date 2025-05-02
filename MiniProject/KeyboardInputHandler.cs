@@ -38,8 +38,15 @@ namespace MiniProject
             else if (e.KeyCode == Keys.Multiply) return "*";                // * 반환 | Multiply
             else if (e.KeyCode == Keys.Divide) return "/";                  // / 반환 | Divide
 
+            // 괄호 처리
+            else if (e.KeyCode == Keys.D9 && e.Shift) return "(";           // ( 반환 | Shift + D9
+            else if (e.KeyCode == Keys.D0 && e.Shift) return ")";           // ) 반환 | Shift + D0
+
             // 엔터 처리
-            else if (e.KeyCode == Keys.Return) return "=";                  // / 반환 | Divide
+            else if (e.KeyCode == Keys.Return) return "=";                  // / 반환 | Return
+
+            // Backspace 처리
+            else if (e.KeyCode == Keys.Back) return "BS";                   // BS 반환 | Back
 
             // 상단 숫자키, 넘패드를 통한 숫자 처리
             else if ((numKeys.Contains(e.KeyCode) || numPadKeys.Contains(e.KeyCode)) && !e.Shift) // 만약 입력된 KeyValue가 배열에 존재한다면

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MiniProject
 {
@@ -30,20 +31,34 @@ namespace MiniProject
 
         private void normalCalculator_KeyDown(object sender, KeyEventArgs e)
         {
-            /*string keyString;
-            int number;
-            keyString = keyHandler.GetKeyString(e);
+            string keyString = keyHandler.GetKeyString(e);
 
-            if (int.TryParse(keyString, out number))
+            switch (keyString)
             {
-                Console.WriteLine(number.ToString());
-            }   
-            else
-            {
-                Console.WriteLine("너는 아무거나 입력했을거시여");
-            }*/
+                case "=":
+                    try
+                    {
+                        var result = data.Compute(textBox_view.Text, null);
+                        textBox_result.Text = result.ToString();
+                    }
+                    catch(SyntaxErrorException)
+                    {
+                        textBox_result.Text = $"식이나 구문에 오류가 있습니다.";
+                        break;
+                    }
+                    break;
 
-            textBox_view.AppendText(keyHandler.GetKeyString(e));
+                case "BS":
+                    if (textBox_view.Text.Length > 0)
+                    {
+                        textBox_view.Text = textBox_view.Text.Substring(0, textBox_view.Text.Length - 1);
+                    }
+                    break;
+
+                default:
+                    textBox_view.AppendText(keyString);
+                    break;
+            }
         }
     }
 }
