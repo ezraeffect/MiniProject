@@ -38,12 +38,14 @@ namespace MiniProject
             else if (e.KeyCode == Keys.Multiply) return "*";                // * 반환 | Multiply
             else if (e.KeyCode == Keys.Divide) return "/";                  // / 반환 | Divide
 
+            // 엔터 처리
+            else if (e.KeyCode == Keys.Return) return "=";                  // / 반환 | Divide
+
             // 상단 숫자키, 넘패드를 통한 숫자 처리
             else if ((numKeys.Contains(e.KeyCode) || numPadKeys.Contains(e.KeyCode)) && !e.Shift) // 만약 입력된 KeyValue가 배열에 존재한다면
             {
                 int number = Array.IndexOf(numKeys, e.KeyCode); // 우선 상단 숫자키 배열에서 Index를 가져온다
                 if (number == -1) number = Array.IndexOf(numPadKeys, e.KeyCode); // 상단 숫자키 배열에서 Index를 찾지 못한다면, 넘패드 배열에서 Index를 가져온다
-                Console.WriteLine(number);
                 return number.ToString();
             }
             else return string.Empty;
