@@ -14,10 +14,12 @@ namespace MiniProject
     {
 
         DataTable data = new DataTable();
+        KeyboardInputHandler keyHandler = new KeyboardInputHandler();
         public normalCalculator()
         {
             InitializeComponent();
             Console.WriteLine("Init Component");
+            this.KeyDown += new KeyEventHandler(normalCalculator_KeyDown);
 
         }
 
@@ -27,9 +29,13 @@ namespace MiniProject
             textBox_result.Text = result.ToString();
         }
 
-        private void normalCalculator_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        private void normalCalculator_KeyDown(object sender, KeyEventArgs e)
         {
-            Console.WriteLine(e.KeyData);
+            //Console.WriteLine($"KeyCode: {e.KeyCode}, KeyData: {e.KeyData}, KeyValue: {e.KeyValue}");
+            string tempString;
+            tempString = keyHandler.GetKeyString(e);
+            Console.WriteLine(tempString);
+            
         }
     }
 }
