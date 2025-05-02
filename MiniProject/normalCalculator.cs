@@ -12,10 +12,24 @@ namespace MiniProject
 {
     public partial class normalCalculator : Form
     {
+
+        DataTable data = new DataTable();
         public normalCalculator()
         {
             InitializeComponent();
-            Console.WriteLine("안녕하세요 Main branch입니다.");
+            Console.WriteLine("Init Component");
+
+        }
+
+        private void button_equal_Click(object sender, EventArgs e)
+        {
+            var result = data.Compute(textBox_view.Text, null);
+            textBox_result.Text = result.ToString();
+        }
+
+        private void normalCalculator_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            Console.WriteLine(e.KeyData);
         }
     }
 }
