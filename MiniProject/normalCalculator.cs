@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MiniProject
 {
-    public partial class Form1 : Form
+    public partial class normalCalculator : Form
     {
-        public Form1()
+        public normalCalculator()
         {
             InitializeComponent();
             Console.WriteLine("안녕하세요 Main branch입니다.");
