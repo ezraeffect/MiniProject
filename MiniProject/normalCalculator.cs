@@ -16,9 +16,12 @@ namespace MiniProject
 
         DataTable data = new DataTable();
         KeyboardInputHandler keyHandler = new KeyboardInputHandler();
+        
+
         public normalCalculator()
         {
             InitializeComponent();
+            // 키보드 입력 이벤트 핸들러
             this.KeyDown += new KeyEventHandler(normalCalculator_KeyDown);
 
         }
@@ -58,6 +61,16 @@ namespace MiniProject
                 default:
                     textBox_view.AppendText(keyString);
                     break;
+            }
+        }
+
+        private void button_writeNum_Click(object sender, EventArgs e)
+        {
+            string buttonText = ((System.Windows.Forms.Button)sender).Text;
+            int num;
+            if (int.TryParse(buttonText, out num))
+            {
+                textBox_view.AppendText(buttonText);
             }
         }
     }

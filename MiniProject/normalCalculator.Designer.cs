@@ -47,7 +47,7 @@
             this.button_writeEight = new System.Windows.Forms.Button();
             this.button_writeNine = new System.Windows.Forms.Button();
             this.button_mul = new System.Windows.Forms.Button();
-            this.button_wrtieFour = new System.Windows.Forms.Button();
+            this.button_writeFour = new System.Windows.Forms.Button();
             this.button_writeFive = new System.Windows.Forms.Button();
             this.button_writeSix = new System.Windows.Forms.Button();
             this.button_sub = new System.Windows.Forms.Button();
@@ -215,8 +215,10 @@
             this.button_writeSeven.Name = "button_writeSeven";
             this.button_writeSeven.Size = new System.Drawing.Size(86, 37);
             this.button_writeSeven.TabIndex = 16;
+            this.button_writeSeven.Tag = "writeSeven";
             this.button_writeSeven.Text = "7";
             this.button_writeSeven.UseVisualStyleBackColor = true;
+            this.button_writeSeven.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_writeEight
             // 
@@ -225,8 +227,10 @@
             this.button_writeEight.Name = "button_writeEight";
             this.button_writeEight.Size = new System.Drawing.Size(86, 37);
             this.button_writeEight.TabIndex = 17;
+            this.button_writeEight.Tag = "writeEight";
             this.button_writeEight.Text = "8";
             this.button_writeEight.UseVisualStyleBackColor = true;
+            this.button_writeEight.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_writeNine
             // 
@@ -235,8 +239,10 @@
             this.button_writeNine.Name = "button_writeNine";
             this.button_writeNine.Size = new System.Drawing.Size(86, 37);
             this.button_writeNine.TabIndex = 18;
+            this.button_writeNine.Tag = "writeNine";
             this.button_writeNine.Text = "9";
             this.button_writeNine.UseVisualStyleBackColor = true;
+            this.button_writeNine.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_mul
             // 
@@ -248,15 +254,17 @@
             this.button_mul.Text = "×";
             this.button_mul.UseVisualStyleBackColor = true;
             // 
-            // button_wrtieFour
+            // button_writeFour
             // 
-            this.button_wrtieFour.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_wrtieFour.Location = new System.Drawing.Point(12, 273);
-            this.button_wrtieFour.Name = "button_wrtieFour";
-            this.button_wrtieFour.Size = new System.Drawing.Size(86, 37);
-            this.button_wrtieFour.TabIndex = 20;
-            this.button_wrtieFour.Text = "4";
-            this.button_wrtieFour.UseVisualStyleBackColor = true;
+            this.button_writeFour.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_writeFour.Location = new System.Drawing.Point(12, 273);
+            this.button_writeFour.Name = "button_writeFour";
+            this.button_writeFour.Size = new System.Drawing.Size(86, 37);
+            this.button_writeFour.TabIndex = 20;
+            this.button_writeFour.Tag = "writeFour";
+            this.button_writeFour.Text = "4";
+            this.button_writeFour.UseVisualStyleBackColor = true;
+            this.button_writeFour.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_writeFive
             // 
@@ -265,8 +273,10 @@
             this.button_writeFive.Name = "button_writeFive";
             this.button_writeFive.Size = new System.Drawing.Size(86, 37);
             this.button_writeFive.TabIndex = 21;
+            this.button_writeFive.Tag = "writeFive";
             this.button_writeFive.Text = "5";
             this.button_writeFive.UseVisualStyleBackColor = true;
+            this.button_writeFive.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_writeSix
             // 
@@ -275,8 +285,10 @@
             this.button_writeSix.Name = "button_writeSix";
             this.button_writeSix.Size = new System.Drawing.Size(86, 37);
             this.button_writeSix.TabIndex = 22;
+            this.button_writeSix.Tag = "writeSix";
             this.button_writeSix.Text = "6";
             this.button_writeSix.UseVisualStyleBackColor = true;
+            this.button_writeSix.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_sub
             // 
@@ -295,8 +307,10 @@
             this.button_writeOne.Name = "button_writeOne";
             this.button_writeOne.Size = new System.Drawing.Size(86, 37);
             this.button_writeOne.TabIndex = 24;
+            this.button_writeOne.Tag = "writeOne";
             this.button_writeOne.Text = "1";
             this.button_writeOne.UseVisualStyleBackColor = true;
+            this.button_writeOne.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_writeTwo
             // 
@@ -305,8 +319,10 @@
             this.button_writeTwo.Name = "button_writeTwo";
             this.button_writeTwo.Size = new System.Drawing.Size(86, 37);
             this.button_writeTwo.TabIndex = 25;
+            this.button_writeTwo.Tag = "writeTwo";
             this.button_writeTwo.Text = "2";
             this.button_writeTwo.UseVisualStyleBackColor = true;
+            this.button_writeTwo.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_writeThree
             // 
@@ -315,8 +331,10 @@
             this.button_writeThree.Name = "button_writeThree";
             this.button_writeThree.Size = new System.Drawing.Size(86, 37);
             this.button_writeThree.TabIndex = 26;
+            this.button_writeThree.Tag = "writeThree";
             this.button_writeThree.Text = "3";
             this.button_writeThree.UseVisualStyleBackColor = true;
+            this.button_writeThree.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_add
             // 
@@ -335,6 +353,7 @@
             this.button_writeDot.Name = "button_writeDot";
             this.button_writeDot.Size = new System.Drawing.Size(86, 37);
             this.button_writeDot.TabIndex = 28;
+            this.button_writeDot.Tag = "writeDot";
             this.button_writeDot.Text = ".";
             this.button_writeDot.UseVisualStyleBackColor = true;
             // 
@@ -345,6 +364,7 @@
             this.button_toggleSign.Name = "button_toggleSign";
             this.button_toggleSign.Size = new System.Drawing.Size(86, 37);
             this.button_toggleSign.TabIndex = 28;
+            this.button_toggleSign.Tag = "toggleSign";
             this.button_toggleSign.Text = "+/-";
             this.button_toggleSign.UseVisualStyleBackColor = true;
             // 
@@ -355,8 +375,10 @@
             this.button_writeZero.Name = "button_writeZero";
             this.button_writeZero.Size = new System.Drawing.Size(86, 37);
             this.button_writeZero.TabIndex = 29;
+            this.button_writeZero.Tag = "writeZero";
             this.button_writeZero.Text = "0";
             this.button_writeZero.UseVisualStyleBackColor = true;
+            this.button_writeZero.Click += new System.EventHandler(this.button_writeNum_Click);
             // 
             // button_equal
             // 
@@ -385,7 +407,7 @@
             this.Controls.Add(this.button_sub);
             this.Controls.Add(this.button_writeSix);
             this.Controls.Add(this.button_writeFive);
-            this.Controls.Add(this.button_wrtieFour);
+            this.Controls.Add(this.button_writeFour);
             this.Controls.Add(this.button_mul);
             this.Controls.Add(this.button_writeNine);
             this.Controls.Add(this.button_writeEight);
@@ -434,7 +456,7 @@
         private System.Windows.Forms.Button button_writeEight;
         private System.Windows.Forms.Button button_writeNine;
         private System.Windows.Forms.Button button_mul;
-        private System.Windows.Forms.Button button_wrtieFour;
+        private System.Windows.Forms.Button button_writeFour;
         private System.Windows.Forms.Button button_writeFive;
         private System.Windows.Forms.Button button_writeSix;
         private System.Windows.Forms.Button button_sub;
