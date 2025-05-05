@@ -58,9 +58,18 @@
       <DependentUpon>normalCalculator.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="programmerCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="programmerCalculator.Designer.cs">
+      <DependentUpon>programmerCalculator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="normalCalculator.resx">
       <DependentUpon>normalCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programmerCalculator.resx">
+      <DependentUpon>programmerCalculator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
