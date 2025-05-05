@@ -15,7 +15,7 @@ namespace MiniProject
     {
         KeyboardInputHandler keyHandler = new KeyboardInputHandler();
 
-        public static KeyboardInputHandler.Base SelectedBase;
+        public static KeyboardInputHandler.Base SelectedBase = KeyboardInputHandler.Base.DEC;
 
         public programmerCalculator()
         {
@@ -37,8 +37,7 @@ namespace MiniProject
         private void programmerCalculator_KeyDown(object sender, KeyEventArgs e)
         {
             string keyString = keyHandler.GetBaseKeyString(e, SelectedBase);
-            textBox1.Text = keyString;
-            Console.WriteLine(keyString);
+            textBox1.AppendText(keyString);
         }
 
         // 진법 변환 radioButton을 눌렀을때 발생하는 이벤트 처리
