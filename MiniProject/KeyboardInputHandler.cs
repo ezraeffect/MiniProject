@@ -10,7 +10,7 @@ using System.Windows.Forms;
  */
 namespace MiniProject
 {
-    internal class KeyboardInputHandler
+    public class KeyboardInputHandler
     {
         // GetKeyString(KeyEventArgs e);  
         // - KeyEventArgs 객체를 인자로 하는 메서드  

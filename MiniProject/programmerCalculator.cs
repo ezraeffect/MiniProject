@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static MiniProject.KeyboardInputHandler;
 
 namespace MiniProject
 {
@@ -14,7 +15,7 @@ namespace MiniProject
     {
         KeyboardInputHandler keyHandler = new KeyboardInputHandler();
 
-        private KeyboardInputHandler.Base SelectedBase;
+        public static KeyboardInputHandler.Base SelectedBase;
 
         public programmerCalculator()
         {
@@ -35,8 +36,7 @@ namespace MiniProject
 
         private void programmerCalculator_KeyDown(object sender, KeyEventArgs e)
         {
-            KeyboardInputHandler.Base value = KeyboardInputHandler.Base.HEX;
-            string keyString = keyHandler.GetBaseKeyString(e, value);
+            string keyString = keyHandler.GetBaseKeyString(e, SelectedBase);
             textBox1.Text = keyString;
             Console.WriteLine(keyString);
         }
@@ -45,7 +45,14 @@ namespace MiniProject
         private void BaseRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton rb = sender as RadioButton;
-            if (rb.Checked) ChangeButtonStatus(rb.Tag?.ToString());
+            string tagString;
+            // radioButton의 모든 이벤트에 대해 가져오므로 체크 되었을때 동작 수행 하도록
+            if (rb.Checked)
+            {
+                tagString = rb.Tag?.ToString();
+                ChangeButtonStatus(rb.Tag?.ToString());
+                SelectedBase = (Base)Enum.Parse(typeof(Base), rb.Tag?.ToString(), true);
+            }
         }
 
         // 이벤트 발생시 진법에 따라 버튼을 활성/비활성화 하는 Fucntion
