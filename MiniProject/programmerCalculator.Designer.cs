@@ -32,9 +32,9 @@
             this.radioButton_DEC = new System.Windows.Forms.RadioButton();
             this.radioButton_OCT = new System.Windows.Forms.RadioButton();
             this.radioButton_BIN = new System.Windows.Forms.RadioButton();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.KeypadTabControl = new System.Windows.Forms.TabControl();
+            this.tabPageAll = new System.Windows.Forms.TabPage();
+            this.tabPageBIN = new System.Windows.Forms.TabPage();
             this.button_writeA = new System.Windows.Forms.Button();
             this.button_writeB = new System.Windows.Forms.Button();
             this.button_writeC = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@
             this.button_rightShift = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button_writeEight = new System.Windows.Forms.Button();
-            this.button__writeFive = new System.Windows.Forms.Button();
+            this.button_writeFive = new System.Windows.Forms.Button();
             this.button_writeTwo = new System.Windows.Forms.Button();
             this.button_writeZero = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -70,8 +70,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.KeypadTabControl.SuspendLayout();
+            this.tabPageAll.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,65 +117,65 @@
             this.radioButton_BIN.Text = "BIN";
             this.radioButton_BIN.UseVisualStyleBackColor = true;
             // 
-            // tabControl1
+            // KeypadTabControl
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 366);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(421, 284);
-            this.tabControl1.TabIndex = 0;
+            this.KeypadTabControl.Controls.Add(this.tabPageAll);
+            this.KeypadTabControl.Controls.Add(this.tabPageBIN);
+            this.KeypadTabControl.Location = new System.Drawing.Point(12, 366);
+            this.KeypadTabControl.Name = "KeypadTabControl";
+            this.KeypadTabControl.SelectedIndex = 0;
+            this.KeypadTabControl.Size = new System.Drawing.Size(421, 284);
+            this.KeypadTabControl.TabIndex = 0;
             // 
-            // tabPage1
+            // tabPageAll
             // 
-            this.tabPage1.Controls.Add(this.button30);
-            this.tabPage1.Controls.Add(this.button24);
-            this.tabPage1.Controls.Add(this.button_writeZero);
-            this.tabPage1.Controls.Add(this.button12);
-            this.tabPage1.Controls.Add(this.button_writeF);
-            this.tabPage1.Controls.Add(this.button29);
-            this.tabPage1.Controls.Add(this.button_writeThree);
-            this.tabPage1.Controls.Add(this.button_writeTwo);
-            this.tabPage1.Controls.Add(this.button_writeOne);
-            this.tabPage1.Controls.Add(this.button_writeE);
-            this.tabPage1.Controls.Add(this.button28);
-            this.tabPage1.Controls.Add(this.button_writeSix);
-            this.tabPage1.Controls.Add(this.button__writeFive);
-            this.tabPage1.Controls.Add(this.button_writeFour);
-            this.tabPage1.Controls.Add(this.button_writeD);
-            this.tabPage1.Controls.Add(this.button27);
-            this.tabPage1.Controls.Add(this.button_writeNine);
-            this.tabPage1.Controls.Add(this.button_writeEight);
-            this.tabPage1.Controls.Add(this.button_writeSeven);
-            this.tabPage1.Controls.Add(this.button_writeC);
-            this.tabPage1.Controls.Add(this.button26);
-            this.tabPage1.Controls.Add(this.button20);
-            this.tabPage1.Controls.Add(this.button14);
-            this.tabPage1.Controls.Add(this.button8);
-            this.tabPage1.Controls.Add(this.button_writeB);
-            this.tabPage1.Controls.Add(this.button25);
-            this.tabPage1.Controls.Add(this.button19);
-            this.tabPage1.Controls.Add(this.button_rightShift);
-            this.tabPage1.Controls.Add(this.button_leftShift);
-            this.tabPage1.Controls.Add(this.button_writeA);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(413, 258);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "전체 키패드";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPageAll.Controls.Add(this.button30);
+            this.tabPageAll.Controls.Add(this.button24);
+            this.tabPageAll.Controls.Add(this.button_writeZero);
+            this.tabPageAll.Controls.Add(this.button12);
+            this.tabPageAll.Controls.Add(this.button_writeF);
+            this.tabPageAll.Controls.Add(this.button29);
+            this.tabPageAll.Controls.Add(this.button_writeThree);
+            this.tabPageAll.Controls.Add(this.button_writeTwo);
+            this.tabPageAll.Controls.Add(this.button_writeOne);
+            this.tabPageAll.Controls.Add(this.button_writeE);
+            this.tabPageAll.Controls.Add(this.button28);
+            this.tabPageAll.Controls.Add(this.button_writeSix);
+            this.tabPageAll.Controls.Add(this.button_writeFive);
+            this.tabPageAll.Controls.Add(this.button_writeFour);
+            this.tabPageAll.Controls.Add(this.button_writeD);
+            this.tabPageAll.Controls.Add(this.button27);
+            this.tabPageAll.Controls.Add(this.button_writeNine);
+            this.tabPageAll.Controls.Add(this.button_writeEight);
+            this.tabPageAll.Controls.Add(this.button_writeSeven);
+            this.tabPageAll.Controls.Add(this.button_writeC);
+            this.tabPageAll.Controls.Add(this.button26);
+            this.tabPageAll.Controls.Add(this.button20);
+            this.tabPageAll.Controls.Add(this.button14);
+            this.tabPageAll.Controls.Add(this.button8);
+            this.tabPageAll.Controls.Add(this.button_writeB);
+            this.tabPageAll.Controls.Add(this.button25);
+            this.tabPageAll.Controls.Add(this.button19);
+            this.tabPageAll.Controls.Add(this.button_rightShift);
+            this.tabPageAll.Controls.Add(this.button_leftShift);
+            this.tabPageAll.Controls.Add(this.button_writeA);
+            this.tabPageAll.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAll.Name = "tabPageAll";
+            this.tabPageAll.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAll.Size = new System.Drawing.Size(413, 258);
+            this.tabPageAll.TabIndex = 0;
+            this.tabPageAll.Text = "전체 키패드";
+            this.tabPageAll.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPageBIN
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(413, 258);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "비트 전환 키패드";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageBIN.Location = new System.Drawing.Point(4, 22);
+            this.tabPageBIN.Name = "tabPageBIN";
+            this.tabPageBIN.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageBIN.Size = new System.Drawing.Size(413, 258);
+            this.tabPageBIN.TabIndex = 1;
+            this.tabPageBIN.Text = "비트 전환 키패드";
+            this.tabPageBIN.UseVisualStyleBackColor = true;
             // 
             // button_writeA
             // 
@@ -181,6 +183,7 @@
             this.button_writeA.Name = "button_writeA";
             this.button_writeA.Size = new System.Drawing.Size(75, 35);
             this.button_writeA.TabIndex = 5;
+            this.button_writeA.Tag = "HEX";
             this.button_writeA.Text = "A";
             this.button_writeA.UseVisualStyleBackColor = true;
             // 
@@ -190,6 +193,7 @@
             this.button_writeB.Name = "button_writeB";
             this.button_writeB.Size = new System.Drawing.Size(75, 35);
             this.button_writeB.TabIndex = 6;
+            this.button_writeB.Tag = "HEX";
             this.button_writeB.Text = "B";
             this.button_writeB.UseVisualStyleBackColor = true;
             // 
@@ -199,6 +203,7 @@
             this.button_writeC.Name = "button_writeC";
             this.button_writeC.Size = new System.Drawing.Size(75, 35);
             this.button_writeC.TabIndex = 7;
+            this.button_writeC.Tag = "HEX";
             this.button_writeC.Text = "C";
             this.button_writeC.UseVisualStyleBackColor = true;
             // 
@@ -208,6 +213,7 @@
             this.button_writeD.Name = "button_writeD";
             this.button_writeD.Size = new System.Drawing.Size(75, 35);
             this.button_writeD.TabIndex = 8;
+            this.button_writeD.Tag = "HEX";
             this.button_writeD.Text = "D";
             this.button_writeD.UseVisualStyleBackColor = true;
             // 
@@ -217,6 +223,7 @@
             this.button_writeE.Name = "button_writeE";
             this.button_writeE.Size = new System.Drawing.Size(75, 35);
             this.button_writeE.TabIndex = 9;
+            this.button_writeE.Tag = "HEX";
             this.button_writeE.Text = "E";
             this.button_writeE.UseVisualStyleBackColor = true;
             // 
@@ -226,6 +233,7 @@
             this.button_writeF.Name = "button_writeF";
             this.button_writeF.Size = new System.Drawing.Size(75, 35);
             this.button_writeF.TabIndex = 10;
+            this.button_writeF.Tag = "HEX";
             this.button_writeF.Text = "F";
             this.button_writeF.UseVisualStyleBackColor = true;
             // 
@@ -253,6 +261,7 @@
             this.button_writeSeven.Name = "button_writeSeven";
             this.button_writeSeven.Size = new System.Drawing.Size(75, 35);
             this.button_writeSeven.TabIndex = 7;
+            this.button_writeSeven.Tag = "OCT,DEC,HEX";
             this.button_writeSeven.Text = "7";
             this.button_writeSeven.UseVisualStyleBackColor = true;
             // 
@@ -262,6 +271,7 @@
             this.button_writeFour.Name = "button_writeFour";
             this.button_writeFour.Size = new System.Drawing.Size(75, 35);
             this.button_writeFour.TabIndex = 8;
+            this.button_writeFour.Tag = "OCT,DEC,HEX";
             this.button_writeFour.Text = "4";
             this.button_writeFour.UseVisualStyleBackColor = true;
             // 
@@ -271,6 +281,7 @@
             this.button_writeOne.Name = "button_writeOne";
             this.button_writeOne.Size = new System.Drawing.Size(75, 35);
             this.button_writeOne.TabIndex = 9;
+            this.button_writeOne.Tag = "BIN,OCT,DEC,HEX";
             this.button_writeOne.Text = "1";
             this.button_writeOne.UseVisualStyleBackColor = true;
             // 
@@ -307,17 +318,19 @@
             this.button_writeEight.Name = "button_writeEight";
             this.button_writeEight.Size = new System.Drawing.Size(75, 35);
             this.button_writeEight.TabIndex = 7;
+            this.button_writeEight.Tag = "DEC,HEX";
             this.button_writeEight.Text = "8";
             this.button_writeEight.UseVisualStyleBackColor = true;
             // 
-            // button__writeFive
+            // button_writeFive
             // 
-            this.button__writeFive.Location = new System.Drawing.Point(168, 129);
-            this.button__writeFive.Name = "button__writeFive";
-            this.button__writeFive.Size = new System.Drawing.Size(75, 35);
-            this.button__writeFive.TabIndex = 8;
-            this.button__writeFive.Text = "5";
-            this.button__writeFive.UseVisualStyleBackColor = true;
+            this.button_writeFive.Location = new System.Drawing.Point(168, 129);
+            this.button_writeFive.Name = "button_writeFive";
+            this.button_writeFive.Size = new System.Drawing.Size(75, 35);
+            this.button_writeFive.TabIndex = 8;
+            this.button_writeFive.Tag = "OCT,DEC,HEX";
+            this.button_writeFive.Text = "5";
+            this.button_writeFive.UseVisualStyleBackColor = true;
             // 
             // button_writeTwo
             // 
@@ -325,6 +338,7 @@
             this.button_writeTwo.Name = "button_writeTwo";
             this.button_writeTwo.Size = new System.Drawing.Size(75, 35);
             this.button_writeTwo.TabIndex = 9;
+            this.button_writeTwo.Tag = "OCT,DEC,HEX";
             this.button_writeTwo.Text = "2";
             this.button_writeTwo.UseVisualStyleBackColor = true;
             // 
@@ -334,6 +348,7 @@
             this.button_writeZero.Name = "button_writeZero";
             this.button_writeZero.Size = new System.Drawing.Size(75, 35);
             this.button_writeZero.TabIndex = 10;
+            this.button_writeZero.Tag = "BIN,OCT,DEC,HEX";
             this.button_writeZero.Text = "0";
             this.button_writeZero.UseVisualStyleBackColor = true;
             // 
@@ -361,6 +376,7 @@
             this.button_writeNine.Name = "button_writeNine";
             this.button_writeNine.Size = new System.Drawing.Size(75, 35);
             this.button_writeNine.TabIndex = 7;
+            this.button_writeNine.Tag = "DEC,HEX";
             this.button_writeNine.Text = "9";
             this.button_writeNine.UseVisualStyleBackColor = true;
             // 
@@ -370,6 +386,7 @@
             this.button_writeSix.Name = "button_writeSix";
             this.button_writeSix.Size = new System.Drawing.Size(75, 35);
             this.button_writeSix.TabIndex = 8;
+            this.button_writeSix.Tag = "OCT,DEC,HEX";
             this.button_writeSix.Text = "6";
             this.button_writeSix.UseVisualStyleBackColor = true;
             // 
@@ -379,6 +396,7 @@
             this.button_writeThree.Name = "button_writeThree";
             this.button_writeThree.Size = new System.Drawing.Size(75, 35);
             this.button_writeThree.TabIndex = 9;
+            this.button_writeThree.Tag = "OCT,DEC,HEX";
             this.button_writeThree.Text = "3";
             this.button_writeThree.UseVisualStyleBackColor = true;
             // 
@@ -490,20 +508,38 @@
             this.textBox4.Size = new System.Drawing.Size(97, 21);
             this.textBox4.TabIndex = 9;
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(12, 12);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(417, 21);
+            this.textBox5.TabIndex = 6;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(12, 39);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(417, 21);
+            this.textBox6.TabIndex = 7;
+            // 
             // programmerCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 920);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.KeypadTabControl);
             this.Controls.Add(this.groupBox1);
+            this.KeyPreview = true;
             this.Name = "programmerCalculator";
             this.Text = "programmerCalculator";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.KeypadTabControl.ResumeLayout(false);
+            this.tabPageAll.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -513,9 +549,9 @@
         private System.Windows.Forms.RadioButton radioButton_DEC;
         private System.Windows.Forms.RadioButton radioButton_OCT;
         private System.Windows.Forms.RadioButton radioButton_BIN;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabControl KeypadTabControl;
+        private System.Windows.Forms.TabPage tabPageAll;
+        private System.Windows.Forms.TabPage tabPageBIN;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button_writeZero;
@@ -528,7 +564,7 @@
         private System.Windows.Forms.Button button_writeE;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button_writeSix;
-        private System.Windows.Forms.Button button__writeFive;
+        private System.Windows.Forms.Button button_writeFive;
         private System.Windows.Forms.Button button_writeFour;
         private System.Windows.Forms.Button button_writeD;
         private System.Windows.Forms.Button button27;
@@ -551,5 +587,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }

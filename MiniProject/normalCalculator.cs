@@ -73,5 +73,11 @@ namespace MiniProject
                 textBox_view.AppendText(buttonText);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            programmerCalculator programmerForm = new programmerCalculator();
+            programmerForm.Show();
+        }
     }
 }

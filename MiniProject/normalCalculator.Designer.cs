@@ -59,6 +59,7 @@
             this.button_toggleSign = new System.Windows.Forms.Button();
             this.button_writeZero = new System.Windows.Forms.Button();
             this.button_equal = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox_view
@@ -391,11 +392,22 @@
             this.button_equal.UseVisualStyleBackColor = true;
             this.button_equal.Click += new System.EventHandler(this.button_equal_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(380, 156);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // normalCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 406);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button_equal);
             this.Controls.Add(this.button_writeZero);
             this.Controls.Add(this.button_toggleSign);
@@ -468,5 +480,6 @@
         private System.Windows.Forms.Button button_toggleSign;
         private System.Windows.Forms.Button button_writeZero;
         private System.Windows.Forms.Button button_equal;
+        private System.Windows.Forms.Button button1;
     }
 }
