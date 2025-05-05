@@ -13,6 +13,9 @@ namespace MiniProject
     public partial class programmerCalculator : Form
     {
         KeyboardInputHandler keyHandler = new KeyboardInputHandler();
+
+        private KeyboardInputHandler.Base SelectedBase;
+
         public programmerCalculator()
         {
             InitializeComponent();
@@ -38,31 +41,14 @@ namespace MiniProject
             Console.WriteLine(keyString);
         }
 
+        // 진법 변환 radioButton을 눌렀을때 발생하는 이벤트 처리
         private void BaseRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton rb = sender as RadioButton;
-
-            if (rb.Checked)
-            {
-                switch (rb.Name)
-                {
-                    case "radioButton_HEX":
-                        ChangeButtonStatus("HEX");
-                        break;
-                    case "radioButton_DEC":
-                        ChangeButtonStatus("DEC");
-                        break;
-                    case "radioButton_OCT":
-                        ChangeButtonStatus("OCT");
-                        break;
-                    case "radioButton_BIN":
-                        ChangeButtonStatus("BIN");
-                        break;
-                }
-            }
+            if (rb.Checked) ChangeButtonStatus(rb.Tag?.ToString());
         }
 
-
+        // 이벤트 발생시 진법에 따라 버튼을 활성/비활성화 하는 Fucntion
         private void ChangeButtonStatus(string @base)
         {
             foreach (Control ctrl in KeypadTabControl.TabPages[0].Controls)
@@ -78,6 +64,7 @@ namespace MiniProject
                         btn.Enabled = true;
                         continue;
                     }
+                    // 버튼의 태그를 string으로 변환하고 ","를 기준으로 나눔. 
                     string[] validBases = btn.Tag?.ToString().Split(',') ?? Array.Empty<string>();
                     btn.Enabled = validBases.Contains(@base);
                 }

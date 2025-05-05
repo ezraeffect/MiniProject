@@ -84,6 +84,7 @@
             this.radioButton_HEX.Name = "radioButton_HEX";
             this.radioButton_HEX.Size = new System.Drawing.Size(47, 16);
             this.radioButton_HEX.TabIndex = 0;
+            this.radioButton_HEX.Tag = "HEX";
             this.radioButton_HEX.Text = "HEX";
             this.radioButton_HEX.UseVisualStyleBackColor = true;
             // 
@@ -94,6 +95,7 @@
             this.radioButton_DEC.Name = "radioButton_DEC";
             this.radioButton_DEC.Size = new System.Drawing.Size(48, 16);
             this.radioButton_DEC.TabIndex = 1;
+            this.radioButton_DEC.Tag = "DEC";
             this.radioButton_DEC.Text = "DEC";
             this.radioButton_DEC.UseVisualStyleBackColor = true;
             // 
@@ -104,6 +106,7 @@
             this.radioButton_OCT.Name = "radioButton_OCT";
             this.radioButton_OCT.Size = new System.Drawing.Size(49, 16);
             this.radioButton_OCT.TabIndex = 2;
+            this.radioButton_OCT.Tag = "OCT";
             this.radioButton_OCT.Text = "OCT";
             this.radioButton_OCT.UseVisualStyleBackColor = true;
             // 
@@ -114,6 +117,7 @@
             this.radioButton_BIN.Name = "radioButton_BIN";
             this.radioButton_BIN.Size = new System.Drawing.Size(43, 16);
             this.radioButton_BIN.TabIndex = 3;
+            this.radioButton_BIN.Tag = "BIN";
             this.radioButton_BIN.Text = "BIN";
             this.radioButton_BIN.UseVisualStyleBackColor = true;
             // 
