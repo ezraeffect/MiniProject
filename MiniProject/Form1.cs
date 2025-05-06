@@ -126,7 +126,32 @@ namespace MiniProject
         {
             textBox_result.Text = calDisplayInfo;
             textBox_view.Text = calHistory;
-        
+
+            #region 입력한 숫자의 길이별로 화면에 표시되는 Font의 크기를 조정한다.
+            if (textBox_result.Text.Length <= 12)
+            {
+                if (textBox_result.Font.Size != 30)
+                {
+                    textBox_result.Font = new System.Drawing.Font("Arial", 30);
+                }
+            }
+            else if (textBox_result.Text.Length >= 13 && textBox_result.Text.Length <= 16)
+            {
+                if (textBox_result.Font.Size != 25)
+                {
+                    textBox_result.Font = new System.Drawing.Font("Arial", 25);
+                }
+            }
+            else
+            {
+                if (textBox_result.Font.Size != 18)
+                {
+                    textBox_result.Font = new System.Drawing.Font("Arial", 18);
+                }
+            }
+
+            #endregion
+
         }
 
     }

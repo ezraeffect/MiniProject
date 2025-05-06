@@ -117,12 +117,25 @@ namespace MiniProject
         {
             //// 사칙연산자가 눌린 이후 소숫점을 입력할 경우에는
             //// 입력 화면에 '0.' 으로 표시한다.
-            if (is4kindOperatorTriggeredOn == true)
+            if (is4kindOperatorTriggeredOn == true || isEqualAssignTriggerdOn == true)
             {
                 strInputNumber = "0";
 
                 //사칙연산자 flag가 true로 설정되어 있으면 false로 초기화한다.
-                is4kindOperatorTriggeredOn = false;
+                if(isEqualAssignTriggerdOn == true)
+                {
+                    is4kindOperatorTriggeredOn = false;
+                }
+
+                // 이퀄(=) 입력 flag가 True면 초기화
+                if (isEqualAssignTriggerdOn == true)
+                {
+
+                    // 계산기를 초기화 한다 - 1cycle 계산완료
+                    ResetCalculation(null);
+
+                    isEqualAssignTriggerdOn = false;
+                }
             }
 
             // 소숫점이 이미 있으면 아무 동작도 하지 않고 종료한다.
@@ -152,6 +165,12 @@ namespace MiniProject
         /// <param name="dispCallBack"></param>
         public void BackspaceProcess(Action<string, string> dispCallBack)
         {
+            // 이퀄(=) 연산자가 입력되었으면
+            if (isEqualAssignTriggerdOn == true)
+            {
+                strCalHistory = "";
+            }
+
             if (strInputNumber == "0" || strInputNumber == "" || strInputNumber.Length == 1)
             {
                 strInputNumber = "0";
@@ -241,7 +260,12 @@ namespace MiniProject
                 bool result = CalculationProcess();
             }
 
-            
+            // 이퀄(=) 입력 flag가 True면 초기화
+            if (isEqualAssignTriggerdOn == true)
+            {
+                isEqualAssignTriggerdOn = false;
+            }
+
             // 방금 입력한 계산식 정보를 Text로 생성
             strCalHistory = string.Format("{0} {1}", Calc2NumberClass.calResult, GetOperatorString(Calc2NumberClass.currentCalcOperator));
 
@@ -265,9 +289,15 @@ namespace MiniProject
         /// <returns></returns>
         bool CalculationProcess()
         {
+            // 방금 전에 이퀄(=) 연산자가 입력되었다면 해당 Flag만 해제하고 연산작업은 수행하지 않는다. - 부호만 바꾼다.
+            if (isEqualAssignTriggerdOn == true)
+            {
+                isEqualAssignTriggerdOn = false;
+            }
+
             // 최초 입력 연산자가 아닐 경우 
             // 연산자 입력시 이전 연산자와 틀릴경우에는 마지막으로 입력된 사칙 연산자를 이용해서 먼저 계산한다.
-            if (Calc2NumberClass.lastCalcOperator != _CalcOperator._none && Calc2NumberClass.lastCalcOperator != Calc2NumberClass.currentCalcOperator)
+            else if (Calc2NumberClass.lastCalcOperator != _CalcOperator._none && Calc2NumberClass.lastCalcOperator != Calc2NumberClass.currentCalcOperator)
             {
                 //Calc2NumberClass 부모 class를 사용하면 상속받은 디바이스 모두 사용가능
                 Calc2NumberClass clnc = GetCalculationMethod(Calc2NumberClass.lastCalcOperator);
