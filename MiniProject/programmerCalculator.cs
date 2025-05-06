@@ -12,6 +12,17 @@ using static MiniProject.KeyboardInputHandler;
 
 namespace MiniProject
 {
+    /*  TODO
+     *  1. 실시간 진법 변환
+     *  2. 비트시프트
+     *  3. 비트연산 (AND, OR, NOT, NAND, NOR, XOR)
+     *  4. byte, WORD, DWORD, QWORD
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
     public partial class programmerCalculator : Form
     {
         KeyboardInputHandler keyHandler = new KeyboardInputHandler();
@@ -19,6 +30,7 @@ namespace MiniProject
         DataTable data = new DataTable();
 
         public static KeyboardInputHandler.Base SelectedBase = KeyboardInputHandler.Base.DEC;
+        public static KeyboardInputHandler.Base CurrentBase;
 
         public programmerCalculator()
         {
@@ -79,9 +91,16 @@ namespace MiniProject
             // radioButton의 모든 이벤트에 대해 가져오므로 체크 되었을때 동작 수행 하도록
             if (rb.Checked)
             {
+                // 체크 된 radioButton의 tag를 가져와 string으로 변환
                 tagString = rb.Tag?.ToString();
+                // tag에 해당하는 button을 활성화/비활성화
                 ChangeButtonStatus(rb.Tag?.ToString());
+                // 체크된 radioButton의 Status 저장
                 SelectedBase = (Base)Enum.Parse(typeof(Base), rb.Tag?.ToString(), true);
+
+                // 진법 변환
+
+
             }
         }
 

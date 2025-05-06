@@ -80,9 +80,10 @@
             // radioButton_HEX
             // 
             this.radioButton_HEX.AutoSize = true;
-            this.radioButton_HEX.Location = new System.Drawing.Point(10, 20);
+            this.radioButton_HEX.Location = new System.Drawing.Point(14, 30);
+            this.radioButton_HEX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton_HEX.Name = "radioButton_HEX";
-            this.radioButton_HEX.Size = new System.Drawing.Size(47, 16);
+            this.radioButton_HEX.Size = new System.Drawing.Size(66, 22);
             this.radioButton_HEX.TabIndex = 0;
             this.radioButton_HEX.Tag = "HEX";
             this.radioButton_HEX.Text = "HEX";
@@ -91,9 +92,10 @@
             // radioButton_DEC
             // 
             this.radioButton_DEC.AutoSize = true;
-            this.radioButton_DEC.Location = new System.Drawing.Point(10, 47);
+            this.radioButton_DEC.Location = new System.Drawing.Point(14, 70);
+            this.radioButton_DEC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton_DEC.Name = "radioButton_DEC";
-            this.radioButton_DEC.Size = new System.Drawing.Size(48, 16);
+            this.radioButton_DEC.Size = new System.Drawing.Size(67, 22);
             this.radioButton_DEC.TabIndex = 1;
             this.radioButton_DEC.Tag = "DEC";
             this.radioButton_DEC.Text = "DEC";
@@ -102,9 +104,10 @@
             // radioButton_OCT
             // 
             this.radioButton_OCT.AutoSize = true;
-            this.radioButton_OCT.Location = new System.Drawing.Point(10, 74);
+            this.radioButton_OCT.Location = new System.Drawing.Point(14, 111);
+            this.radioButton_OCT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton_OCT.Name = "radioButton_OCT";
-            this.radioButton_OCT.Size = new System.Drawing.Size(49, 16);
+            this.radioButton_OCT.Size = new System.Drawing.Size(68, 22);
             this.radioButton_OCT.TabIndex = 2;
             this.radioButton_OCT.Tag = "OCT";
             this.radioButton_OCT.Text = "OCT";
@@ -113,9 +116,10 @@
             // radioButton_BIN
             // 
             this.radioButton_BIN.AutoSize = true;
-            this.radioButton_BIN.Location = new System.Drawing.Point(10, 101);
+            this.radioButton_BIN.Location = new System.Drawing.Point(14, 152);
+            this.radioButton_BIN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton_BIN.Name = "radioButton_BIN";
-            this.radioButton_BIN.Size = new System.Drawing.Size(43, 16);
+            this.radioButton_BIN.Size = new System.Drawing.Size(59, 22);
             this.radioButton_BIN.TabIndex = 3;
             this.radioButton_BIN.Tag = "BIN";
             this.radioButton_BIN.Text = "BIN";
@@ -125,10 +129,11 @@
             // 
             this.KeypadTabControl.Controls.Add(this.tabPageAll);
             this.KeypadTabControl.Controls.Add(this.tabPageBIN);
-            this.KeypadTabControl.Location = new System.Drawing.Point(12, 366);
+            this.KeypadTabControl.Location = new System.Drawing.Point(17, 549);
+            this.KeypadTabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.KeypadTabControl.Name = "KeypadTabControl";
             this.KeypadTabControl.SelectedIndex = 0;
-            this.KeypadTabControl.Size = new System.Drawing.Size(421, 284);
+            this.KeypadTabControl.Size = new System.Drawing.Size(601, 426);
             this.KeypadTabControl.TabIndex = 0;
             // 
             // tabPageAll
@@ -163,37 +168,42 @@
             this.tabPageAll.Controls.Add(this.button_rightShift);
             this.tabPageAll.Controls.Add(this.button_leftShift);
             this.tabPageAll.Controls.Add(this.button_writeA);
-            this.tabPageAll.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAll.Location = new System.Drawing.Point(4, 28);
+            this.tabPageAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageAll.Name = "tabPageAll";
-            this.tabPageAll.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAll.Size = new System.Drawing.Size(413, 258);
+            this.tabPageAll.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageAll.Size = new System.Drawing.Size(593, 394);
             this.tabPageAll.TabIndex = 0;
             this.tabPageAll.Text = "전체 키패드";
             this.tabPageAll.UseVisualStyleBackColor = true;
             // 
             // button30
             // 
-            this.button30.Location = new System.Drawing.Point(330, 211);
+            this.button30.Location = new System.Drawing.Point(471, 316);
+            this.button30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(75, 35);
+            this.button30.Size = new System.Drawing.Size(107, 52);
             this.button30.TabIndex = 10;
-            this.button30.Text = "button6";
+            this.button30.Text = "=";
             this.button30.UseVisualStyleBackColor = true;
             // 
             // button24
             // 
-            this.button24.Location = new System.Drawing.Point(249, 211);
+            this.button24.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button24.Location = new System.Drawing.Point(356, 316);
+            this.button24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 35);
+            this.button24.Size = new System.Drawing.Size(107, 52);
             this.button24.TabIndex = 10;
-            this.button24.Text = "button6";
+            this.button24.Text = ".";
             this.button24.UseVisualStyleBackColor = true;
             // 
             // button_writeZero
             // 
-            this.button_writeZero.Location = new System.Drawing.Point(168, 211);
+            this.button_writeZero.Location = new System.Drawing.Point(240, 316);
+            this.button_writeZero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeZero.Name = "button_writeZero";
-            this.button_writeZero.Size = new System.Drawing.Size(75, 35);
+            this.button_writeZero.Size = new System.Drawing.Size(107, 52);
             this.button_writeZero.TabIndex = 10;
             this.button_writeZero.Tag = "BIN,OCT,DEC,HEX";
             this.button_writeZero.Text = "0";
@@ -201,18 +211,20 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(87, 211);
+            this.button12.Location = new System.Drawing.Point(124, 316);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 35);
+            this.button12.Size = new System.Drawing.Size(107, 52);
             this.button12.TabIndex = 10;
-            this.button12.Text = "button6";
+            this.button12.Text = "+/-";
             this.button12.UseVisualStyleBackColor = true;
             // 
             // button_writeF
             // 
-            this.button_writeF.Location = new System.Drawing.Point(6, 211);
+            this.button_writeF.Location = new System.Drawing.Point(9, 316);
+            this.button_writeF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeF.Name = "button_writeF";
-            this.button_writeF.Size = new System.Drawing.Size(75, 35);
+            this.button_writeF.Size = new System.Drawing.Size(107, 52);
             this.button_writeF.TabIndex = 10;
             this.button_writeF.Tag = "HEX";
             this.button_writeF.Text = "F";
@@ -220,18 +232,20 @@
             // 
             // button29
             // 
-            this.button29.Location = new System.Drawing.Point(330, 170);
+            this.button29.Location = new System.Drawing.Point(471, 255);
+            this.button29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(75, 35);
+            this.button29.Size = new System.Drawing.Size(107, 52);
             this.button29.TabIndex = 9;
-            this.button29.Text = "button5";
+            this.button29.Text = "+";
             this.button29.UseVisualStyleBackColor = true;
             // 
             // button_writeThree
             // 
-            this.button_writeThree.Location = new System.Drawing.Point(249, 170);
+            this.button_writeThree.Location = new System.Drawing.Point(356, 255);
+            this.button_writeThree.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeThree.Name = "button_writeThree";
-            this.button_writeThree.Size = new System.Drawing.Size(75, 35);
+            this.button_writeThree.Size = new System.Drawing.Size(107, 52);
             this.button_writeThree.TabIndex = 9;
             this.button_writeThree.Tag = "OCT,DEC,HEX";
             this.button_writeThree.Text = "3";
@@ -239,9 +253,10 @@
             // 
             // button_writeTwo
             // 
-            this.button_writeTwo.Location = new System.Drawing.Point(168, 170);
+            this.button_writeTwo.Location = new System.Drawing.Point(240, 255);
+            this.button_writeTwo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeTwo.Name = "button_writeTwo";
-            this.button_writeTwo.Size = new System.Drawing.Size(75, 35);
+            this.button_writeTwo.Size = new System.Drawing.Size(107, 52);
             this.button_writeTwo.TabIndex = 9;
             this.button_writeTwo.Tag = "OCT,DEC,HEX";
             this.button_writeTwo.Text = "2";
@@ -249,9 +264,10 @@
             // 
             // button_writeOne
             // 
-            this.button_writeOne.Location = new System.Drawing.Point(87, 170);
+            this.button_writeOne.Location = new System.Drawing.Point(124, 255);
+            this.button_writeOne.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeOne.Name = "button_writeOne";
-            this.button_writeOne.Size = new System.Drawing.Size(75, 35);
+            this.button_writeOne.Size = new System.Drawing.Size(107, 52);
             this.button_writeOne.TabIndex = 9;
             this.button_writeOne.Tag = "BIN,OCT,DEC,HEX";
             this.button_writeOne.Text = "1";
@@ -259,9 +275,10 @@
             // 
             // button_writeE
             // 
-            this.button_writeE.Location = new System.Drawing.Point(6, 170);
+            this.button_writeE.Location = new System.Drawing.Point(9, 255);
+            this.button_writeE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeE.Name = "button_writeE";
-            this.button_writeE.Size = new System.Drawing.Size(75, 35);
+            this.button_writeE.Size = new System.Drawing.Size(107, 52);
             this.button_writeE.TabIndex = 9;
             this.button_writeE.Tag = "HEX";
             this.button_writeE.Text = "E";
@@ -269,18 +286,20 @@
             // 
             // button28
             // 
-            this.button28.Location = new System.Drawing.Point(330, 129);
+            this.button28.Location = new System.Drawing.Point(471, 194);
+            this.button28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 35);
+            this.button28.Size = new System.Drawing.Size(107, 52);
             this.button28.TabIndex = 8;
-            this.button28.Text = "button4";
+            this.button28.Text = "-";
             this.button28.UseVisualStyleBackColor = true;
             // 
             // button_writeSix
             // 
-            this.button_writeSix.Location = new System.Drawing.Point(249, 129);
+            this.button_writeSix.Location = new System.Drawing.Point(356, 194);
+            this.button_writeSix.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeSix.Name = "button_writeSix";
-            this.button_writeSix.Size = new System.Drawing.Size(75, 35);
+            this.button_writeSix.Size = new System.Drawing.Size(107, 52);
             this.button_writeSix.TabIndex = 8;
             this.button_writeSix.Tag = "OCT,DEC,HEX";
             this.button_writeSix.Text = "6";
@@ -288,9 +307,10 @@
             // 
             // button_writeFive
             // 
-            this.button_writeFive.Location = new System.Drawing.Point(168, 129);
+            this.button_writeFive.Location = new System.Drawing.Point(240, 194);
+            this.button_writeFive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeFive.Name = "button_writeFive";
-            this.button_writeFive.Size = new System.Drawing.Size(75, 35);
+            this.button_writeFive.Size = new System.Drawing.Size(107, 52);
             this.button_writeFive.TabIndex = 8;
             this.button_writeFive.Tag = "OCT,DEC,HEX";
             this.button_writeFive.Text = "5";
@@ -298,9 +318,10 @@
             // 
             // button_writeFour
             // 
-            this.button_writeFour.Location = new System.Drawing.Point(87, 129);
+            this.button_writeFour.Location = new System.Drawing.Point(124, 194);
+            this.button_writeFour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeFour.Name = "button_writeFour";
-            this.button_writeFour.Size = new System.Drawing.Size(75, 35);
+            this.button_writeFour.Size = new System.Drawing.Size(107, 52);
             this.button_writeFour.TabIndex = 8;
             this.button_writeFour.Tag = "OCT,DEC,HEX";
             this.button_writeFour.Text = "4";
@@ -308,9 +329,10 @@
             // 
             // button_writeD
             // 
-            this.button_writeD.Location = new System.Drawing.Point(6, 129);
+            this.button_writeD.Location = new System.Drawing.Point(9, 194);
+            this.button_writeD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeD.Name = "button_writeD";
-            this.button_writeD.Size = new System.Drawing.Size(75, 35);
+            this.button_writeD.Size = new System.Drawing.Size(107, 52);
             this.button_writeD.TabIndex = 8;
             this.button_writeD.Tag = "HEX";
             this.button_writeD.Text = "D";
@@ -318,18 +340,20 @@
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(330, 88);
+            this.button27.Location = new System.Drawing.Point(471, 132);
+            this.button27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(75, 35);
+            this.button27.Size = new System.Drawing.Size(107, 52);
             this.button27.TabIndex = 7;
-            this.button27.Text = "button3";
+            this.button27.Text = "×";
             this.button27.UseVisualStyleBackColor = true;
             // 
             // button_writeNine
             // 
-            this.button_writeNine.Location = new System.Drawing.Point(249, 88);
+            this.button_writeNine.Location = new System.Drawing.Point(356, 132);
+            this.button_writeNine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeNine.Name = "button_writeNine";
-            this.button_writeNine.Size = new System.Drawing.Size(75, 35);
+            this.button_writeNine.Size = new System.Drawing.Size(107, 52);
             this.button_writeNine.TabIndex = 7;
             this.button_writeNine.Tag = "DEC,HEX";
             this.button_writeNine.Text = "9";
@@ -337,9 +361,10 @@
             // 
             // button_writeEight
             // 
-            this.button_writeEight.Location = new System.Drawing.Point(168, 88);
+            this.button_writeEight.Location = new System.Drawing.Point(240, 132);
+            this.button_writeEight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeEight.Name = "button_writeEight";
-            this.button_writeEight.Size = new System.Drawing.Size(75, 35);
+            this.button_writeEight.Size = new System.Drawing.Size(107, 52);
             this.button_writeEight.TabIndex = 7;
             this.button_writeEight.Tag = "DEC,HEX";
             this.button_writeEight.Text = "8";
@@ -347,9 +372,10 @@
             // 
             // button_writeSeven
             // 
-            this.button_writeSeven.Location = new System.Drawing.Point(87, 88);
+            this.button_writeSeven.Location = new System.Drawing.Point(124, 132);
+            this.button_writeSeven.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeSeven.Name = "button_writeSeven";
-            this.button_writeSeven.Size = new System.Drawing.Size(75, 35);
+            this.button_writeSeven.Size = new System.Drawing.Size(107, 52);
             this.button_writeSeven.TabIndex = 7;
             this.button_writeSeven.Tag = "OCT,DEC,HEX";
             this.button_writeSeven.Text = "7";
@@ -357,9 +383,10 @@
             // 
             // button_writeC
             // 
-            this.button_writeC.Location = new System.Drawing.Point(6, 88);
+            this.button_writeC.Location = new System.Drawing.Point(9, 132);
+            this.button_writeC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeC.Name = "button_writeC";
-            this.button_writeC.Size = new System.Drawing.Size(75, 35);
+            this.button_writeC.Size = new System.Drawing.Size(107, 52);
             this.button_writeC.TabIndex = 7;
             this.button_writeC.Tag = "HEX";
             this.button_writeC.Text = "C";
@@ -367,45 +394,50 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(330, 47);
+            this.button26.Location = new System.Drawing.Point(471, 70);
+            this.button26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 35);
+            this.button26.Size = new System.Drawing.Size(107, 52);
             this.button26.TabIndex = 6;
-            this.button26.Text = "button2";
+            this.button26.Text = "÷";
             this.button26.UseVisualStyleBackColor = true;
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(249, 47);
+            this.button20.Location = new System.Drawing.Point(356, 70);
+            this.button20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 35);
+            this.button20.Size = new System.Drawing.Size(107, 52);
             this.button20.TabIndex = 6;
-            this.button20.Text = "button2";
+            this.button20.Text = "%";
             this.button20.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(168, 47);
+            this.button14.Location = new System.Drawing.Point(240, 70);
+            this.button14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 35);
+            this.button14.Size = new System.Drawing.Size(107, 52);
             this.button14.TabIndex = 6;
-            this.button14.Text = "button2";
+            this.button14.Text = ")";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(87, 47);
+            this.button8.Location = new System.Drawing.Point(124, 70);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 35);
+            this.button8.Size = new System.Drawing.Size(107, 52);
             this.button8.TabIndex = 6;
-            this.button8.Text = "button2";
+            this.button8.Text = "(";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button_writeB
             // 
-            this.button_writeB.Location = new System.Drawing.Point(6, 47);
+            this.button_writeB.Location = new System.Drawing.Point(9, 70);
+            this.button_writeB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeB.Name = "button_writeB";
-            this.button_writeB.Size = new System.Drawing.Size(75, 35);
+            this.button_writeB.Size = new System.Drawing.Size(107, 52);
             this.button_writeB.TabIndex = 6;
             this.button_writeB.Tag = "HEX";
             this.button_writeB.Text = "B";
@@ -413,45 +445,50 @@
             // 
             // button25
             // 
-            this.button25.Location = new System.Drawing.Point(330, 6);
+            this.button25.Location = new System.Drawing.Point(471, 9);
+            this.button25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 35);
+            this.button25.Size = new System.Drawing.Size(107, 52);
             this.button25.TabIndex = 5;
-            this.button25.Text = "button1";
+            this.button25.Text = "BS";
             this.button25.UseVisualStyleBackColor = true;
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(249, 6);
+            this.button19.Location = new System.Drawing.Point(356, 9);
+            this.button19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 35);
+            this.button19.Size = new System.Drawing.Size(107, 52);
             this.button19.TabIndex = 5;
-            this.button19.Text = "button1";
+            this.button19.Text = "C";
             this.button19.UseVisualStyleBackColor = true;
             // 
             // button_rightShift
             // 
-            this.button_rightShift.Location = new System.Drawing.Point(168, 6);
+            this.button_rightShift.Location = new System.Drawing.Point(240, 9);
+            this.button_rightShift.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_rightShift.Name = "button_rightShift";
-            this.button_rightShift.Size = new System.Drawing.Size(75, 35);
+            this.button_rightShift.Size = new System.Drawing.Size(107, 52);
             this.button_rightShift.TabIndex = 5;
             this.button_rightShift.Text = ">>";
             this.button_rightShift.UseVisualStyleBackColor = true;
             // 
             // button_leftShift
             // 
-            this.button_leftShift.Location = new System.Drawing.Point(87, 6);
+            this.button_leftShift.Location = new System.Drawing.Point(124, 9);
+            this.button_leftShift.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_leftShift.Name = "button_leftShift";
-            this.button_leftShift.Size = new System.Drawing.Size(75, 35);
+            this.button_leftShift.Size = new System.Drawing.Size(107, 52);
             this.button_leftShift.TabIndex = 5;
             this.button_leftShift.Text = "<<";
             this.button_leftShift.UseVisualStyleBackColor = true;
             // 
             // button_writeA
             // 
-            this.button_writeA.Location = new System.Drawing.Point(6, 6);
+            this.button_writeA.Location = new System.Drawing.Point(9, 9);
+            this.button_writeA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_writeA.Name = "button_writeA";
-            this.button_writeA.Size = new System.Drawing.Size(75, 35);
+            this.button_writeA.Size = new System.Drawing.Size(107, 52);
             this.button_writeA.TabIndex = 5;
             this.button_writeA.Tag = "HEX";
             this.button_writeA.Text = "A";
@@ -459,10 +496,11 @@
             // 
             // tabPageBIN
             // 
-            this.tabPageBIN.Location = new System.Drawing.Point(4, 22);
+            this.tabPageBIN.Location = new System.Drawing.Point(4, 28);
+            this.tabPageBIN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageBIN.Name = "tabPageBIN";
-            this.tabPageBIN.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBIN.Size = new System.Drawing.Size(413, 258);
+            this.tabPageBIN.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageBIN.Size = new System.Drawing.Size(593, 394);
             this.tabPageBIN.TabIndex = 1;
             this.tabPageBIN.Text = "비트 전환 키패드";
             this.tabPageBIN.UseVisualStyleBackColor = true;
@@ -477,65 +515,74 @@
             this.groupBox1.Controls.Add(this.radioButton_DEC);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 223);
+            this.groupBox1.Location = new System.Drawing.Point(17, 334);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(166, 137);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(237, 206);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "진수 변환";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(63, 19);
+            this.textBox1.Location = new System.Drawing.Point(90, 28);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(97, 21);
+            this.textBox1.Size = new System.Drawing.Size(137, 28);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(63, 46);
+            this.textBox2.Location = new System.Drawing.Point(90, 69);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(97, 21);
+            this.textBox2.Size = new System.Drawing.Size(137, 28);
             this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(63, 73);
+            this.textBox3.Location = new System.Drawing.Point(90, 110);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(97, 21);
+            this.textBox3.Size = new System.Drawing.Size(137, 28);
             this.textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(63, 100);
+            this.textBox4.Location = new System.Drawing.Point(90, 150);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(97, 21);
+            this.textBox4.Size = new System.Drawing.Size(137, 28);
             this.textBox4.TabIndex = 9;
             // 
             // textBox_view
             // 
-            this.textBox_view.Location = new System.Drawing.Point(12, 12);
+            this.textBox_view.Location = new System.Drawing.Point(17, 18);
+            this.textBox_view.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_view.Name = "textBox_view";
-            this.textBox_view.Size = new System.Drawing.Size(417, 21);
+            this.textBox_view.Size = new System.Drawing.Size(594, 28);
             this.textBox_view.TabIndex = 6;
             // 
             // textBox_result
             // 
-            this.textBox_result.Location = new System.Drawing.Point(12, 39);
+            this.textBox_result.Location = new System.Drawing.Point(17, 58);
+            this.textBox_result.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_result.Name = "textBox_result";
-            this.textBox_result.Size = new System.Drawing.Size(417, 21);
+            this.textBox_result.Size = new System.Drawing.Size(594, 28);
             this.textBox_result.TabIndex = 7;
             // 
             // programmerCalculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 920);
+            this.ClientSize = new System.Drawing.Size(1143, 1380);
             this.Controls.Add(this.textBox_result);
             this.Controls.Add(this.textBox_view);
             this.Controls.Add(this.KeypadTabControl);
             this.Controls.Add(this.groupBox1);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "programmerCalculator";
             this.Text = "programmerCalculator";
             this.KeypadTabControl.ResumeLayout(false);
