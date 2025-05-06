@@ -10,6 +10,14 @@ using System.Windows.Forms;
  */
 namespace MiniProject
 {
+    public enum Base:int // 진법을 지정합니다.
+    {
+        BIN = 2,
+        OCT = 8,
+        DEC = 10,
+        HEX = 16
+    }
+
     public class KeyboardInputHandler
     {
         // GetKeyString(KeyEventArgs e);  
@@ -62,14 +70,6 @@ namespace MiniProject
         // - KeyEventArgs 객체를 인자로 하는 메서드  
         // - KeyValue를 비교하여 알맞은 String을 반환한다.  
         // - 16진수 계산을 위한 A,B,C,D,E,F 추가  
-
-        public enum Base // 진법을 지정합니다.
-        {
-            BIN,
-            OCT,
-            DEC,
-            HEX
-        }
 
         public string GetBaseKeyString(KeyEventArgs e, Base @base)
         {
