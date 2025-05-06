@@ -246,18 +246,37 @@ namespace MiniProject
         /// </summary>
         bool is4kindOperatorTriggeredOn { get; set; } = false;
 
+        /// <summary>
+        /// 사칙연산을 수행함.
+        /// </summary>
+        /// <returns></returns>
         bool CalculationProcess()
         {
-            if (Calc2NumberClass.LastCalcOperator != _CalcOperator._none&& Calc2NumberClass.LastCalcOperator != Calc2NumberClass.currentCalcOperator)
-            { 
-            }
-            Calc2NumberClass clnc = GetCalculationMethod(Calc2NumberClass.currentCalcOperator);
-
-            decimal inputNumber = 0;
-            if (decimal.TryParse(strInputNumber, out inputNumber))
+            // 최초 입력 연산자가 아닐 경우 
+            // 연산자 입력시 이전 연산자와 틀릴경우에는 마지막으로 입력된 사칙 연산자를 이용해서 먼저 계산한다.
+            if (Calc2NumberClass.LastCalcOperator != _CalcOperator._none && Calc2NumberClass.LastCalcOperator != Calc2NumberClass.currentCalcOperator)
             {
-                clnc.Calculation(inputNumber);
-                return true;
+                Calc2NumberClass clnc = GetCalculationMethod(Calc2NumberClass.LastCalcOperator);
+                if (clnc != null)
+                {
+                    decimal inputNumber = 0;
+                    if (decimal.TryParse(strInputNumber, out inputNumber))
+                    {
+                        clnc.Calculation(inputNumber);
+                        return true;
+                    }
+                }
+            }
+            else
+            {
+                Calc2NumberClass clnc = GetCalculationMethod(Calc2NumberClass.currentCalcOperator);
+
+                decimal inputNumber = 0;
+                if (decimal.TryParse(strInputNumber, out inputNumber))
+                {
+                    clnc.Calculation(inputNumber);
+                    return true;
+                }
             }
             return false;
         }
