@@ -16,7 +16,7 @@ namespace MiniProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new normalCalculator());
+            Application.Run(new Form1());
         }
     }
 }
