@@ -52,10 +52,6 @@
     <Compile Include="basicOperations.cs" />
     <Compile Include="KeyboardInputHandler.cs" />
     <Compile Include="normalCalculator.cs">
-    <Compile Include="Calc2NumberClass.cs" />
-    <Compile Include="CalKeyPressProcess.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="normalCalculator.Designer.cs">
@@ -74,8 +70,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="programmerCalculator.resx">
       <DependentUpon>programmerCalculator.cs</DependentUpon>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
