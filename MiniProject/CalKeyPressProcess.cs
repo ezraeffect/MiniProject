@@ -314,12 +314,57 @@ namespace MiniProject
         #region 4. 이퀄(=) Assign 연산자를 처리하는 Method
 
         /// <summary>
+        /// 이퀄(=) 연산자가 바로 이전에 입력되었는지 체크하는 flag
+        /// </summary>
+        bool isEqualAssignTriggerdOn { get; set; } = false;
+
+        /// <summary>
         /// 이퀄(=) 연산자가 입력될 경우 호출되는 Method
         /// </summary>
         /// <param name="dispCallBack"></param>
         public void EqualAssignOperatorInput(Action<string, string> dispCallBack)
         {
+            EqualCalProcess();
+
+            // 화면 정보를 Call Back 함수로 갱신한다.
             dispCallBack(strCalHistory, strInputNumber);
+        }
+
+        /// <summary>
+        /// 이퀄(=) 연산자를 처리하는 함수
+        /// </summary>
+        void EqualCalProcess()
+        {
+            // 현재 계산을 진행할 연산자 Class를 얻어온다.
+            Calc2NumberClass clnc = GetCalculationMethod(Calc2NumberClass.currentCalcOperator);
+
+            // 아래 2가지 조건 중 하나만 만족하면 이퀄(=) 연산자 처리를 수행한다.
+            // 1. Null이 아니면 사칙연산자 중에 한개의 작업을 진행한다 - clnc Class Ref => +,-,/,*
+            // 2. 숫자만 입력한 후, 또는 아무것도 하지않고 이퀄(=)만 입력한 경우
+            if (clnc != null || Calc2NumberClass.currentCalcOperator == _CalcOperator._none)
+            {
+                decimal inputnumber = 0;
+                if (decimal.TryParse(strInputNumber, out inputnumber) == true)
+                {
+                    // 1. 숫자 변환이 성공 되었으면 이퀄(=) 계산을 진행한다.
+
+                    // 1-1. 계산 History 식 왼쪽에 표시될 숫자 - 현재 계산이 완료된 값 (초기에는 0)
+                    decimal beforeCalcResult = Calc2NumberClass.calResult;
+
+                    // 1-2. 계산 History 식 오른쪽에 표시될 숫자 - 현재 입력한 값
+                    decimal currentInputNumber = 0;
+
+                    if (clnc != null)
+                    {
+                        currentInputNumber = inputnumber;  
+                        bool result = clnc.Calculation(beforeCalcResult, currentInputNumber);
+
+                        strCalHistory = string.Format("{0} {1} {2} =", beforeCalcResult, GetOperatorString(Calc2NumberClass.currentCalcOperator), currentInputNumber);
+                    }
+
+                    strInputNumber = Calc2NumberClass.calResult.ToString();
+                }
+            }
         }
 
         #endregion
