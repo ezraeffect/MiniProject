@@ -11,6 +11,7 @@ namespace MiniProject
     /// </summary>
     public class CalKeyPressProcess
     {
+        
         /// <summary>
         /// 바로 전단계 계산식 History를 표시하는 문자 Text
         /// textBox_veiw
@@ -24,7 +25,7 @@ namespace MiniProject
         string strCalResult { get; set; } = "";
 
         /// <summary>
-        /// 현재 입력된 숫자 및 소숫점을 표시하는 문자 Text
+        /// 현재 입력된 숫자 및 소수점을 표시하는 문자 Text
         /// textBox_result
         /// </summary>
         string strInputNumber { get; set; } = "";
@@ -38,7 +39,7 @@ namespace MiniProject
         /// 2) C을 눌렀을 때 호출됨
         /// </summary>
         /// <param name="dispCallBack"></param>
-        public void ResetCalculation(Action<string, string>dispCallBack)
+        public void ResetCalculation(Action<string, string>dispCallBack) //dispCallBack - Deligate 인자로 선언
         {
             strCalHistory = "";
             strCalResult = "";
@@ -102,8 +103,8 @@ namespace MiniProject
         /// <param name="dispCallBack"></param>
         public void AddDot(Action<string, string> dispCallBack)
         {
-            // 사칙연산자가 눌린 이후 소숫점을 입력할 경우에는
-            // 입력 화면에 '0.' 으로 표시한다.
+            //// 사칙연산자가 눌린 이후 소숫점을 입력할 경우에는
+            //// 입력 화면에 '0.' 으로 표시한다.
             if (is4kindOperatorTriggeredOn == true)
             {
                 strInputNumber = "0";
@@ -152,7 +153,7 @@ namespace MiniProject
 
         #endregion
 
-        #region 3. 사칙연산 키 입력을 처리하는 Method (-, +. *, /0
+        #region 3. 사칙연산 키 입력을 처리하는 Method (-, +. *, /)
 
         // 현재 입력된 연산자 Tag를 체크하여 계산에 사용될 Operator를 얻어온다.
         _CalcOperator GetOperator(string strOperator) 
@@ -162,7 +163,7 @@ namespace MiniProject
             switch (strOperator)
             {
                 case "_plus":
-                    result = _CalcOperator._pluse;
+                    result = _CalcOperator._plus;
                     break;
 
                 case "_minus":
@@ -191,7 +192,7 @@ namespace MiniProject
             string result = "";
             switch (calOperator)
             {
-                case _CalcOperator._pluse:
+                case _CalcOperator._plus:
                     result = "+";
                     break;
                 case _CalcOperator._minus:
@@ -211,13 +212,13 @@ namespace MiniProject
         /// <summary>
         /// 키패드에서 사칙연산자를 눌렀을 경우 호출되는 Method
         /// </summary>
-        /// <param name="strCalOperator"></param>
+        /// <param name="strCalcOperator"></param>
         /// <param name="dispCallBack"></param>
-        public void CalcOperatorInput(string strCalOperator, Action<string, string> dispCallBack)
+        public void CalcOperatorInput(string strCalcOperator, Action<string, string> dispCallBack)
         {
 
             // 현재 입력된 연산자를 계산기 Class에 설정한다.
-            Calc2NumberClass.SetOperator(GetOperator(strCalOperator));
+            Calc2NumberClass.SetOperator(GetOperator(strCalcOperator));
 
 
             // 연속으로 사칙 연산자를 입력하지 않은 경우에만 계산을 진행한다.
@@ -240,7 +241,7 @@ namespace MiniProject
         }
 
         /// <summary>
-        /// 사칙연산자 버튼이 눌렸는지의 여부 확인
+        /// 사칙연산자 버튼을 눌렸는지의 여부 확인
         /// 1. 설정 : 사칙연산자 입력시 True로 설정됨
         /// 2. 해제 : 숫자 "0" ~ "9", 소숫점, 이퀄(=), C(클리어) 입력되면 해제된다.
         /// </summary>
@@ -254,9 +255,10 @@ namespace MiniProject
         {
             // 최초 입력 연산자가 아닐 경우 
             // 연산자 입력시 이전 연산자와 틀릴경우에는 마지막으로 입력된 사칙 연산자를 이용해서 먼저 계산한다.
-            if (Calc2NumberClass.LastCalcOperator != _CalcOperator._none && Calc2NumberClass.LastCalcOperator != Calc2NumberClass.currentCalcOperator)
+            if (Calc2NumberClass.lastCalcOperator != _CalcOperator._none && Calc2NumberClass.lastCalcOperator != Calc2NumberClass.currentCalcOperator)
             {
-                Calc2NumberClass clnc = GetCalculationMethod(Calc2NumberClass.LastCalcOperator);
+                //Calc2NumberClass 부모 class를 사용하면 상속받은 디바이스 모두 사용가능
+                Calc2NumberClass clnc = GetCalculationMethod(Calc2NumberClass.lastCalcOperator);
                 if (clnc != null)
                 {
                     decimal inputNumber = 0;
@@ -291,7 +293,7 @@ namespace MiniProject
             Calc2NumberClass clnc = null;
             switch(calcOperator)
             {
-                case _CalcOperator._pluse:
+                case _CalcOperator._plus:
                     clnc = new Plus();
                     break;
                 case _CalcOperator._minus:

@@ -14,7 +14,7 @@ namespace MiniProject
     public enum _CalcOperator
     {
         _none, // 초기값
-        _pluse,
+        _plus,
         _minus,
         _multiple,
         _divide
@@ -46,7 +46,7 @@ namespace MiniProject
         /// <summary>
         /// 바로 이전에 입력되거나 수정된 사칙 연산자 오퍼레이터
         /// </summary>
-        public static _CalcOperator LastCalcOperator { get; set; } = _CalcOperator._none;
+        public static _CalcOperator lastCalcOperator { get; set; } = _CalcOperator._none;
 
         /// <summary>
         /// 계산기 전역 변수 초기화 함수
@@ -55,23 +55,23 @@ namespace MiniProject
         {
             calResult = 0;
             fixedBaseNumber = 0;
-            LastCalcOperator = 0;
+            lastCalcOperator = 0;
             currentCalcOperator = 0;
         }
 
         #endregion
 
         /// <summary>
-        /// 계산기에서 현재 계산을 진행할 연산자 오퍼레이터를 설정하는 Method
+        /// 계산기에서 현재 계산을 진행할 연산자 오퍼레이터를 설정하는 Method (전역 함수)
         /// </summary>
         /// <param name="calcOperator">계산기에서 누른 연산자</param>
-        public static void SetOperator(_CalcOperator calcOperator)
+        public static void SetOperator(_CalcOperator calOperator)
         {
             // 바로 이전 연산자를 현재 연산자 값으로 설정한다.
-            LastCalcOperator = calcOperator;
+            lastCalcOperator = currentCalcOperator;
 
             // 현재 연산자를 파라메터로 전달된 연산자로 설정한다.
-            currentCalcOperator = calcOperator;
+            currentCalcOperator = calOperator;
         }
 
         #region 추상 Class Method - 상속 받아서 반드시 구현해야 하는 Method
@@ -91,7 +91,7 @@ namespace MiniProject
     // 더하기(+) 기능 클래스 (Calc2NumberClass 부모 클래스를 상속받겠다.)
     public class Plus : Calc2NumberClass
     {
-        // override : 상속받는 예약어
+        // override : 추상Class 구현하는 예약어
         // 연산자만 입력한 경우 계산하는 경우
         public override bool Calculation()
         {
@@ -160,7 +160,7 @@ namespace MiniProject
         {
             try
             {
-                if (LastCalcOperator == _CalcOperator._none && calResult == 0)
+                if (lastCalcOperator == _CalcOperator._none && calResult == 0)
                 {
                     // 계산기 초기화 후 최초로 연산자가 입력된 경우, 해당 입력 값을 계산값으로 설정함.
                     calResult = leftNumberA;
@@ -217,7 +217,15 @@ namespace MiniProject
         {
             try
             {
-                calResult *= leftNumberA;
+                if (lastCalcOperator == _CalcOperator._none && calResult == 0)
+                {
+                    // 계산기 초기화 후 최초로 연산자가 입력된 경우, 해당 입력 값을 계산값으로 설정함.
+                    calResult = leftNumberA;
+                }
+                else
+                {
+                    calResult *= leftNumberA;
+                }
                 return true;
             }
             catch (Exception ex)
@@ -266,7 +274,15 @@ namespace MiniProject
         {
             try
             {
-                calResult /= leftNumberA;
+                if (lastCalcOperator == _CalcOperator._none && calResult == 0)
+                {
+                    // 계산기 초기화 후 최초로 연산자가 입력된 경우, 해당 입력 값을 계산값으로 설정함.
+                    calResult = leftNumberA;
+                }
+                else
+                {
+                    calResult /= leftNumberA;
+                }
                 return true;
             }
             catch (Exception ex)
