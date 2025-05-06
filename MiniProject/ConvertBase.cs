@@ -17,26 +17,9 @@ namespace MiniProject
     {
         public string BaseConvert(Base from, Base to, string inputValue)
         {
-            // a진수를 10진수 String으로 변환
-            // String에서 다시 b진수로 변환
             int fromValue = (int)from;
-            string tempDECString = Convert.ToInt32(inputValue, (int)from).ToString();
-            /*switch (from)
-            {
-                case Base.BIN: // 2진수에서
-                    tempDECString = Convert.ToInt32(inputValue, 2).ToString();
-                    break;
-                case Base.OCT: // 8진수에서
-                    tempDECString = Convert.ToString 
-                    break;
-                case Base.DEC: // 10진수에서
-
-                    break;
-                case Base.HEX: // 16진수에서
-
-                    break;
-            }*/
-            return string.Empty;
+            int decimalValue = Convert.ToInt32(inputValue, fromValue);
+            return Convert.ToString(decimalValue, (int)to);
         }
     }
 }
