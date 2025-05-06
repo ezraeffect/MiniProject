@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,8 @@ namespace MiniProject
     public partial class programmerCalculator : Form
     {
         KeyboardInputHandler keyHandler = new KeyboardInputHandler();
+
+        DataTable data = new DataTable();
 
         public static KeyboardInputHandler.Base SelectedBase = KeyboardInputHandler.Base.DEC;
 
@@ -37,7 +40,35 @@ namespace MiniProject
         private void programmerCalculator_KeyDown(object sender, KeyEventArgs e)
         {
             string keyString = keyHandler.GetBaseKeyString(e, SelectedBase);
-            textBox1.AppendText(keyString);
+
+            switch (keyString)
+            {
+                case "=":
+                    try
+                    {
+                        // TODO
+                        // 진법 계산 고려하여 분기문 수정
+                        var result = data.Compute(textBox_result.Text, null);
+                        textBox_result.Text = result.ToString();
+                    }
+                    catch (SyntaxErrorException)
+                    {
+                        textBox_result.Text = $"식이나 구문에 오류가 있습니다.";
+                        break;
+                    }
+                    break;
+
+                case "BS":
+                    if (textBox_result.Text.Length > 0)
+                    {
+                        textBox_result.Text = textBox_result.Text.Substring(0, textBox_result.Text.Length - 1);
+                    }
+                    break;
+
+                default:
+                    textBox_result.AppendText(keyString);
+                    break;
+            }
         }
 
         // 진법 변환 radioButton을 눌렀을때 발생하는 이벤트 처리
