@@ -48,7 +48,10 @@ namespace MiniProject
             Calc2NumberClass.ClearCalculation();
 
             // 화면 정보를 Call Back 함수로 갱신한다.
+            if (dispCallBack != null)
+            {
             dispCallBack(strCalHistory, strInputNumber);
+            }
         }
 
 
@@ -76,6 +79,15 @@ namespace MiniProject
         /// <param name="dispCallBack"></param>
         public void AddNumber(string strNum, Action<string, string> dispCallBack)
         {
+            // 이퀄(=) 연산자가 입력되었으면
+            if(isEqualAssignTriggerdOn == true)
+            {
+                // 계산기를 초기화 한다 - 1 cycle 계산 완료
+                ResetCalculation(null);
+
+                // 이퀄(=) 입력 체크 Flag는 초기화한다.
+                isEqualAssignTriggerdOn = false;
+            }
             // 계산기 초기화 이후 최초 입력시에는 strInputText에는 방금 입력한 값만 대입한다. 
             if (strInputNumber == "0" || is4kindOperatorTriggeredOn == true)
             {
