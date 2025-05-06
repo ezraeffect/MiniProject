@@ -328,6 +328,8 @@ namespace MiniProject
 
             // 화면 정보를 Call Back 함수로 갱신한다.
             dispCallBack(strCalHistory, strInputNumber);
+
+            isEqualAssignTriggerdOn = true;
         }
 
         /// <summary>
@@ -344,7 +346,7 @@ namespace MiniProject
             if (clnc != null || Calc2NumberClass.currentCalcOperator == _CalcOperator._none)
             {
                 decimal inputnumber = 0;
-                if (decimal.TryParse(strInputNumber, out inputnumber) == true)
+                if (decimal.TryParse(strInputNumber, out inputnumber))
                 {
                     // 1. 숫자 변환이 성공 되었으면 이퀄(=) 계산을 진행한다.
 
@@ -354,11 +356,36 @@ namespace MiniProject
                     // 1-2. 계산 History 식 오른쪽에 표시될 숫자 - 현재 입력한 값
                     decimal currentInputNumber = 0;
 
-                    if (clnc != null)
+                    if (isEqualAssignTriggerdOn == true)
                     {
-                        currentInputNumber = inputnumber;  
+                        // 이퀄(=) 연속으로 2번이상 누를 경우에는 이전 현재값에 입력된 값을 이용해서 계산한다.
+                        currentInputNumber = Calc2NumberClass.fixedBaseNumber;
+                    }
+                    else
+                    {
+                        // 이퀄(=) 최초 1회 입력할 경우 현재 입력값으로 설정한다.
+                        currentInputNumber = inputnumber;
+
+                        // 그리고 그 값을 백업한다. -> 추후에 이퀄(=) 연속으로 입력할 경우 History 계산식 우측에 표기되는 값
+                        Calc2NumberClass.fixedBaseNumber = currentInputNumber;
+                    }
+
+
+                    // 1-3. 연산자 없이 이퀄(=) 누른 경우와 연산자를 입력 후 누른 경우로 구분해서 처리함.
+                    if(Calc2NumberClass.currentCalcOperator == _CalcOperator._none)
+                    {
+                        // 현재 입력값을 결과 값으로 설정한다.
+                        Calc2NumberClass.calResult = currentInputNumber;
+
+                        // 계산식 History에 표기할 문자를 만든다.
+                        strCalHistory = string.Format("{0} =", currentInputNumber);
+                    }
+                    else
+                    {
+                        // 계산을 진행한다 : beforeCalcResult + 연산자 + currentInputNumber => Calc2NumberClass.calResult 로 들어간다.
                         bool result = clnc.Calculation(beforeCalcResult, currentInputNumber);
 
+                        // 계산식 History에 표기할 문자를 만든다.
                         strCalHistory = string.Format("{0} {1} {2} =", beforeCalcResult, GetOperatorString(Calc2NumberClass.currentCalcOperator), currentInputNumber);
                     }
 

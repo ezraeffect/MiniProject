@@ -36,7 +36,7 @@ namespace MiniProject
         /// <summary>
         /// 이퀄(=) 연산자를 2번 이상 누를 경우 계산될 베이스값 - 마지막 입력 숫자, 계산기 History에서 우측에 배치 된다.
         /// </summary>
-        public static _CalcOperator fixedBaseNumber { get; set; } = _CalcOperator._none;
+        public static decimal fixedBaseNumber { get; set; } = 0;
 
         /// <summary>
         /// 현재 입력된 사칙연산자 오퍼레이터
