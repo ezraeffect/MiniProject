@@ -74,15 +74,21 @@ namespace MiniProject
                     break;
 
                 case "BS":
-                    // 1의 자리 수 일때 아예 지워지지 않도록 처리
-                    if (textBox_result.Text.Length > 0)
+                    
+                    if (textBox_result.Text.Length > 1)
                     {
                         textBox_result.Text = textBox_result.Text.Substring(0, textBox_result.Text.Length - 1);
+                    }
+                    else if (textBox_result.Text.Length == 1)
+                    {
+                        // 1의 자리 수 일때 아예 지워지지 않도록 처리
+                        textBox_result.Text = "0";
                     }
                     break;
 
                 default:
-                    textBox_result.AppendText(keyString);
+                    if (textBox_result.Text == "0") textBox_result.Text = keyString;
+                    else textBox_result.AppendText(keyString);
                     break;
             }
         }

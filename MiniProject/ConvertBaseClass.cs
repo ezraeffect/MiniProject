@@ -16,13 +16,11 @@ namespace MiniProject
             Console.WriteLine(inputValue);
             if (inputValue == null || inputValue == "0")
             {
-                Console.WriteLine("Null OR Zero!");
                 return "0";
             }
             else
             {
-                int decimalValue = Convert.ToInt32(inputValue, fromValue);
-                Console.WriteLine(decimalValue);
+                int decimalValue = Convert.ToInt32(inputValue, fromValue); // OverflowException 예외 처리 필요
                 return Convert.ToString(decimalValue, (int)to);
             }
         }
