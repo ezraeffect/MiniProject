@@ -47,17 +47,31 @@ namespace MiniProject
             switch (keyString)
             {
                 case "=":
-                    try
+                    CalculateBitClass calBit = new CalculateBitClass();
+                    if (!string.IsNullOrEmpty(textBox_result.Text) && textBox_result.Text != "0")
                     {
-                        // TODO
-                        // 진법 계산 고려하여 분기문 수정
-                        var result = data.Compute(textBox_result.Text, null);
-                        textBox_result.Text = result.ToString();
+                        textBox_view.AppendText(textBox_result.Text);
+                        textBox_result.Text = calBit.CalculateWithOperation(textBox_view.Text, SelectedBase);
+
+                        ChangeOperationButtonStatus(true);
                     }
-                    catch (SyntaxErrorException)
+                    break;
+
+                case "+":
+                case "-":
+                case "*":
+                case "/":
+                    // 1. 부호 버튼을 누르면 textBox_result + "부호"를 textBox_view에 넣는다
+                    if (textBox_result.Text != "0" || textBox_result.Text != "")
                     {
-                        textBox_result.Text = $"식이나 구문에 오류가 있습니다.";
-                        break;
+                        textBox_view.Text = textBox_result.Text + keyString;
+
+                        // 2. equal 버튼 누르기 전까지 사칙연산 button, 진수변환 radioButton 비활성화
+                        ChangeOperationButtonStatus(false);
+
+                        // 3. textBox_result 텍스트 초기화
+                        textBox_result.Clear();
+                        textBox_result.Text = "0";
                     }
                     break;
 
