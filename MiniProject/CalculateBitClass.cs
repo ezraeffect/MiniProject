@@ -14,53 +14,61 @@ namespace MiniProject
             ConvertBaseClass cb = new ConvertBaseClass();
             string[] tokenizeString = TokenizeExpression(str);
 
-            string operaterString = tokenizeString[1];
-
-            int leftOperand = int.Parse(cb.ConvertBase(@base, Base.DEC, tokenizeString[0]));
-            int rightOperand = int.Parse(cb.ConvertBase(@base, Base.DEC, tokenizeString[2]));
-
-            var calResult = 0;
-            switch (operaterString)
+            try
             {
-                case "+":
-                    calResult = leftOperand + rightOperand;
-                    break;
-                case "-":
-                    calResult = leftOperand - rightOperand;
-                    break;
-                case "×":
-                    calResult = leftOperand * rightOperand;
-                    break;
-                case "÷":
-                    calResult = leftOperand / rightOperand;
-                    break;
-                case "%":
-                    calResult = leftOperand % rightOperand;
-                    break;
-                case "<<":
-                    calResult = leftOperand << rightOperand;
-                    break;
-                case ">>":
-                    calResult = leftOperand >> rightOperand;
-                    break;
-                case "AND":
-                    calResult = leftOperand & rightOperand;
-                    break;
-                case "OR":
-                    calResult = leftOperand | rightOperand;
-                    break;
-                case "NAND":
-                    calResult = ~(leftOperand & rightOperand);
-                    break;
-                case "XOR":
-                    calResult = leftOperand ^ rightOperand;
-                    break;
-                case "NOR":
-                    calResult = ~(leftOperand | rightOperand);
-                    break;
+                string operaterString = tokenizeString[1];
+
+                int leftOperand = int.Parse(cb.ConvertBase(@base, Base.DEC, tokenizeString[0]));
+                int rightOperand = int.Parse(cb.ConvertBase(@base, Base.DEC, tokenizeString[2]));
+
+                var calResult = 0;
+                switch (operaterString)
+                {
+                    case "+":
+                        calResult = leftOperand + rightOperand;
+                        break;
+                    case "-":
+                        calResult = leftOperand - rightOperand;
+                        break;
+                    case "×":
+                        calResult = leftOperand * rightOperand;
+                        break;
+                    case "÷":
+                        calResult = leftOperand / rightOperand;
+                        break;
+                    case "%":
+                        calResult = leftOperand % rightOperand;
+                        break;
+                    case "<<":
+                        calResult = leftOperand << rightOperand;
+                        break;
+                    case ">>":
+                        calResult = leftOperand >> rightOperand;
+                        break;
+                    case "AND":
+                        calResult = leftOperand & rightOperand;
+                        break;
+                    case "OR":
+                        calResult = leftOperand | rightOperand;
+                        break;
+                    case "NAND":
+                        calResult = ~(leftOperand & rightOperand);
+                        break;
+                    case "XOR":
+                        calResult = leftOperand ^ rightOperand;
+                        break;
+                    case "NOR":
+                        calResult = ~(leftOperand | rightOperand);
+                        break;
+                }
+                //Console.WriteLine($"Result {leftOperand} {operaterString} {rightOperand} = {calResult}");
+                return cb.ConvertBase(Base.DEC, @base, calResult.ToString());
             }
-            //Console.WriteLine($"Result {leftOperand} {operaterString} {rightOperand} = {calResult}");
-            return cb.ConvertBase(Base.DEC, @base, calResult.ToString());
+            catch(IndexOutOfRangeException)
+            {
+                return "IndexOutOfRange";
+            }
+            
         }
 
         public string CalculateNotGateOoperation(string str, Base @base)

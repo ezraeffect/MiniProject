@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MiniProject
 {
@@ -19,8 +20,19 @@ namespace MiniProject
             }
             else
             {
-                int decimalValue = Convert.ToInt32(inputValue, fromValue); // OverflowException 예외 처리 필요
-                return Convert.ToString(decimalValue, (int)to);
+                try
+                {
+                    long decimalValue = Convert.ToInt64(inputValue, fromValue); 
+                    return Convert.ToString(decimalValue, (int)to);
+                }
+                catch(OverflowException) // OverflowException 예외 처리
+                {
+                    return "Overflow";
+                }
+                catch (FormatException)
+                {
+                    return "0";
+                }
             }
         }
 
