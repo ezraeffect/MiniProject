@@ -30,9 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.textBox_view = new System.Windows.Forms.TextBox();
+            this.textBox_result = new System.Windows.Forms.TextBox();
             this.lblTimer = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.textBox_result = new System.Windows.Forms.TextBox();
             this.button_backspace = new System.Windows.Forms.Button();
             this.button_clear = new System.Windows.Forms.Button();
             this.button_clearEntry = new System.Windows.Forms.Button();
@@ -56,10 +57,7 @@
             this.button_equl = new System.Windows.Forms.Button();
             this.button_writeDot = new System.Windows.Forms.Button();
             this.button_writeZero = new System.Windows.Forms.Button();
-            this.btnCopy = new System.Windows.Forms.Button();
-            this.btnPaste = new System.Windows.Forms.Button();
             this.pnlBody = new System.Windows.Forms.Panel();
-            this.textBox_view = new System.Windows.Forms.TextBox();
             this.pnlTop.SuspendLayout();
             this.pnlBody.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +72,31 @@
             this.pnlTop.Size = new System.Drawing.Size(622, 163);
             this.pnlTop.TabIndex = 31;
             // 
+            // textBox_view
+            // 
+            this.textBox_view.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_view.Location = new System.Drawing.Point(3, 10);
+            this.textBox_view.Multiline = true;
+            this.textBox_view.Name = "textBox_view";
+            this.textBox_view.ReadOnly = true;
+            this.textBox_view.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox_view.Size = new System.Drawing.Size(607, 50);
+            this.textBox_view.TabIndex = 4;
+            this.textBox_view.Text = "123,456+789";
+            this.textBox_view.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox_result
+            // 
+            this.textBox_result.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_result.Location = new System.Drawing.Point(3, 67);
+            this.textBox_result.Multiline = true;
+            this.textBox_result.Name = "textBox_result";
+            this.textBox_result.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox_result.Size = new System.Drawing.Size(607, 93);
+            this.textBox_result.TabIndex = 3;
+            this.textBox_result.Text = "123,456,789";
+            this.textBox_result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // lblTimer
             // 
             this.lblTimer.AutoSize = true;
@@ -87,18 +110,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // textBox_result
-            // 
-            this.textBox_result.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_result.Location = new System.Drawing.Point(3, 67);
-            this.textBox_result.Multiline = true;
-            this.textBox_result.Name = "textBox_result";
-            this.textBox_result.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox_result.Size = new System.Drawing.Size(607, 93);
-            this.textBox_result.TabIndex = 3;
-            this.textBox_result.Text = "123,456,789";
-            this.textBox_result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button_backspace
             // 
@@ -140,8 +151,10 @@
             this.button_percent.Name = "button_percent";
             this.button_percent.Size = new System.Drawing.Size(137, 75);
             this.button_percent.TabIndex = 11;
+            this.button_percent.Tag = "_percent";
             this.button_percent.Text = "%";
             this.button_percent.UseVisualStyleBackColor = true;
+            this.button_percent.Click += new System.EventHandler(this.button4kindOperatorPress_Event);
             // 
             // button_div
             // 
@@ -353,32 +366,8 @@
             this.button_writeZero.UseVisualStyleBackColor = true;
             this.button_writeZero.Click += new System.EventHandler(this.NumberKeyPress_0to9_Event);
             // 
-            // btnCopy
-            // 
-            this.btnCopy.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnCopy.Location = new System.Drawing.Point(316, 35);
-            this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(145, 36);
-            this.btnCopy.TabIndex = 31;
-            this.btnCopy.Text = "복사";
-            this.btnCopy.UseVisualStyleBackColor = true;
-            this.btnCopy.Click += new System.EventHandler(this.btnClick);
-            // 
-            // btnPaste
-            // 
-            this.btnPaste.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnPaste.Location = new System.Drawing.Point(465, 35);
-            this.btnPaste.Name = "btnPaste";
-            this.btnPaste.Size = new System.Drawing.Size(141, 36);
-            this.btnPaste.TabIndex = 32;
-            this.btnPaste.Text = "붙여넣기";
-            this.btnPaste.UseVisualStyleBackColor = true;
-            this.btnPaste.Click += new System.EventHandler(this.btnClick);
-            // 
             // pnlBody
             // 
-            this.pnlBody.Controls.Add(this.btnPaste);
-            this.pnlBody.Controls.Add(this.btnCopy);
             this.pnlBody.Controls.Add(this.lblTimer);
             this.pnlBody.Controls.Add(this.button_writeZero);
             this.pnlBody.Controls.Add(this.button_writeDot);
@@ -408,19 +397,6 @@
             this.pnlBody.Name = "pnlBody";
             this.pnlBody.Size = new System.Drawing.Size(622, 579);
             this.pnlBody.TabIndex = 32;
-            // 
-            // textBox_view
-            // 
-            this.textBox_view.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_view.Location = new System.Drawing.Point(3, 10);
-            this.textBox_view.Multiline = true;
-            this.textBox_view.Name = "textBox_view";
-            this.textBox_view.ReadOnly = true;
-            this.textBox_view.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox_view.Size = new System.Drawing.Size(607, 50);
-            this.textBox_view.TabIndex = 4;
-            this.textBox_view.Text = "123,456+789";
-            this.textBox_view.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
@@ -470,8 +446,6 @@
         private System.Windows.Forms.Button button_equl;
         private System.Windows.Forms.Button button_writeDot;
         private System.Windows.Forms.Button button_writeZero;
-        private System.Windows.Forms.Button btnCopy;
-        private System.Windows.Forms.Button btnPaste;
         private System.Windows.Forms.Panel pnlBody;
     }
 }

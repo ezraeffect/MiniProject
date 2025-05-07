@@ -65,10 +65,14 @@ namespace MiniProject
         {
             calkeypressprocess.BackspaceProcess(DisplayCallBack);
         }
+        private void button_percent_Click(object sender, EventArgs e)
+        {
+            //calkeypressprocess.PercentProcess(DisplayCallBack);
+        }
 
         #endregion
 
-        #region 2. 사칙연산자 키 '+', '-', '*', '/' 키 이벤트 처리 루틴
+        #region 2. 사칙연산자 키 '+', '-', '*', '/', '%'키 이벤트 처리 루틴
 
         // 사칙연산 키 "+", "-", "*", "/" 눌렸을 때 처리되는 이벤트 함수
         void button4kindOperatorPress_Event(object sender, EventArgs e)
@@ -172,54 +176,8 @@ namespace MiniProject
         }
         #endregion
 
-        #region 클립보드 생성
+        
 
-        private string lastCopiedText = "";
-
-        private void btnClick(object sender, EventArgs e)
-        {
-            Button btn = sender as Button;
-
-            if (btn == btnCopy) // 복사 버튼 클릭
-            {
-                string selectedText = textBox_result.SelectedText;
-
-                if (string.IsNullOrEmpty(selectedText))
-                {
-                    MessageBox.Show("복사할 텍스트를 먼저 선택해주세요.");
-                    return;
-                }
-
-                if (selectedText == lastCopiedText)
-                {
-                    Clipboard.Clear();
-                    lastCopiedText = "";
-                    MessageBox.Show("같은 내용을 다시 복사하여 클립보드가 초기화되었습니다.");
-                }
-                else
-                {
-                    Clipboard.SetText(selectedText);
-                    lastCopiedText = selectedText;
-                    MessageBox.Show("텍스트가 클립보드에 복사되었습니다.");
-                }
-            }
-            else if (btn == btnPaste)
-            {
-                if (Clipboard.ContainsText())
-                {
-                    string pasteText = Clipboard.GetText();
-                    int selStart = textBox_result.SelectionStart;
-                    textBox_result.Text = textBox_result.Text.Insert(selStart, pasteText);
-                    textBox_result.SelectionStart = selStart + pasteText.Length;
-                }
-                else
-                {
-                    MessageBox.Show("클립보드에 텍스트가 없습니다.");
-                }
-            }
-        }
-
-        #endregion
     }
 
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MiniProject
@@ -108,6 +109,37 @@ namespace MiniProject
             dispCallBack(strCalHistory, strInputNumber);
         }
 
+        public void PercentProcess(string strNum, Action<string, string> dispCallBack)
+        {
+            // 이퀄(=) 연산자가 입력되었으면
+            if (isEqualAssignTriggerdOn == true)
+            {
+                // 계산기를 초기화 한다 - 1 cycle 계산 완료
+                ResetCalculation(null);
+
+                // 이퀄(=) 입력 체크 Flag는 초기화한다.
+                isEqualAssignTriggerdOn = false;
+            }
+            // 계산기 초기화 이후 최초 입력시에는 strInputText에는 방금 입력한 값만 대입한다. 
+            if (strInputNumber == "0" || is4kindOperatorTriggeredOn == true)
+            {
+                // 현재 입력된 숫자를 입력 문자로 설정한다.
+                strInputNumber = strNum;
+
+                if (is4kindOperatorTriggeredOn == true)
+                {
+                    // 사칙연산자 flag가 true로 설정되어 있으면 False로 초기화한다.
+                    is4kindOperatorTriggeredOn = false;
+                }
+            }
+            else
+            {
+                strInputNumber += strNum;
+            }
+
+            dispCallBack(strCalHistory, strInputNumber);
+        }
+
 
         /// <summary>
         /// 소숫점 입력시 호출되는 Method
@@ -182,6 +214,7 @@ namespace MiniProject
             dispCallBack(strCalHistory, strInputNumber);
         }
 
+
         #endregion
 
         #region 3. 사칙연산 키 입력을 처리하는 Method (-, +. *, /)
@@ -207,6 +240,9 @@ namespace MiniProject
 
                 case "_divide":
                     result = _CalcOperator._divide;
+                    break;
+                case "_percent":
+                    result = _CalcOperator._percent;
                     break;
             }
 
@@ -234,6 +270,9 @@ namespace MiniProject
                     break;
                 case _CalcOperator._divide:
                     result = "/";
+                    break;
+                case _CalcOperator._percent:
+                    result = "%";
                     break;
             }
 
@@ -283,6 +322,8 @@ namespace MiniProject
         /// </summary>
         bool is4kindOperatorTriggeredOn { get; set; } = false;
 
+        
+
         /// <summary>
         /// 사칙연산을 수행함.
         /// </summary>
@@ -325,6 +366,52 @@ namespace MiniProject
             return false;
         }
 
+        bool CalculationProcess(bool isPercent = false)
+        {
+            // 퍼센트 처리
+            if (isPercent)
+            {
+                decimal inputNumber;
+                if (decimal.TryParse(strInputNumber, out inputNumber))
+                {
+                    inputNumber /= 100; // 퍼센트 처리
+                    strInputNumber = inputNumber.ToString(); // textbox 등 표시 갱신용
+                    Calc2NumberClass.calResult = inputNumber; // 결과로도 반영 가능
+                    return true;
+                }
+                return false;
+            }
+
+            if (isEqualAssignTriggerdOn == true)
+            {
+                isEqualAssignTriggerdOn = false;
+            }
+            else if (Calc2NumberClass.lastCalcOperator != _CalcOperator._none && Calc2NumberClass.lastCalcOperator != Calc2NumberClass.currentCalcOperator)
+            {
+                Calc2NumberClass clnc = GetCalculationMethod(Calc2NumberClass.lastCalcOperator);
+                if (clnc != null)
+                {
+                    decimal inputNumber;
+                    if (decimal.TryParse(strInputNumber, out inputNumber))
+                    {
+                        clnc.Calculation(inputNumber);
+                        return true;
+                    }
+                }
+            }
+            else
+            {
+                Calc2NumberClass clnc = GetCalculationMethod(Calc2NumberClass.currentCalcOperator);
+                decimal inputNumber;
+                if (decimal.TryParse(strInputNumber, out inputNumber))
+                {
+                    clnc.Calculation(inputNumber);
+                    return true;
+                }
+            }
+            return false;
+        }
+
         /// <summary>
         /// 전달된 사칙연산자의 종류에 따라 계산을 진행할 자식 Class Instance를 생성해서 얻어옴.
         /// </summary>
@@ -347,6 +434,10 @@ namespace MiniProject
                 case _CalcOperator._divide:
                     clnc = new Divide();
                     break;
+                case _CalcOperator._percent:
+                    clnc = new Percent();
+                    break;
+                    
             }    
             return clnc;
         }
