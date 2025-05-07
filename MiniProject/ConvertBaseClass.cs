@@ -14,7 +14,7 @@ namespace MiniProject
         {
             int fromValue = (int)from;
             Console.WriteLine(inputValue);
-            if (inputValue == null || inputValue == "0")
+            if (inputValue == null || inputValue == "0" || inputValue == "")
             {
                 return "0";
             }

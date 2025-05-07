@@ -37,11 +37,9 @@ namespace MiniProject
         public programmerCalculator()
         {
             InitializeComponent();
-            // 키보드 입력 이벤트 핸들러
-            this.KeyDown += new KeyEventHandler(programmerCalculator_KeyDown);
 
             // 버튼 초기 설정
-            ChangeButtonStatus("DEC",0);
+            ChangeButtonStatus("DEC", 0);
             ChangeButtonStatus("QWORD", 1);
         }
 
@@ -67,7 +65,7 @@ namespace MiniProject
                     break;
 
                 case "BS":
-                    
+
                     if (textBox_result.Text.Length > 1)
                     {
                         textBox_result.Text = textBox_result.Text.Substring(0, textBox_result.Text.Length - 1);
@@ -97,7 +95,7 @@ namespace MiniProject
                 // 체크 된 radioButton의 tag를 가져와 string으로 변환
                 tagString = rb.Tag?.ToString();
                 // tag에 해당하는 button을 활성화/비활성화
-                ChangeButtonStatus(rb.Tag?.ToString(),0);
+                ChangeButtonStatus(rb.Tag?.ToString(), 0);
                 // 체크된 radioButton의 Status 저장
                 SelectedBase = (Base)Enum.Parse(typeof(Base), rb.Tag?.ToString(), true);
 
@@ -133,7 +131,7 @@ namespace MiniProject
                 // 체크 된 radioButton의 tag를 가져와 string으로 변환
                 tagString = rb.Tag?.ToString();
                 // tag에 해당하는 button을 활성화/비활성화
-                ChangeButtonStatus(rb.Tag?.ToString(),1);
+                ChangeButtonStatus(rb.Tag?.ToString(), 1);
                 // 체크된 radioButton의 Status 저장
                 SelectedType = (Type)Enum.Parse(typeof(Type), rb.Tag?.ToString(), true);
 
@@ -165,6 +163,15 @@ namespace MiniProject
 
             UpdateBitArrayForBtn();
             textBox_result.Text = BitArr2String(bitArray, SelectedBase);
+        }
+
+        // 폼에서 우클릭 눌렀을때 발생하는 이벤트 처리
+        private void OnMouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+                styleMenuStrip.Show(this, e.Location);
+            }
         }
 
         // 비트 키패드의 현재 값을 bitArray에 적용하는 Function
@@ -275,7 +282,8 @@ namespace MiniProject
                         btn.Text = reversedBIN[bitIndex].ToString();
                         bitArray[bitIndex] = reversedBIN[bitIndex] == '0' ? false : true;
 
-                    } else // 배열 범위 밖이라면 무조건 0으로 처리
+                    }
+                    else // 배열 범위 밖이라면 무조건 0으로 처리
                     {
                         btn.Text = "0";
                         bitArray[bitIndex] = false;
