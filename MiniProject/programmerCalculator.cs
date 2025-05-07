@@ -152,22 +152,6 @@ namespace MiniProject
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ConvertBaseClass cb = new ConvertBaseClass();
-
-            string[] convertedArray = cb.ConvertAllBase(SelectedBase, textBox_result.Text);
-
-            foreach (Control ctrl in groupBox1.Controls)
-            {
-                if (ctrl is TextBox txt)
-                {
-                    int tagNum = int.Parse((string)txt.Tag);
-                    txt.Text = convertedArray[tagNum];
-                }
-            }
-        }
-
         private void ResultTextBox_TextChanged(object sender, EventArgs e)
         {
             ConvertBaseClass cb = new ConvertBaseClass();
@@ -184,5 +168,14 @@ namespace MiniProject
             }
         }
 
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
