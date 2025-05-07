@@ -116,9 +116,17 @@ namespace MiniProject
 
         // BitArray 값을 TabControl 내부의 버튼 Text로 적용하는 Function
         // BitArray -> 비트 키패드
-        public void UpdateBitArrayBtn(TabControl tabCtrl, BitArray bitArr, Base @base)
+        public void UpdateBitArrayBtn(TabControl tabCtrl, BitArray bitArr)
         {
-            string convertedBIN = BitArrayToString(bitArr, @base); // 2진법으로 변환 된 값의 String
+
+            /* 1. 텍스트 박스가 변경되면
+             * 2. 각진법에 알맞게 변환이 된다
+             * 3. string의 n번째 값을 n번째 버튼의 Text로 변경
+             * 3-1. string의 n번째 값을 bitArray의 n번에 저장
+             * 단, 4비트라 가정했을때 string[0]은 4번 비트를 나타낸다
+             * string을 반대로 뒤집으면?
+             */
+            string convertedBIN = BitArrayToString(bitArr, Base.BIN); // 2진법으로 변환 된 값의 String
             string reversedBIN = new string(convertedBIN.Reverse().ToArray()); // String을 반대로 뒤집어 bitIndex와 stringIndex를 맞춘다
             int len = convertedBIN.Length;
             foreach (Control ctrl in tabCtrl.TabPages[1].Controls)
@@ -162,7 +170,7 @@ namespace MiniProject
 
         // 비트 키패드의 현재 값을 bitArray에 적용하는 Function
         // 비트 키패드 -> bitArray
-        public void KeypadValueToBitArray(TabControl tabCtrl, BitArray bitArr)
+        public BitArray KeypadValueToBitArray(TabControl tabCtrl, BitArray bitArr)
         {
             foreach (Control ctrl in tabCtrl.TabPages[1].Controls)
             {
@@ -183,6 +191,20 @@ namespace MiniProject
                     }
                 }
             }
+
+            return bitArr;
+        }
+
+        // BitArray를 Console에 출력하는 Function
+        // !!!! USE ONLY DEBUG !!!!
+        public void PrintBitArray(BitArray bitArray)
+        {
+            StringBuilder sb = new StringBuilder(bitArray.Length);
+            for (int i = 0; i < bitArray.Length; i++)
+            {
+                sb.Append(bitArray[i] ? '1' : '0');
+            }
+            Console.WriteLine(sb.ToString());
         }
     }
 }

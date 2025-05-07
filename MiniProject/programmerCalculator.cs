@@ -148,15 +148,16 @@ namespace MiniProject
                 ChangeButtonStatus(rb.Tag?.ToString(), 1);
                 // 체크된 radioButton의 Status 저장
                 SelectedType = (Type)Enum.Parse(typeof(Type), rb.Tag?.ToString(), true);
+
                 // 변환된 자료형의 최대 비트수 보다 이상의 비트는 전부 false 처리
                 for (int i = (int)SelectedType; i <= 63; i++)
                 {
                     bitArray.Set(i, false);
                 }
 
-                cb.UpdateBitArrayBtn(KeypadTabControl, bitArray, SelectedBase); // bitArray의 값을 Button에 적용
+                cb.UpdateBitArrayBtn(KeypadTabControl, bitArray); // bitArray의 값을 Button에 적용
                 string convertedBIN = cb.BitArrayToString(bitArray, SelectedBase); // 2진법으로 변환 된 값의 String
-                cb.KeypadValueToBitArray(KeypadTabControl, bitArray);
+                bitArray = cb.KeypadValueToBitArray(KeypadTabControl, bitArray);
                 textBox_result.Text = convertedBIN;
             }
         }
@@ -183,7 +184,7 @@ namespace MiniProject
                     break;
             }
 
-            cb.KeypadValueToBitArray(KeypadTabControl, bitArray);
+            bitArray = cb.KeypadValueToBitArray(KeypadTabControl, bitArray);
             textBox_result.Text = cb.BitArrayToString(bitArray, SelectedBase);
         }
 
@@ -314,7 +315,7 @@ namespace MiniProject
         private void ResultTextBox_TextChanged(object sender, EventArgs e)
         {
             ConvertBaseClass cb = new ConvertBaseClass();
-
+            CalculateBitClass cBit = new CalculateBitClass();
             string[] convertedArray = cb.ConvertAllBase(SelectedBase, textBox_result.Text);
 
             foreach (Control ctrl in groupBox1.Controls)
@@ -326,36 +327,7 @@ namespace MiniProject
                 }
             }
 
-            /* 1. 텍스트 박스가 변경되면
-             * 2. 각진법에 알맞게 변환이 된다
-             * 3. string의 n번째 값을 n번째 버튼의 Text로 변경
-             * 3-1. string의 n번째 값을 bitArray의 n번에 저장
-             * 단, 4비트라 가정했을때 string[0]은 4번 비트를 나타낸다
-             * string을 반대로 뒤집으면?
-             */
-            string convertedBIN = convertedArray[3]; // 2진법으로 변환 된 값의 String
-            string reversedBIN = new string(convertedBIN.Reverse().ToArray()); // String을 반대로 뒤집어 bitIndex와 stringIndex를 맞춘다
-            int len = convertedBIN.Length;
-            foreach (Control ctrl in KeypadTabControl.TabPages[1].Controls)
-            {
-                if (ctrl is Button btn)
-                {
-                    string btnNum = new string(btn.Name.Where(char.IsDigit).ToArray()); // string에서 정수만 취한 후 저장
-                    int bitIndex = int.Parse(btnNum); // string을 int로 parse
-
-                    if (bitIndex < len) // 배열 범위 이내라면 값 복사
-                    {
-                        btn.Text = reversedBIN[bitIndex].ToString();
-                        bitArray[bitIndex] = reversedBIN[bitIndex] == '0' ? false : true;
-
-                    }
-                    else // 배열 범위 밖이라면 무조건 0으로 처리
-                    {
-                        btn.Text = "0";
-                        bitArray[bitIndex] = false;
-                    }
-                }
-            }
+            //cBit.UpdateBitArrayBtn(KeypadTabControl, bitArray, SelectedBase);
         }
 
         // Backspace 버튼 이벤트 처리
