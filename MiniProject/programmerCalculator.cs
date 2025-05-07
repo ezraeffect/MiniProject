@@ -28,28 +28,17 @@ namespace MiniProject
         DataTable data = new DataTable();
 
         public static Base SelectedBase = Base.DEC;
-        public static Base CurrentBase;
+        public static Type SelectedType = Type.DWORD;
 
         public programmerCalculator()
         {
             InitializeComponent();
             // 키보드 입력 이벤트 핸들러
             this.KeyDown += new KeyEventHandler(programmerCalculator_KeyDown);
-            // radioButton 값 초기 설정
-            radioButton_HEX.Checked = false;
-            radioButton_DEC.Checked = true;
-            radioButton_OCT.Checked = false;
-            radioButton_BIN.Checked = false;
-
-            radioButton_HEX.CheckedChanged += new EventHandler(BaseRadioButton_CheckedChanged);
-            radioButton_DEC.CheckedChanged += new EventHandler(BaseRadioButton_CheckedChanged);
-            radioButton_OCT.CheckedChanged += new EventHandler(BaseRadioButton_CheckedChanged);
-            radioButton_BIN.CheckedChanged += new EventHandler(BaseRadioButton_CheckedChanged);
-
-            textBox_result.TextChanged += new EventHandler(ResultTextBox_TextChanged);
 
             // 버튼 초기 설정
-            ChangeButtonStatus("DEC");
+            ChangeButtonStatus("DEC",0);
+            ChangeButtonStatus("QWORD", 1);
         }
 
         private void programmerCalculator_KeyDown(object sender, KeyEventArgs e)
@@ -104,7 +93,7 @@ namespace MiniProject
                 // 체크 된 radioButton의 tag를 가져와 string으로 변환
                 tagString = rb.Tag?.ToString();
                 // tag에 해당하는 button을 활성화/비활성화
-                ChangeButtonStatus(rb.Tag?.ToString());
+                ChangeButtonStatus(rb.Tag?.ToString(),0);
                 // 체크된 radioButton의 Status 저장
                 SelectedBase = (Base)Enum.Parse(typeof(Base), rb.Tag?.ToString(), true);
 
@@ -129,11 +118,32 @@ namespace MiniProject
             }
         }
 
-        // 이벤트 발생시 진법에 따라 버튼을 활성/비활성화 하는 Fucntion
-        private void ChangeButtonStatus(string @base)
+        // 자료형 변환 radioButton을 눌렀을때 발생하는 이벤트 처리
+        private void TypeRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            foreach (Control ctrl in KeypadTabControl.TabPages[0].Controls)
-            // KeypadTabControl 객체에 0번 탭 페이지의 모든 컨트롤을 foreach
+            RadioButton rb = sender as RadioButton;
+            string tagString;
+            // radioButton의 모든 이벤트에 대해 가져오므로 체크 되었을때 동작 수행 하도록
+            if (rb.Checked)
+            {
+                // 체크 된 radioButton의 tag를 가져와 string으로 변환
+                tagString = rb.Tag?.ToString();
+                // tag에 해당하는 button을 활성화/비활성화
+                ChangeButtonStatus(rb.Tag?.ToString(),1);
+                // 체크된 radioButton의 Status 저장
+                SelectedType = (Type)Enum.Parse(typeof(Type), rb.Tag?.ToString(), true);
+
+                /***** 기능 추가 *****/
+                // 비트 전환 키패드의 버튼들을 Type에 맞게 활성, 비활성
+                Console.WriteLine(SelectedType.ToString());
+            }
+        }
+
+        // 이벤트 발생시 진법에 따라 버튼을 활성/비활성화 하는 Fucntion
+        private void ChangeButtonStatus(string @base, int pageNum)
+        {
+            foreach (Control ctrl in KeypadTabControl.TabPages[pageNum].Controls)
+            // KeypadTabControl 객체에 n번 탭 페이지의 모든 컨트롤을 foreach
             {
                 if (ctrl is Button btn)
                 // Button 속성의 컨트롤이며
@@ -166,16 +176,6 @@ namespace MiniProject
                     txt.Text = convertedArray[tagNum];
                 }
             }
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

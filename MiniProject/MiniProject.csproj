@@ -53,6 +53,7 @@
     <Compile Include="Calc2NumberClass.cs" />
     <Compile Include="CalKeyPressProcess.cs" />
     <Compile Include="ConvertBaseClass.cs" />
+    <Compile Include="ConvertTypeClass.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
