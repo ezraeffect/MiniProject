@@ -65,6 +65,86 @@
             this.button_leftShift = new System.Windows.Forms.Button();
             this.button_writeA = new System.Windows.Forms.Button();
             this.tabPageBIN = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_bit14 = new System.Windows.Forms.Button();
+            this.button_bit13 = new System.Windows.Forms.Button();
+            this.button_bit12 = new System.Windows.Forms.Button();
+            this.button_bit15 = new System.Windows.Forms.Button();
+            this.button_bit11 = new System.Windows.Forms.Button();
+            this.button_bit10 = new System.Windows.Forms.Button();
+            this.button_bit9 = new System.Windows.Forms.Button();
+            this.button_bit8 = new System.Windows.Forms.Button();
+            this.button_bit7 = new System.Windows.Forms.Button();
+            this.button_bit6 = new System.Windows.Forms.Button();
+            this.button_bit5 = new System.Windows.Forms.Button();
+            this.button_bit4 = new System.Windows.Forms.Button();
+            this.button_bit3 = new System.Windows.Forms.Button();
+            this.button_bit2 = new System.Windows.Forms.Button();
+            this.button_bit1 = new System.Windows.Forms.Button();
+            this.button_bit0 = new System.Windows.Forms.Button();
+            this.button_bit30 = new System.Windows.Forms.Button();
+            this.button_bit29 = new System.Windows.Forms.Button();
+            this.button_bit28 = new System.Windows.Forms.Button();
+            this.button_bit31 = new System.Windows.Forms.Button();
+            this.button_bit27 = new System.Windows.Forms.Button();
+            this.button_bit26 = new System.Windows.Forms.Button();
+            this.button_bit25 = new System.Windows.Forms.Button();
+            this.button_bit24 = new System.Windows.Forms.Button();
+            this.button_bit23 = new System.Windows.Forms.Button();
+            this.button_bit22 = new System.Windows.Forms.Button();
+            this.button_bit21 = new System.Windows.Forms.Button();
+            this.button_bit20 = new System.Windows.Forms.Button();
+            this.button_bit19 = new System.Windows.Forms.Button();
+            this.button_bit18 = new System.Windows.Forms.Button();
+            this.button_bit17 = new System.Windows.Forms.Button();
+            this.button_bit16 = new System.Windows.Forms.Button();
+            this.button_bit46 = new System.Windows.Forms.Button();
+            this.button_bit45 = new System.Windows.Forms.Button();
+            this.button_bit44 = new System.Windows.Forms.Button();
+            this.button_bit47 = new System.Windows.Forms.Button();
+            this.button_bit43 = new System.Windows.Forms.Button();
+            this.button_bit42 = new System.Windows.Forms.Button();
+            this.button_bit41 = new System.Windows.Forms.Button();
+            this.button_bit40 = new System.Windows.Forms.Button();
+            this.button_bit39 = new System.Windows.Forms.Button();
+            this.button_bit38 = new System.Windows.Forms.Button();
+            this.button_bit37 = new System.Windows.Forms.Button();
+            this.button_bit36 = new System.Windows.Forms.Button();
+            this.button_bit35 = new System.Windows.Forms.Button();
+            this.button_bit34 = new System.Windows.Forms.Button();
+            this.button_bit33 = new System.Windows.Forms.Button();
+            this.button_bit32 = new System.Windows.Forms.Button();
+            this.button_bit62 = new System.Windows.Forms.Button();
+            this.button_bit61 = new System.Windows.Forms.Button();
+            this.button_bit60 = new System.Windows.Forms.Button();
+            this.button_bit63 = new System.Windows.Forms.Button();
+            this.button_bit59 = new System.Windows.Forms.Button();
+            this.button_bit58 = new System.Windows.Forms.Button();
+            this.button_bit57 = new System.Windows.Forms.Button();
+            this.button_bit56 = new System.Windows.Forms.Button();
+            this.button_bit55 = new System.Windows.Forms.Button();
+            this.button_bit54 = new System.Windows.Forms.Button();
+            this.button_bit53 = new System.Windows.Forms.Button();
+            this.button_bit52 = new System.Windows.Forms.Button();
+            this.button_bit51 = new System.Windows.Forms.Button();
+            this.button_bit50 = new System.Windows.Forms.Button();
+            this.button_bit49 = new System.Windows.Forms.Button();
+            this.button_bit48 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox_HEX = new System.Windows.Forms.TextBox();
             this.textBox_DEC = new System.Windows.Forms.TextBox();
@@ -84,86 +164,6 @@
             this.radioButton_Dword = new System.Windows.Forms.RadioButton();
             this.radioButton_Word = new System.Windows.Forms.RadioButton();
             this.radioButton_Byte = new System.Windows.Forms.RadioButton();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button43 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
-            this.button53 = new System.Windows.Forms.Button();
-            this.button54 = new System.Windows.Forms.Button();
-            this.button55 = new System.Windows.Forms.Button();
-            this.button56 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
-            this.button58 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
-            this.button61 = new System.Windows.Forms.Button();
-            this.button62 = new System.Windows.Forms.Button();
-            this.button63 = new System.Windows.Forms.Button();
-            this.button64 = new System.Windows.Forms.Button();
-            this.button65 = new System.Windows.Forms.Button();
-            this.button66 = new System.Windows.Forms.Button();
-            this.button67 = new System.Windows.Forms.Button();
-            this.button68 = new System.Windows.Forms.Button();
-            this.button69 = new System.Windows.Forms.Button();
-            this.button70 = new System.Windows.Forms.Button();
-            this.button71 = new System.Windows.Forms.Button();
-            this.button72 = new System.Windows.Forms.Button();
-            this.button73 = new System.Windows.Forms.Button();
-            this.button74 = new System.Windows.Forms.Button();
-            this.button75 = new System.Windows.Forms.Button();
-            this.button76 = new System.Windows.Forms.Button();
-            this.button77 = new System.Windows.Forms.Button();
-            this.button78 = new System.Windows.Forms.Button();
-            this.button79 = new System.Windows.Forms.Button();
-            this.button80 = new System.Windows.Forms.Button();
-            this.button81 = new System.Windows.Forms.Button();
-            this.button82 = new System.Windows.Forms.Button();
-            this.button83 = new System.Windows.Forms.Button();
-            this.button84 = new System.Windows.Forms.Button();
-            this.button85 = new System.Windows.Forms.Button();
-            this.button86 = new System.Windows.Forms.Button();
-            this.button87 = new System.Windows.Forms.Button();
-            this.button88 = new System.Windows.Forms.Button();
-            this.button89 = new System.Windows.Forms.Button();
-            this.button90 = new System.Windows.Forms.Button();
-            this.button91 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.KeypadTabControl.SuspendLayout();
             this.tabPageAll.SuspendLayout();
             this.tabPageBIN.SuspendLayout();
@@ -649,70 +649,70 @@
             this.tabPageBIN.Controls.Add(this.label3);
             this.tabPageBIN.Controls.Add(this.label2);
             this.tabPageBIN.Controls.Add(this.label1);
-            this.tabPageBIN.Controls.Add(this.button76);
-            this.tabPageBIN.Controls.Add(this.button77);
-            this.tabPageBIN.Controls.Add(this.button78);
-            this.tabPageBIN.Controls.Add(this.button79);
-            this.tabPageBIN.Controls.Add(this.button80);
-            this.tabPageBIN.Controls.Add(this.button81);
-            this.tabPageBIN.Controls.Add(this.button82);
-            this.tabPageBIN.Controls.Add(this.button83);
-            this.tabPageBIN.Controls.Add(this.button84);
-            this.tabPageBIN.Controls.Add(this.button85);
-            this.tabPageBIN.Controls.Add(this.button86);
-            this.tabPageBIN.Controls.Add(this.button87);
-            this.tabPageBIN.Controls.Add(this.button88);
-            this.tabPageBIN.Controls.Add(this.button89);
-            this.tabPageBIN.Controls.Add(this.button90);
-            this.tabPageBIN.Controls.Add(this.button91);
-            this.tabPageBIN.Controls.Add(this.button60);
-            this.tabPageBIN.Controls.Add(this.button61);
-            this.tabPageBIN.Controls.Add(this.button62);
-            this.tabPageBIN.Controls.Add(this.button63);
-            this.tabPageBIN.Controls.Add(this.button64);
-            this.tabPageBIN.Controls.Add(this.button65);
-            this.tabPageBIN.Controls.Add(this.button66);
-            this.tabPageBIN.Controls.Add(this.button67);
-            this.tabPageBIN.Controls.Add(this.button68);
-            this.tabPageBIN.Controls.Add(this.button69);
-            this.tabPageBIN.Controls.Add(this.button70);
-            this.tabPageBIN.Controls.Add(this.button71);
-            this.tabPageBIN.Controls.Add(this.button72);
-            this.tabPageBIN.Controls.Add(this.button73);
-            this.tabPageBIN.Controls.Add(this.button74);
-            this.tabPageBIN.Controls.Add(this.button75);
-            this.tabPageBIN.Controls.Add(this.button44);
-            this.tabPageBIN.Controls.Add(this.button45);
-            this.tabPageBIN.Controls.Add(this.button46);
-            this.tabPageBIN.Controls.Add(this.button47);
-            this.tabPageBIN.Controls.Add(this.button48);
-            this.tabPageBIN.Controls.Add(this.button49);
-            this.tabPageBIN.Controls.Add(this.button50);
-            this.tabPageBIN.Controls.Add(this.button51);
-            this.tabPageBIN.Controls.Add(this.button52);
-            this.tabPageBIN.Controls.Add(this.button53);
-            this.tabPageBIN.Controls.Add(this.button54);
-            this.tabPageBIN.Controls.Add(this.button55);
-            this.tabPageBIN.Controls.Add(this.button56);
-            this.tabPageBIN.Controls.Add(this.button57);
-            this.tabPageBIN.Controls.Add(this.button58);
-            this.tabPageBIN.Controls.Add(this.button59);
-            this.tabPageBIN.Controls.Add(this.button21);
-            this.tabPageBIN.Controls.Add(this.button22);
-            this.tabPageBIN.Controls.Add(this.button23);
-            this.tabPageBIN.Controls.Add(this.button31);
-            this.tabPageBIN.Controls.Add(this.button32);
-            this.tabPageBIN.Controls.Add(this.button33);
-            this.tabPageBIN.Controls.Add(this.button34);
-            this.tabPageBIN.Controls.Add(this.button35);
-            this.tabPageBIN.Controls.Add(this.button36);
-            this.tabPageBIN.Controls.Add(this.button37);
-            this.tabPageBIN.Controls.Add(this.button38);
-            this.tabPageBIN.Controls.Add(this.button39);
-            this.tabPageBIN.Controls.Add(this.button40);
-            this.tabPageBIN.Controls.Add(this.button41);
-            this.tabPageBIN.Controls.Add(this.button42);
-            this.tabPageBIN.Controls.Add(this.button43);
+            this.tabPageBIN.Controls.Add(this.button_bit14);
+            this.tabPageBIN.Controls.Add(this.button_bit13);
+            this.tabPageBIN.Controls.Add(this.button_bit12);
+            this.tabPageBIN.Controls.Add(this.button_bit15);
+            this.tabPageBIN.Controls.Add(this.button_bit11);
+            this.tabPageBIN.Controls.Add(this.button_bit10);
+            this.tabPageBIN.Controls.Add(this.button_bit9);
+            this.tabPageBIN.Controls.Add(this.button_bit8);
+            this.tabPageBIN.Controls.Add(this.button_bit7);
+            this.tabPageBIN.Controls.Add(this.button_bit6);
+            this.tabPageBIN.Controls.Add(this.button_bit5);
+            this.tabPageBIN.Controls.Add(this.button_bit4);
+            this.tabPageBIN.Controls.Add(this.button_bit3);
+            this.tabPageBIN.Controls.Add(this.button_bit2);
+            this.tabPageBIN.Controls.Add(this.button_bit1);
+            this.tabPageBIN.Controls.Add(this.button_bit0);
+            this.tabPageBIN.Controls.Add(this.button_bit30);
+            this.tabPageBIN.Controls.Add(this.button_bit29);
+            this.tabPageBIN.Controls.Add(this.button_bit28);
+            this.tabPageBIN.Controls.Add(this.button_bit31);
+            this.tabPageBIN.Controls.Add(this.button_bit27);
+            this.tabPageBIN.Controls.Add(this.button_bit26);
+            this.tabPageBIN.Controls.Add(this.button_bit25);
+            this.tabPageBIN.Controls.Add(this.button_bit24);
+            this.tabPageBIN.Controls.Add(this.button_bit23);
+            this.tabPageBIN.Controls.Add(this.button_bit22);
+            this.tabPageBIN.Controls.Add(this.button_bit21);
+            this.tabPageBIN.Controls.Add(this.button_bit20);
+            this.tabPageBIN.Controls.Add(this.button_bit19);
+            this.tabPageBIN.Controls.Add(this.button_bit18);
+            this.tabPageBIN.Controls.Add(this.button_bit17);
+            this.tabPageBIN.Controls.Add(this.button_bit16);
+            this.tabPageBIN.Controls.Add(this.button_bit46);
+            this.tabPageBIN.Controls.Add(this.button_bit45);
+            this.tabPageBIN.Controls.Add(this.button_bit44);
+            this.tabPageBIN.Controls.Add(this.button_bit47);
+            this.tabPageBIN.Controls.Add(this.button_bit43);
+            this.tabPageBIN.Controls.Add(this.button_bit42);
+            this.tabPageBIN.Controls.Add(this.button_bit41);
+            this.tabPageBIN.Controls.Add(this.button_bit40);
+            this.tabPageBIN.Controls.Add(this.button_bit39);
+            this.tabPageBIN.Controls.Add(this.button_bit38);
+            this.tabPageBIN.Controls.Add(this.button_bit37);
+            this.tabPageBIN.Controls.Add(this.button_bit36);
+            this.tabPageBIN.Controls.Add(this.button_bit35);
+            this.tabPageBIN.Controls.Add(this.button_bit34);
+            this.tabPageBIN.Controls.Add(this.button_bit33);
+            this.tabPageBIN.Controls.Add(this.button_bit32);
+            this.tabPageBIN.Controls.Add(this.button_bit62);
+            this.tabPageBIN.Controls.Add(this.button_bit61);
+            this.tabPageBIN.Controls.Add(this.button_bit60);
+            this.tabPageBIN.Controls.Add(this.button_bit63);
+            this.tabPageBIN.Controls.Add(this.button_bit59);
+            this.tabPageBIN.Controls.Add(this.button_bit58);
+            this.tabPageBIN.Controls.Add(this.button_bit57);
+            this.tabPageBIN.Controls.Add(this.button_bit56);
+            this.tabPageBIN.Controls.Add(this.button_bit55);
+            this.tabPageBIN.Controls.Add(this.button_bit54);
+            this.tabPageBIN.Controls.Add(this.button_bit53);
+            this.tabPageBIN.Controls.Add(this.button_bit52);
+            this.tabPageBIN.Controls.Add(this.button_bit51);
+            this.tabPageBIN.Controls.Add(this.button_bit50);
+            this.tabPageBIN.Controls.Add(this.button_bit49);
+            this.tabPageBIN.Controls.Add(this.button_bit48);
             this.tabPageBIN.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageBIN.Location = new System.Drawing.Point(4, 34);
             this.tabPageBIN.Margin = new System.Windows.Forms.Padding(4);
@@ -723,6 +723,934 @@
             this.tabPageBIN.Tag = "QWORD";
             this.tabPageBIN.Text = "비트 전환 키패드";
             this.tabPageBIN.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(116, 64);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(32, 25);
+            this.label13.TabIndex = 95;
+            this.label13.Text = "60";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(256, 64);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(32, 25);
+            this.label14.TabIndex = 94;
+            this.label14.Text = "56";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(396, 64);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(32, 25);
+            this.label15.TabIndex = 93;
+            this.label15.Text = "52";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(536, 64);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(32, 25);
+            this.label16.TabIndex = 92;
+            this.label16.Text = "48";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(116, 146);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(32, 25);
+            this.label9.TabIndex = 91;
+            this.label9.Text = "44";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(256, 146);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(32, 25);
+            this.label10.TabIndex = 90;
+            this.label10.Text = "40";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(396, 146);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(32, 25);
+            this.label11.TabIndex = 89;
+            this.label11.Text = "36";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(536, 146);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(32, 25);
+            this.label12.TabIndex = 88;
+            this.label12.Text = "32";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(116, 230);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 25);
+            this.label5.TabIndex = 87;
+            this.label5.Text = "28";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(256, 230);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 25);
+            this.label6.TabIndex = 86;
+            this.label6.Text = "24";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(396, 230);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 25);
+            this.label7.TabIndex = 85;
+            this.label7.Text = "20";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(536, 230);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(32, 25);
+            this.label8.TabIndex = 84;
+            this.label8.Text = "16";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(116, 320);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 25);
+            this.label4.TabIndex = 83;
+            this.label4.Text = "12";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(256, 320);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(22, 25);
+            this.label3.TabIndex = 82;
+            this.label3.Text = "8";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(396, 320);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(22, 25);
+            this.label2.TabIndex = 81;
+            this.label2.Text = "4";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(536, 320);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 25);
+            this.label1.TabIndex = 80;
+            this.label1.Text = "0";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // button_bit14
+            // 
+            this.button_bit14.Location = new System.Drawing.Point(60, 279);
+            this.button_bit14.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit14.Name = "button_bit14";
+            this.button_bit14.Size = new System.Drawing.Size(22, 32);
+            this.button_bit14.TabIndex = 79;
+            this.button_bit14.Tag = "WORD,DWORD,QWORD";
+            this.button_bit14.Text = "0";
+            this.button_bit14.UseVisualStyleBackColor = true;
+            this.button_bit14.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit13
+            // 
+            this.button_bit13.Location = new System.Drawing.Point(88, 279);
+            this.button_bit13.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit13.Name = "button_bit13";
+            this.button_bit13.Size = new System.Drawing.Size(22, 32);
+            this.button_bit13.TabIndex = 78;
+            this.button_bit13.Tag = "WORD,DWORD,QWORD";
+            this.button_bit13.Text = "0";
+            this.button_bit13.UseVisualStyleBackColor = true;
+            this.button_bit13.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit12
+            // 
+            this.button_bit12.Location = new System.Drawing.Point(116, 279);
+            this.button_bit12.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit12.Name = "button_bit12";
+            this.button_bit12.Size = new System.Drawing.Size(22, 32);
+            this.button_bit12.TabIndex = 77;
+            this.button_bit12.Tag = "WORD,DWORD,QWORD";
+            this.button_bit12.Text = "0";
+            this.button_bit12.UseVisualStyleBackColor = true;
+            this.button_bit12.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit15
+            // 
+            this.button_bit15.Location = new System.Drawing.Point(32, 279);
+            this.button_bit15.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit15.Name = "button_bit15";
+            this.button_bit15.Size = new System.Drawing.Size(22, 32);
+            this.button_bit15.TabIndex = 76;
+            this.button_bit15.Tag = "WORD,DWORD,QWORD";
+            this.button_bit15.Text = "0";
+            this.button_bit15.UseVisualStyleBackColor = true;
+            this.button_bit15.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit11
+            // 
+            this.button_bit11.Location = new System.Drawing.Point(172, 279);
+            this.button_bit11.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit11.Name = "button_bit11";
+            this.button_bit11.Size = new System.Drawing.Size(22, 32);
+            this.button_bit11.TabIndex = 75;
+            this.button_bit11.Tag = "WORD,DWORD,QWORD";
+            this.button_bit11.Text = "0";
+            this.button_bit11.UseVisualStyleBackColor = true;
+            this.button_bit11.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit10
+            // 
+            this.button_bit10.Location = new System.Drawing.Point(200, 279);
+            this.button_bit10.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit10.Name = "button_bit10";
+            this.button_bit10.Size = new System.Drawing.Size(22, 32);
+            this.button_bit10.TabIndex = 74;
+            this.button_bit10.Tag = "WORD,DWORD,QWORD";
+            this.button_bit10.Text = "0";
+            this.button_bit10.UseVisualStyleBackColor = true;
+            this.button_bit10.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit9
+            // 
+            this.button_bit9.Location = new System.Drawing.Point(228, 279);
+            this.button_bit9.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit9.Name = "button_bit9";
+            this.button_bit9.Size = new System.Drawing.Size(22, 32);
+            this.button_bit9.TabIndex = 73;
+            this.button_bit9.Tag = "WORD,DWORD,QWORD";
+            this.button_bit9.Text = "0";
+            this.button_bit9.UseVisualStyleBackColor = true;
+            this.button_bit9.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit8
+            // 
+            this.button_bit8.Location = new System.Drawing.Point(256, 279);
+            this.button_bit8.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit8.Name = "button_bit8";
+            this.button_bit8.Size = new System.Drawing.Size(22, 32);
+            this.button_bit8.TabIndex = 72;
+            this.button_bit8.Tag = "WORD,DWORD,QWORD";
+            this.button_bit8.Text = "0";
+            this.button_bit8.UseVisualStyleBackColor = true;
+            this.button_bit8.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit7
+            // 
+            this.button_bit7.Location = new System.Drawing.Point(312, 279);
+            this.button_bit7.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit7.Name = "button_bit7";
+            this.button_bit7.Size = new System.Drawing.Size(22, 32);
+            this.button_bit7.TabIndex = 71;
+            this.button_bit7.Tag = "BYTE,WORD,DWORD,QWORD";
+            this.button_bit7.Text = "0";
+            this.button_bit7.UseVisualStyleBackColor = true;
+            this.button_bit7.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit6
+            // 
+            this.button_bit6.Location = new System.Drawing.Point(340, 279);
+            this.button_bit6.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit6.Name = "button_bit6";
+            this.button_bit6.Size = new System.Drawing.Size(22, 32);
+            this.button_bit6.TabIndex = 70;
+            this.button_bit6.Tag = "BYTE,WORD,DWORD,QWORD";
+            this.button_bit6.Text = "0";
+            this.button_bit6.UseVisualStyleBackColor = true;
+            this.button_bit6.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit5
+            // 
+            this.button_bit5.Location = new System.Drawing.Point(368, 279);
+            this.button_bit5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit5.Name = "button_bit5";
+            this.button_bit5.Size = new System.Drawing.Size(22, 32);
+            this.button_bit5.TabIndex = 69;
+            this.button_bit5.Tag = "BYTE,WORD,DWORD,QWORD";
+            this.button_bit5.Text = "0";
+            this.button_bit5.UseVisualStyleBackColor = true;
+            this.button_bit5.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit4
+            // 
+            this.button_bit4.Location = new System.Drawing.Point(396, 279);
+            this.button_bit4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit4.Name = "button_bit4";
+            this.button_bit4.Size = new System.Drawing.Size(22, 32);
+            this.button_bit4.TabIndex = 68;
+            this.button_bit4.Tag = "BYTE,WORD,DWORD,QWORD";
+            this.button_bit4.Text = "0";
+            this.button_bit4.UseVisualStyleBackColor = true;
+            this.button_bit4.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit3
+            // 
+            this.button_bit3.Location = new System.Drawing.Point(452, 279);
+            this.button_bit3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit3.Name = "button_bit3";
+            this.button_bit3.Size = new System.Drawing.Size(22, 32);
+            this.button_bit3.TabIndex = 67;
+            this.button_bit3.Tag = "BYTE,WORD,DWORD,QWORD";
+            this.button_bit3.Text = "0";
+            this.button_bit3.UseVisualStyleBackColor = true;
+            this.button_bit3.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit2
+            // 
+            this.button_bit2.Location = new System.Drawing.Point(480, 279);
+            this.button_bit2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit2.Name = "button_bit2";
+            this.button_bit2.Size = new System.Drawing.Size(22, 32);
+            this.button_bit2.TabIndex = 66;
+            this.button_bit2.Tag = "BYTE,WORD,DWORD,QWORD";
+            this.button_bit2.Text = "0";
+            this.button_bit2.UseVisualStyleBackColor = true;
+            this.button_bit2.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit1
+            // 
+            this.button_bit1.Location = new System.Drawing.Point(508, 279);
+            this.button_bit1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit1.Name = "button_bit1";
+            this.button_bit1.Size = new System.Drawing.Size(22, 32);
+            this.button_bit1.TabIndex = 65;
+            this.button_bit1.Tag = "BYTE,WORD,DWORD,QWORD";
+            this.button_bit1.Text = "0";
+            this.button_bit1.UseVisualStyleBackColor = true;
+            this.button_bit1.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit0
+            // 
+            this.button_bit0.Location = new System.Drawing.Point(536, 279);
+            this.button_bit0.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit0.Name = "button_bit0";
+            this.button_bit0.Size = new System.Drawing.Size(22, 32);
+            this.button_bit0.TabIndex = 64;
+            this.button_bit0.Tag = "BYTE,WORD,DWORD,QWORD";
+            this.button_bit0.Text = "0";
+            this.button_bit0.UseVisualStyleBackColor = true;
+            this.button_bit0.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit30
+            // 
+            this.button_bit30.Location = new System.Drawing.Point(60, 194);
+            this.button_bit30.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit30.Name = "button_bit30";
+            this.button_bit30.Size = new System.Drawing.Size(22, 32);
+            this.button_bit30.TabIndex = 63;
+            this.button_bit30.Tag = "DWORD,QWORD";
+            this.button_bit30.Text = "0";
+            this.button_bit30.UseVisualStyleBackColor = true;
+            this.button_bit30.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit29
+            // 
+            this.button_bit29.Location = new System.Drawing.Point(88, 194);
+            this.button_bit29.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit29.Name = "button_bit29";
+            this.button_bit29.Size = new System.Drawing.Size(22, 32);
+            this.button_bit29.TabIndex = 62;
+            this.button_bit29.Tag = "DWORD,QWORD";
+            this.button_bit29.Text = "0";
+            this.button_bit29.UseVisualStyleBackColor = true;
+            this.button_bit29.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit28
+            // 
+            this.button_bit28.Location = new System.Drawing.Point(116, 194);
+            this.button_bit28.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit28.Name = "button_bit28";
+            this.button_bit28.Size = new System.Drawing.Size(22, 32);
+            this.button_bit28.TabIndex = 61;
+            this.button_bit28.Tag = "DWORD,QWORD";
+            this.button_bit28.Text = "0";
+            this.button_bit28.UseVisualStyleBackColor = true;
+            this.button_bit28.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit31
+            // 
+            this.button_bit31.Location = new System.Drawing.Point(32, 194);
+            this.button_bit31.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit31.Name = "button_bit31";
+            this.button_bit31.Size = new System.Drawing.Size(22, 32);
+            this.button_bit31.TabIndex = 60;
+            this.button_bit31.Tag = "DWORD,QWORD";
+            this.button_bit31.Text = "0";
+            this.button_bit31.UseVisualStyleBackColor = true;
+            this.button_bit31.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit27
+            // 
+            this.button_bit27.Location = new System.Drawing.Point(172, 194);
+            this.button_bit27.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit27.Name = "button_bit27";
+            this.button_bit27.Size = new System.Drawing.Size(22, 32);
+            this.button_bit27.TabIndex = 59;
+            this.button_bit27.Tag = "DWORD,QWORD";
+            this.button_bit27.Text = "0";
+            this.button_bit27.UseVisualStyleBackColor = true;
+            this.button_bit27.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit26
+            // 
+            this.button_bit26.Location = new System.Drawing.Point(200, 194);
+            this.button_bit26.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit26.Name = "button_bit26";
+            this.button_bit26.Size = new System.Drawing.Size(22, 32);
+            this.button_bit26.TabIndex = 58;
+            this.button_bit26.Tag = "DWORD,QWORD";
+            this.button_bit26.Text = "0";
+            this.button_bit26.UseVisualStyleBackColor = true;
+            this.button_bit26.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit25
+            // 
+            this.button_bit25.Location = new System.Drawing.Point(228, 194);
+            this.button_bit25.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit25.Name = "button_bit25";
+            this.button_bit25.Size = new System.Drawing.Size(22, 32);
+            this.button_bit25.TabIndex = 57;
+            this.button_bit25.Tag = "DWORD,QWORD";
+            this.button_bit25.Text = "0";
+            this.button_bit25.UseVisualStyleBackColor = true;
+            this.button_bit25.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit24
+            // 
+            this.button_bit24.Location = new System.Drawing.Point(256, 194);
+            this.button_bit24.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit24.Name = "button_bit24";
+            this.button_bit24.Size = new System.Drawing.Size(22, 32);
+            this.button_bit24.TabIndex = 56;
+            this.button_bit24.Tag = "DWORD,QWORD";
+            this.button_bit24.Text = "0";
+            this.button_bit24.UseVisualStyleBackColor = true;
+            this.button_bit24.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit23
+            // 
+            this.button_bit23.Location = new System.Drawing.Point(312, 194);
+            this.button_bit23.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit23.Name = "button_bit23";
+            this.button_bit23.Size = new System.Drawing.Size(22, 32);
+            this.button_bit23.TabIndex = 55;
+            this.button_bit23.Tag = "DWORD,QWORD";
+            this.button_bit23.Text = "0";
+            this.button_bit23.UseVisualStyleBackColor = true;
+            this.button_bit23.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit22
+            // 
+            this.button_bit22.Location = new System.Drawing.Point(340, 194);
+            this.button_bit22.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit22.Name = "button_bit22";
+            this.button_bit22.Size = new System.Drawing.Size(22, 32);
+            this.button_bit22.TabIndex = 54;
+            this.button_bit22.Tag = "DWORD,QWORD";
+            this.button_bit22.Text = "0";
+            this.button_bit22.UseVisualStyleBackColor = true;
+            this.button_bit22.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit21
+            // 
+            this.button_bit21.Location = new System.Drawing.Point(368, 194);
+            this.button_bit21.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit21.Name = "button_bit21";
+            this.button_bit21.Size = new System.Drawing.Size(22, 32);
+            this.button_bit21.TabIndex = 53;
+            this.button_bit21.Tag = "DWORD,QWORD";
+            this.button_bit21.Text = "0";
+            this.button_bit21.UseVisualStyleBackColor = true;
+            this.button_bit21.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit20
+            // 
+            this.button_bit20.Location = new System.Drawing.Point(396, 194);
+            this.button_bit20.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit20.Name = "button_bit20";
+            this.button_bit20.Size = new System.Drawing.Size(22, 32);
+            this.button_bit20.TabIndex = 52;
+            this.button_bit20.Tag = "DWORD,QWORD";
+            this.button_bit20.Text = "0";
+            this.button_bit20.UseVisualStyleBackColor = true;
+            this.button_bit20.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit19
+            // 
+            this.button_bit19.Location = new System.Drawing.Point(452, 194);
+            this.button_bit19.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit19.Name = "button_bit19";
+            this.button_bit19.Size = new System.Drawing.Size(22, 32);
+            this.button_bit19.TabIndex = 51;
+            this.button_bit19.Tag = "DWORD,QWORD";
+            this.button_bit19.Text = "0";
+            this.button_bit19.UseVisualStyleBackColor = true;
+            this.button_bit19.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit18
+            // 
+            this.button_bit18.Location = new System.Drawing.Point(480, 194);
+            this.button_bit18.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit18.Name = "button_bit18";
+            this.button_bit18.Size = new System.Drawing.Size(22, 32);
+            this.button_bit18.TabIndex = 50;
+            this.button_bit18.Tag = "DWORD,QWORD";
+            this.button_bit18.Text = "0";
+            this.button_bit18.UseVisualStyleBackColor = true;
+            this.button_bit18.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit17
+            // 
+            this.button_bit17.Location = new System.Drawing.Point(508, 194);
+            this.button_bit17.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit17.Name = "button_bit17";
+            this.button_bit17.Size = new System.Drawing.Size(22, 32);
+            this.button_bit17.TabIndex = 49;
+            this.button_bit17.Tag = "DWORD,QWORD";
+            this.button_bit17.Text = "0";
+            this.button_bit17.UseVisualStyleBackColor = true;
+            this.button_bit17.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit16
+            // 
+            this.button_bit16.Location = new System.Drawing.Point(536, 194);
+            this.button_bit16.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit16.Name = "button_bit16";
+            this.button_bit16.Size = new System.Drawing.Size(22, 32);
+            this.button_bit16.TabIndex = 48;
+            this.button_bit16.Tag = "DWORD,QWORD";
+            this.button_bit16.Text = "0";
+            this.button_bit16.UseVisualStyleBackColor = true;
+            this.button_bit16.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit46
+            // 
+            this.button_bit46.Location = new System.Drawing.Point(60, 109);
+            this.button_bit46.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit46.Name = "button_bit46";
+            this.button_bit46.Size = new System.Drawing.Size(22, 32);
+            this.button_bit46.TabIndex = 47;
+            this.button_bit46.Tag = "QWORD";
+            this.button_bit46.Text = "0";
+            this.button_bit46.UseVisualStyleBackColor = true;
+            this.button_bit46.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit45
+            // 
+            this.button_bit45.Location = new System.Drawing.Point(88, 109);
+            this.button_bit45.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit45.Name = "button_bit45";
+            this.button_bit45.Size = new System.Drawing.Size(22, 32);
+            this.button_bit45.TabIndex = 46;
+            this.button_bit45.Tag = "QWORD";
+            this.button_bit45.Text = "0";
+            this.button_bit45.UseVisualStyleBackColor = true;
+            this.button_bit45.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit44
+            // 
+            this.button_bit44.Location = new System.Drawing.Point(116, 109);
+            this.button_bit44.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit44.Name = "button_bit44";
+            this.button_bit44.Size = new System.Drawing.Size(22, 32);
+            this.button_bit44.TabIndex = 45;
+            this.button_bit44.Tag = "QWORD";
+            this.button_bit44.Text = "0";
+            this.button_bit44.UseVisualStyleBackColor = true;
+            this.button_bit44.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit47
+            // 
+            this.button_bit47.Location = new System.Drawing.Point(32, 109);
+            this.button_bit47.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit47.Name = "button_bit47";
+            this.button_bit47.Size = new System.Drawing.Size(22, 32);
+            this.button_bit47.TabIndex = 44;
+            this.button_bit47.Tag = "QWORD";
+            this.button_bit47.Text = "0";
+            this.button_bit47.UseVisualStyleBackColor = true;
+            this.button_bit47.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit43
+            // 
+            this.button_bit43.Location = new System.Drawing.Point(172, 109);
+            this.button_bit43.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit43.Name = "button_bit43";
+            this.button_bit43.Size = new System.Drawing.Size(22, 32);
+            this.button_bit43.TabIndex = 43;
+            this.button_bit43.Tag = "QWORD";
+            this.button_bit43.Text = "0";
+            this.button_bit43.UseVisualStyleBackColor = true;
+            this.button_bit43.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit42
+            // 
+            this.button_bit42.Location = new System.Drawing.Point(200, 109);
+            this.button_bit42.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit42.Name = "button_bit42";
+            this.button_bit42.Size = new System.Drawing.Size(22, 32);
+            this.button_bit42.TabIndex = 42;
+            this.button_bit42.Tag = "QWORD";
+            this.button_bit42.Text = "0";
+            this.button_bit42.UseVisualStyleBackColor = true;
+            this.button_bit42.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit41
+            // 
+            this.button_bit41.Location = new System.Drawing.Point(228, 109);
+            this.button_bit41.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit41.Name = "button_bit41";
+            this.button_bit41.Size = new System.Drawing.Size(22, 32);
+            this.button_bit41.TabIndex = 41;
+            this.button_bit41.Tag = "QWORD";
+            this.button_bit41.Text = "0";
+            this.button_bit41.UseVisualStyleBackColor = true;
+            this.button_bit41.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit40
+            // 
+            this.button_bit40.Location = new System.Drawing.Point(256, 109);
+            this.button_bit40.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit40.Name = "button_bit40";
+            this.button_bit40.Size = new System.Drawing.Size(22, 32);
+            this.button_bit40.TabIndex = 40;
+            this.button_bit40.Tag = "QWORD";
+            this.button_bit40.Text = "0";
+            this.button_bit40.UseVisualStyleBackColor = true;
+            this.button_bit40.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit39
+            // 
+            this.button_bit39.Location = new System.Drawing.Point(312, 109);
+            this.button_bit39.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit39.Name = "button_bit39";
+            this.button_bit39.Size = new System.Drawing.Size(22, 32);
+            this.button_bit39.TabIndex = 39;
+            this.button_bit39.Tag = "QWORD";
+            this.button_bit39.Text = "0";
+            this.button_bit39.UseVisualStyleBackColor = true;
+            this.button_bit39.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit38
+            // 
+            this.button_bit38.Location = new System.Drawing.Point(340, 109);
+            this.button_bit38.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit38.Name = "button_bit38";
+            this.button_bit38.Size = new System.Drawing.Size(22, 32);
+            this.button_bit38.TabIndex = 38;
+            this.button_bit38.Tag = "QWORD";
+            this.button_bit38.Text = "0";
+            this.button_bit38.UseVisualStyleBackColor = true;
+            this.button_bit38.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit37
+            // 
+            this.button_bit37.Location = new System.Drawing.Point(368, 109);
+            this.button_bit37.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit37.Name = "button_bit37";
+            this.button_bit37.Size = new System.Drawing.Size(22, 32);
+            this.button_bit37.TabIndex = 37;
+            this.button_bit37.Tag = "QWORD";
+            this.button_bit37.Text = "0";
+            this.button_bit37.UseVisualStyleBackColor = true;
+            this.button_bit37.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit36
+            // 
+            this.button_bit36.Location = new System.Drawing.Point(396, 109);
+            this.button_bit36.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit36.Name = "button_bit36";
+            this.button_bit36.Size = new System.Drawing.Size(22, 32);
+            this.button_bit36.TabIndex = 36;
+            this.button_bit36.Tag = "QWORD";
+            this.button_bit36.Text = "0";
+            this.button_bit36.UseVisualStyleBackColor = true;
+            this.button_bit36.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit35
+            // 
+            this.button_bit35.Location = new System.Drawing.Point(452, 109);
+            this.button_bit35.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit35.Name = "button_bit35";
+            this.button_bit35.Size = new System.Drawing.Size(22, 32);
+            this.button_bit35.TabIndex = 35;
+            this.button_bit35.Tag = "QWORD";
+            this.button_bit35.Text = "0";
+            this.button_bit35.UseVisualStyleBackColor = true;
+            this.button_bit35.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit34
+            // 
+            this.button_bit34.Location = new System.Drawing.Point(480, 109);
+            this.button_bit34.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit34.Name = "button_bit34";
+            this.button_bit34.Size = new System.Drawing.Size(22, 32);
+            this.button_bit34.TabIndex = 34;
+            this.button_bit34.Tag = "QWORD";
+            this.button_bit34.Text = "0";
+            this.button_bit34.UseVisualStyleBackColor = true;
+            this.button_bit34.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit33
+            // 
+            this.button_bit33.Location = new System.Drawing.Point(508, 109);
+            this.button_bit33.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit33.Name = "button_bit33";
+            this.button_bit33.Size = new System.Drawing.Size(22, 32);
+            this.button_bit33.TabIndex = 33;
+            this.button_bit33.Tag = "QWORD";
+            this.button_bit33.Text = "0";
+            this.button_bit33.UseVisualStyleBackColor = true;
+            this.button_bit33.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit32
+            // 
+            this.button_bit32.Location = new System.Drawing.Point(536, 109);
+            this.button_bit32.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.button_bit32.Name = "button_bit32";
+            this.button_bit32.Size = new System.Drawing.Size(22, 32);
+            this.button_bit32.TabIndex = 32;
+            this.button_bit32.Tag = "QWORD";
+            this.button_bit32.Text = "0";
+            this.button_bit32.UseVisualStyleBackColor = true;
+            this.button_bit32.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit62
+            // 
+            this.button_bit62.Location = new System.Drawing.Point(60, 24);
+            this.button_bit62.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit62.Name = "button_bit62";
+            this.button_bit62.Size = new System.Drawing.Size(22, 32);
+            this.button_bit62.TabIndex = 31;
+            this.button_bit62.Tag = "QWORD";
+            this.button_bit62.Text = "0";
+            this.button_bit62.UseVisualStyleBackColor = true;
+            this.button_bit62.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit61
+            // 
+            this.button_bit61.Location = new System.Drawing.Point(88, 24);
+            this.button_bit61.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit61.Name = "button_bit61";
+            this.button_bit61.Size = new System.Drawing.Size(22, 32);
+            this.button_bit61.TabIndex = 30;
+            this.button_bit61.Tag = "QWORD";
+            this.button_bit61.Text = "0";
+            this.button_bit61.UseVisualStyleBackColor = true;
+            this.button_bit61.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit60
+            // 
+            this.button_bit60.Location = new System.Drawing.Point(116, 24);
+            this.button_bit60.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit60.Name = "button_bit60";
+            this.button_bit60.Size = new System.Drawing.Size(22, 32);
+            this.button_bit60.TabIndex = 29;
+            this.button_bit60.Tag = "QWORD";
+            this.button_bit60.Text = "0";
+            this.button_bit60.UseVisualStyleBackColor = true;
+            this.button_bit60.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit63
+            // 
+            this.button_bit63.Location = new System.Drawing.Point(32, 24);
+            this.button_bit63.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit63.Name = "button_bit63";
+            this.button_bit63.Size = new System.Drawing.Size(22, 32);
+            this.button_bit63.TabIndex = 28;
+            this.button_bit63.Tag = "QWORD";
+            this.button_bit63.Text = "0";
+            this.button_bit63.UseVisualStyleBackColor = true;
+            this.button_bit63.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit59
+            // 
+            this.button_bit59.Location = new System.Drawing.Point(172, 24);
+            this.button_bit59.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit59.Name = "button_bit59";
+            this.button_bit59.Size = new System.Drawing.Size(22, 32);
+            this.button_bit59.TabIndex = 27;
+            this.button_bit59.Tag = "QWORD";
+            this.button_bit59.Text = "0";
+            this.button_bit59.UseVisualStyleBackColor = true;
+            this.button_bit59.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit58
+            // 
+            this.button_bit58.Location = new System.Drawing.Point(200, 24);
+            this.button_bit58.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit58.Name = "button_bit58";
+            this.button_bit58.Size = new System.Drawing.Size(22, 32);
+            this.button_bit58.TabIndex = 26;
+            this.button_bit58.Tag = "QWORD";
+            this.button_bit58.Text = "0";
+            this.button_bit58.UseVisualStyleBackColor = true;
+            this.button_bit58.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit57
+            // 
+            this.button_bit57.Location = new System.Drawing.Point(228, 24);
+            this.button_bit57.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit57.Name = "button_bit57";
+            this.button_bit57.Size = new System.Drawing.Size(22, 32);
+            this.button_bit57.TabIndex = 25;
+            this.button_bit57.Tag = "QWORD";
+            this.button_bit57.Text = "0";
+            this.button_bit57.UseVisualStyleBackColor = true;
+            this.button_bit57.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit56
+            // 
+            this.button_bit56.Location = new System.Drawing.Point(256, 24);
+            this.button_bit56.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit56.Name = "button_bit56";
+            this.button_bit56.Size = new System.Drawing.Size(22, 32);
+            this.button_bit56.TabIndex = 24;
+            this.button_bit56.Tag = "QWORD";
+            this.button_bit56.Text = "0";
+            this.button_bit56.UseVisualStyleBackColor = true;
+            this.button_bit56.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit55
+            // 
+            this.button_bit55.Location = new System.Drawing.Point(312, 24);
+            this.button_bit55.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit55.Name = "button_bit55";
+            this.button_bit55.Size = new System.Drawing.Size(22, 32);
+            this.button_bit55.TabIndex = 23;
+            this.button_bit55.Tag = "QWORD";
+            this.button_bit55.Text = "0";
+            this.button_bit55.UseVisualStyleBackColor = true;
+            this.button_bit55.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit54
+            // 
+            this.button_bit54.Location = new System.Drawing.Point(340, 24);
+            this.button_bit54.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit54.Name = "button_bit54";
+            this.button_bit54.Size = new System.Drawing.Size(22, 32);
+            this.button_bit54.TabIndex = 22;
+            this.button_bit54.Tag = "QWORD";
+            this.button_bit54.Text = "0";
+            this.button_bit54.UseVisualStyleBackColor = true;
+            this.button_bit54.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit53
+            // 
+            this.button_bit53.Location = new System.Drawing.Point(368, 24);
+            this.button_bit53.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit53.Name = "button_bit53";
+            this.button_bit53.Size = new System.Drawing.Size(22, 32);
+            this.button_bit53.TabIndex = 21;
+            this.button_bit53.Tag = "QWORD";
+            this.button_bit53.Text = "0";
+            this.button_bit53.UseVisualStyleBackColor = true;
+            this.button_bit53.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit52
+            // 
+            this.button_bit52.Location = new System.Drawing.Point(396, 24);
+            this.button_bit52.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit52.Name = "button_bit52";
+            this.button_bit52.Size = new System.Drawing.Size(22, 32);
+            this.button_bit52.TabIndex = 20;
+            this.button_bit52.Tag = "QWORD";
+            this.button_bit52.Text = "0";
+            this.button_bit52.UseVisualStyleBackColor = true;
+            this.button_bit52.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit51
+            // 
+            this.button_bit51.Location = new System.Drawing.Point(452, 24);
+            this.button_bit51.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit51.Name = "button_bit51";
+            this.button_bit51.Size = new System.Drawing.Size(22, 32);
+            this.button_bit51.TabIndex = 19;
+            this.button_bit51.Tag = "QWORD";
+            this.button_bit51.Text = "0";
+            this.button_bit51.UseVisualStyleBackColor = true;
+            this.button_bit51.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit50
+            // 
+            this.button_bit50.Location = new System.Drawing.Point(480, 24);
+            this.button_bit50.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit50.Name = "button_bit50";
+            this.button_bit50.Size = new System.Drawing.Size(22, 32);
+            this.button_bit50.TabIndex = 18;
+            this.button_bit50.Tag = "QWORD";
+            this.button_bit50.Text = "0";
+            this.button_bit50.UseVisualStyleBackColor = true;
+            this.button_bit50.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit49
+            // 
+            this.button_bit49.Location = new System.Drawing.Point(508, 24);
+            this.button_bit49.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit49.Name = "button_bit49";
+            this.button_bit49.Size = new System.Drawing.Size(22, 32);
+            this.button_bit49.TabIndex = 17;
+            this.button_bit49.Tag = "QWORD";
+            this.button_bit49.Text = "0";
+            this.button_bit49.UseVisualStyleBackColor = true;
+            this.button_bit49.Click += new System.EventHandler(this.BitButton_Clicked);
+            // 
+            // button_bit48
+            // 
+            this.button_bit48.Location = new System.Drawing.Point(536, 24);
+            this.button_bit48.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
+            this.button_bit48.Name = "button_bit48";
+            this.button_bit48.Size = new System.Drawing.Size(22, 32);
+            this.button_bit48.TabIndex = 16;
+            this.button_bit48.Tag = "QWORD";
+            this.button_bit48.Text = "0";
+            this.button_bit48.UseVisualStyleBackColor = true;
+            this.button_bit48.Click += new System.EventHandler(this.BitButton_Clicked);
             // 
             // groupBox1
             // 
@@ -956,870 +1884,6 @@
             this.radioButton_Byte.UseVisualStyleBackColor = true;
             this.radioButton_Byte.CheckedChanged += new System.EventHandler(this.TypeRadioButton_CheckedChanged);
             // 
-            // button21
-            // 
-            this.button21.Location = new System.Drawing.Point(60, 24);
-            this.button21.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(22, 32);
-            this.button21.TabIndex = 31;
-            this.button21.Tag = "QWORD";
-            this.button21.Text = "0";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            this.button22.Location = new System.Drawing.Point(88, 24);
-            this.button22.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(22, 32);
-            this.button22.TabIndex = 30;
-            this.button22.Tag = "QWORD";
-            this.button22.Text = "0";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(116, 24);
-            this.button23.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(22, 32);
-            this.button23.TabIndex = 29;
-            this.button23.Tag = "QWORD";
-            this.button23.Text = "0";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button31
-            // 
-            this.button31.Location = new System.Drawing.Point(32, 24);
-            this.button31.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(22, 32);
-            this.button31.TabIndex = 28;
-            this.button31.Tag = "QWORD";
-            this.button31.Text = "0";
-            this.button31.UseVisualStyleBackColor = true;
-            // 
-            // button32
-            // 
-            this.button32.Location = new System.Drawing.Point(172, 24);
-            this.button32.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(22, 32);
-            this.button32.TabIndex = 27;
-            this.button32.Tag = "QWORD";
-            this.button32.Text = "0";
-            this.button32.UseVisualStyleBackColor = true;
-            // 
-            // button33
-            // 
-            this.button33.Location = new System.Drawing.Point(200, 24);
-            this.button33.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(22, 32);
-            this.button33.TabIndex = 26;
-            this.button33.Tag = "QWORD";
-            this.button33.Text = "0";
-            this.button33.UseVisualStyleBackColor = true;
-            // 
-            // button34
-            // 
-            this.button34.Location = new System.Drawing.Point(228, 24);
-            this.button34.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(22, 32);
-            this.button34.TabIndex = 25;
-            this.button34.Tag = "QWORD";
-            this.button34.Text = "0";
-            this.button34.UseVisualStyleBackColor = true;
-            // 
-            // button35
-            // 
-            this.button35.Location = new System.Drawing.Point(256, 24);
-            this.button35.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(22, 32);
-            this.button35.TabIndex = 24;
-            this.button35.Tag = "QWORD";
-            this.button35.Text = "0";
-            this.button35.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.Location = new System.Drawing.Point(312, 24);
-            this.button36.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(22, 32);
-            this.button36.TabIndex = 23;
-            this.button36.Tag = "QWORD";
-            this.button36.Text = "0";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.Location = new System.Drawing.Point(340, 24);
-            this.button37.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(22, 32);
-            this.button37.TabIndex = 22;
-            this.button37.Tag = "QWORD";
-            this.button37.Text = "0";
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.Location = new System.Drawing.Point(368, 24);
-            this.button38.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(22, 32);
-            this.button38.TabIndex = 21;
-            this.button38.Tag = "QWORD";
-            this.button38.Text = "0";
-            this.button38.UseVisualStyleBackColor = true;
-            // 
-            // button39
-            // 
-            this.button39.Location = new System.Drawing.Point(396, 24);
-            this.button39.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(22, 32);
-            this.button39.TabIndex = 20;
-            this.button39.Tag = "QWORD";
-            this.button39.Text = "0";
-            this.button39.UseVisualStyleBackColor = true;
-            // 
-            // button40
-            // 
-            this.button40.Location = new System.Drawing.Point(452, 24);
-            this.button40.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(22, 32);
-            this.button40.TabIndex = 19;
-            this.button40.Tag = "QWORD";
-            this.button40.Text = "0";
-            this.button40.UseVisualStyleBackColor = true;
-            // 
-            // button41
-            // 
-            this.button41.Location = new System.Drawing.Point(480, 24);
-            this.button41.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(22, 32);
-            this.button41.TabIndex = 18;
-            this.button41.Tag = "QWORD";
-            this.button41.Text = "0";
-            this.button41.UseVisualStyleBackColor = true;
-            // 
-            // button42
-            // 
-            this.button42.Location = new System.Drawing.Point(508, 24);
-            this.button42.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(22, 32);
-            this.button42.TabIndex = 17;
-            this.button42.Tag = "QWORD";
-            this.button42.Text = "0";
-            this.button42.UseVisualStyleBackColor = true;
-            // 
-            // button43
-            // 
-            this.button43.Location = new System.Drawing.Point(536, 24);
-            this.button43.Margin = new System.Windows.Forms.Padding(3, 20, 20, 50);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(22, 32);
-            this.button43.TabIndex = 16;
-            this.button43.Tag = "QWORD";
-            this.button43.Text = "0";
-            this.button43.UseVisualStyleBackColor = true;
-            // 
-            // button44
-            // 
-            this.button44.Location = new System.Drawing.Point(60, 109);
-            this.button44.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(22, 32);
-            this.button44.TabIndex = 47;
-            this.button44.Tag = "QWORD";
-            this.button44.Text = "0";
-            this.button44.UseVisualStyleBackColor = true;
-            // 
-            // button45
-            // 
-            this.button45.Location = new System.Drawing.Point(88, 109);
-            this.button45.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(22, 32);
-            this.button45.TabIndex = 46;
-            this.button45.Tag = "QWORD";
-            this.button45.Text = "0";
-            this.button45.UseVisualStyleBackColor = true;
-            // 
-            // button46
-            // 
-            this.button46.Location = new System.Drawing.Point(116, 109);
-            this.button46.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(22, 32);
-            this.button46.TabIndex = 45;
-            this.button46.Tag = "QWORD";
-            this.button46.Text = "0";
-            this.button46.UseVisualStyleBackColor = true;
-            // 
-            // button47
-            // 
-            this.button47.Location = new System.Drawing.Point(32, 109);
-            this.button47.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(22, 32);
-            this.button47.TabIndex = 44;
-            this.button47.Tag = "QWORD";
-            this.button47.Text = "0";
-            this.button47.UseVisualStyleBackColor = true;
-            // 
-            // button48
-            // 
-            this.button48.Location = new System.Drawing.Point(172, 109);
-            this.button48.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(22, 32);
-            this.button48.TabIndex = 43;
-            this.button48.Tag = "QWORD";
-            this.button48.Text = "0";
-            this.button48.UseVisualStyleBackColor = true;
-            // 
-            // button49
-            // 
-            this.button49.Location = new System.Drawing.Point(200, 109);
-            this.button49.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(22, 32);
-            this.button49.TabIndex = 42;
-            this.button49.Tag = "QWORD";
-            this.button49.Text = "0";
-            this.button49.UseVisualStyleBackColor = true;
-            // 
-            // button50
-            // 
-            this.button50.Location = new System.Drawing.Point(228, 109);
-            this.button50.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(22, 32);
-            this.button50.TabIndex = 41;
-            this.button50.Tag = "QWORD";
-            this.button50.Text = "0";
-            this.button50.UseVisualStyleBackColor = true;
-            // 
-            // button51
-            // 
-            this.button51.Location = new System.Drawing.Point(256, 109);
-            this.button51.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(22, 32);
-            this.button51.TabIndex = 40;
-            this.button51.Tag = "QWORD";
-            this.button51.Text = "0";
-            this.button51.UseVisualStyleBackColor = true;
-            // 
-            // button52
-            // 
-            this.button52.Location = new System.Drawing.Point(312, 109);
-            this.button52.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(22, 32);
-            this.button52.TabIndex = 39;
-            this.button52.Tag = "QWORD";
-            this.button52.Text = "0";
-            this.button52.UseVisualStyleBackColor = true;
-            // 
-            // button53
-            // 
-            this.button53.Location = new System.Drawing.Point(340, 109);
-            this.button53.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(22, 32);
-            this.button53.TabIndex = 38;
-            this.button53.Tag = "QWORD";
-            this.button53.Text = "0";
-            this.button53.UseVisualStyleBackColor = true;
-            // 
-            // button54
-            // 
-            this.button54.Location = new System.Drawing.Point(368, 109);
-            this.button54.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(22, 32);
-            this.button54.TabIndex = 37;
-            this.button54.Tag = "QWORD";
-            this.button54.Text = "0";
-            this.button54.UseVisualStyleBackColor = true;
-            // 
-            // button55
-            // 
-            this.button55.Location = new System.Drawing.Point(396, 109);
-            this.button55.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(22, 32);
-            this.button55.TabIndex = 36;
-            this.button55.Tag = "QWORD";
-            this.button55.Text = "0";
-            this.button55.UseVisualStyleBackColor = true;
-            // 
-            // button56
-            // 
-            this.button56.Location = new System.Drawing.Point(452, 109);
-            this.button56.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(22, 32);
-            this.button56.TabIndex = 35;
-            this.button56.Tag = "QWORD";
-            this.button56.Text = "0";
-            this.button56.UseVisualStyleBackColor = true;
-            // 
-            // button57
-            // 
-            this.button57.Location = new System.Drawing.Point(480, 109);
-            this.button57.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(22, 32);
-            this.button57.TabIndex = 34;
-            this.button57.Tag = "QWORD";
-            this.button57.Text = "0";
-            this.button57.UseVisualStyleBackColor = true;
-            // 
-            // button58
-            // 
-            this.button58.Location = new System.Drawing.Point(508, 109);
-            this.button58.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(22, 32);
-            this.button58.TabIndex = 33;
-            this.button58.Tag = "QWORD";
-            this.button58.Text = "0";
-            this.button58.UseVisualStyleBackColor = true;
-            // 
-            // button59
-            // 
-            this.button59.Location = new System.Drawing.Point(536, 109);
-            this.button59.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(22, 32);
-            this.button59.TabIndex = 32;
-            this.button59.Tag = "QWORD";
-            this.button59.Text = "0";
-            this.button59.UseVisualStyleBackColor = true;
-            // 
-            // button60
-            // 
-            this.button60.Location = new System.Drawing.Point(60, 194);
-            this.button60.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(22, 32);
-            this.button60.TabIndex = 63;
-            this.button60.Tag = "DWORD,QWORD";
-            this.button60.Text = "0";
-            this.button60.UseVisualStyleBackColor = true;
-            // 
-            // button61
-            // 
-            this.button61.Location = new System.Drawing.Point(88, 194);
-            this.button61.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(22, 32);
-            this.button61.TabIndex = 62;
-            this.button61.Tag = "DWORD,QWORD";
-            this.button61.Text = "0";
-            this.button61.UseVisualStyleBackColor = true;
-            // 
-            // button62
-            // 
-            this.button62.Location = new System.Drawing.Point(116, 194);
-            this.button62.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(22, 32);
-            this.button62.TabIndex = 61;
-            this.button62.Tag = "DWORD,QWORD";
-            this.button62.Text = "0";
-            this.button62.UseVisualStyleBackColor = true;
-            // 
-            // button63
-            // 
-            this.button63.Location = new System.Drawing.Point(32, 194);
-            this.button63.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button63.Name = "button63";
-            this.button63.Size = new System.Drawing.Size(22, 32);
-            this.button63.TabIndex = 60;
-            this.button63.Tag = "DWORD,QWORD";
-            this.button63.Text = "0";
-            this.button63.UseVisualStyleBackColor = true;
-            // 
-            // button64
-            // 
-            this.button64.Location = new System.Drawing.Point(172, 194);
-            this.button64.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button64.Name = "button64";
-            this.button64.Size = new System.Drawing.Size(22, 32);
-            this.button64.TabIndex = 59;
-            this.button64.Tag = "DWORD,QWORD";
-            this.button64.Text = "0";
-            this.button64.UseVisualStyleBackColor = true;
-            // 
-            // button65
-            // 
-            this.button65.Location = new System.Drawing.Point(200, 194);
-            this.button65.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button65.Name = "button65";
-            this.button65.Size = new System.Drawing.Size(22, 32);
-            this.button65.TabIndex = 58;
-            this.button65.Tag = "DWORD,QWORD";
-            this.button65.Text = "0";
-            this.button65.UseVisualStyleBackColor = true;
-            // 
-            // button66
-            // 
-            this.button66.Location = new System.Drawing.Point(228, 194);
-            this.button66.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button66.Name = "button66";
-            this.button66.Size = new System.Drawing.Size(22, 32);
-            this.button66.TabIndex = 57;
-            this.button66.Tag = "DWORD,QWORD";
-            this.button66.Text = "0";
-            this.button66.UseVisualStyleBackColor = true;
-            // 
-            // button67
-            // 
-            this.button67.Location = new System.Drawing.Point(256, 194);
-            this.button67.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button67.Name = "button67";
-            this.button67.Size = new System.Drawing.Size(22, 32);
-            this.button67.TabIndex = 56;
-            this.button67.Tag = "DWORD,QWORD";
-            this.button67.Text = "0";
-            this.button67.UseVisualStyleBackColor = true;
-            // 
-            // button68
-            // 
-            this.button68.Location = new System.Drawing.Point(312, 194);
-            this.button68.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button68.Name = "button68";
-            this.button68.Size = new System.Drawing.Size(22, 32);
-            this.button68.TabIndex = 55;
-            this.button68.Tag = "DWORD,QWORD";
-            this.button68.Text = "0";
-            this.button68.UseVisualStyleBackColor = true;
-            // 
-            // button69
-            // 
-            this.button69.Location = new System.Drawing.Point(340, 194);
-            this.button69.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button69.Name = "button69";
-            this.button69.Size = new System.Drawing.Size(22, 32);
-            this.button69.TabIndex = 54;
-            this.button69.Tag = "DWORD,QWORD";
-            this.button69.Text = "0";
-            this.button69.UseVisualStyleBackColor = true;
-            // 
-            // button70
-            // 
-            this.button70.Location = new System.Drawing.Point(368, 194);
-            this.button70.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button70.Name = "button70";
-            this.button70.Size = new System.Drawing.Size(22, 32);
-            this.button70.TabIndex = 53;
-            this.button70.Tag = "DWORD,QWORD";
-            this.button70.Text = "0";
-            this.button70.UseVisualStyleBackColor = true;
-            // 
-            // button71
-            // 
-            this.button71.Location = new System.Drawing.Point(396, 194);
-            this.button71.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button71.Name = "button71";
-            this.button71.Size = new System.Drawing.Size(22, 32);
-            this.button71.TabIndex = 52;
-            this.button71.Tag = "DWORD,QWORD";
-            this.button71.Text = "0";
-            this.button71.UseVisualStyleBackColor = true;
-            // 
-            // button72
-            // 
-            this.button72.Location = new System.Drawing.Point(452, 194);
-            this.button72.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button72.Name = "button72";
-            this.button72.Size = new System.Drawing.Size(22, 32);
-            this.button72.TabIndex = 51;
-            this.button72.Tag = "DWORD,QWORD";
-            this.button72.Text = "0";
-            this.button72.UseVisualStyleBackColor = true;
-            // 
-            // button73
-            // 
-            this.button73.Location = new System.Drawing.Point(480, 194);
-            this.button73.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button73.Name = "button73";
-            this.button73.Size = new System.Drawing.Size(22, 32);
-            this.button73.TabIndex = 50;
-            this.button73.Tag = "DWORD,QWORD";
-            this.button73.Text = "0";
-            this.button73.UseVisualStyleBackColor = true;
-            // 
-            // button74
-            // 
-            this.button74.Location = new System.Drawing.Point(508, 194);
-            this.button74.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button74.Name = "button74";
-            this.button74.Size = new System.Drawing.Size(22, 32);
-            this.button74.TabIndex = 49;
-            this.button74.Tag = "DWORD,QWORD";
-            this.button74.Text = "0";
-            this.button74.UseVisualStyleBackColor = true;
-            // 
-            // button75
-            // 
-            this.button75.Location = new System.Drawing.Point(536, 194);
-            this.button75.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button75.Name = "button75";
-            this.button75.Size = new System.Drawing.Size(22, 32);
-            this.button75.TabIndex = 48;
-            this.button75.Tag = "DWORD,QWORD";
-            this.button75.Text = "0";
-            this.button75.UseVisualStyleBackColor = true;
-            // 
-            // button76
-            // 
-            this.button76.Location = new System.Drawing.Point(60, 279);
-            this.button76.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button76.Name = "button76";
-            this.button76.Size = new System.Drawing.Size(22, 32);
-            this.button76.TabIndex = 79;
-            this.button76.Tag = "WORD,DWORD,QWORD";
-            this.button76.Text = "0";
-            this.button76.UseVisualStyleBackColor = true;
-            // 
-            // button77
-            // 
-            this.button77.Location = new System.Drawing.Point(88, 279);
-            this.button77.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button77.Name = "button77";
-            this.button77.Size = new System.Drawing.Size(22, 32);
-            this.button77.TabIndex = 78;
-            this.button77.Tag = "WORD,DWORD,QWORD";
-            this.button77.Text = "0";
-            this.button77.UseVisualStyleBackColor = true;
-            // 
-            // button78
-            // 
-            this.button78.Location = new System.Drawing.Point(116, 279);
-            this.button78.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button78.Name = "button78";
-            this.button78.Size = new System.Drawing.Size(22, 32);
-            this.button78.TabIndex = 77;
-            this.button78.Tag = "WORD,DWORD,QWORD";
-            this.button78.Text = "0";
-            this.button78.UseVisualStyleBackColor = true;
-            // 
-            // button79
-            // 
-            this.button79.Location = new System.Drawing.Point(32, 279);
-            this.button79.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button79.Name = "button79";
-            this.button79.Size = new System.Drawing.Size(22, 32);
-            this.button79.TabIndex = 76;
-            this.button79.Tag = "WORD,DWORD,QWORD";
-            this.button79.Text = "0";
-            this.button79.UseVisualStyleBackColor = true;
-            // 
-            // button80
-            // 
-            this.button80.Location = new System.Drawing.Point(172, 279);
-            this.button80.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button80.Name = "button80";
-            this.button80.Size = new System.Drawing.Size(22, 32);
-            this.button80.TabIndex = 75;
-            this.button80.Tag = "WORD,DWORD,QWORD";
-            this.button80.Text = "0";
-            this.button80.UseVisualStyleBackColor = true;
-            // 
-            // button81
-            // 
-            this.button81.Location = new System.Drawing.Point(200, 279);
-            this.button81.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button81.Name = "button81";
-            this.button81.Size = new System.Drawing.Size(22, 32);
-            this.button81.TabIndex = 74;
-            this.button81.Tag = "WORD,DWORD,QWORD";
-            this.button81.Text = "0";
-            this.button81.UseVisualStyleBackColor = true;
-            // 
-            // button82
-            // 
-            this.button82.Location = new System.Drawing.Point(228, 279);
-            this.button82.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button82.Name = "button82";
-            this.button82.Size = new System.Drawing.Size(22, 32);
-            this.button82.TabIndex = 73;
-            this.button82.Tag = "WORD,DWORD,QWORD";
-            this.button82.Text = "0";
-            this.button82.UseVisualStyleBackColor = true;
-            // 
-            // button83
-            // 
-            this.button83.Location = new System.Drawing.Point(256, 279);
-            this.button83.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button83.Name = "button83";
-            this.button83.Size = new System.Drawing.Size(22, 32);
-            this.button83.TabIndex = 72;
-            this.button83.Tag = "WORD,DWORD,QWORD";
-            this.button83.Text = "0";
-            this.button83.UseVisualStyleBackColor = true;
-            // 
-            // button84
-            // 
-            this.button84.Location = new System.Drawing.Point(312, 279);
-            this.button84.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button84.Name = "button84";
-            this.button84.Size = new System.Drawing.Size(22, 32);
-            this.button84.TabIndex = 71;
-            this.button84.Tag = "BYTE,WORD,DWORD,QWORD";
-            this.button84.Text = "0";
-            this.button84.UseVisualStyleBackColor = true;
-            // 
-            // button85
-            // 
-            this.button85.Location = new System.Drawing.Point(340, 279);
-            this.button85.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button85.Name = "button85";
-            this.button85.Size = new System.Drawing.Size(22, 32);
-            this.button85.TabIndex = 70;
-            this.button85.Tag = "BYTE,WORD,DWORD,QWORD";
-            this.button85.Text = "0";
-            this.button85.UseVisualStyleBackColor = true;
-            // 
-            // button86
-            // 
-            this.button86.Location = new System.Drawing.Point(368, 279);
-            this.button86.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button86.Name = "button86";
-            this.button86.Size = new System.Drawing.Size(22, 32);
-            this.button86.TabIndex = 69;
-            this.button86.Tag = "BYTE,WORD,DWORD,QWORD";
-            this.button86.Text = "0";
-            this.button86.UseVisualStyleBackColor = true;
-            // 
-            // button87
-            // 
-            this.button87.Location = new System.Drawing.Point(396, 279);
-            this.button87.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button87.Name = "button87";
-            this.button87.Size = new System.Drawing.Size(22, 32);
-            this.button87.TabIndex = 68;
-            this.button87.Tag = "BYTE,WORD,DWORD,QWORD";
-            this.button87.Text = "0";
-            this.button87.UseVisualStyleBackColor = true;
-            // 
-            // button88
-            // 
-            this.button88.Location = new System.Drawing.Point(452, 279);
-            this.button88.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button88.Name = "button88";
-            this.button88.Size = new System.Drawing.Size(22, 32);
-            this.button88.TabIndex = 67;
-            this.button88.Tag = "BYTE,WORD,DWORD,QWORD";
-            this.button88.Text = "0";
-            this.button88.UseVisualStyleBackColor = true;
-            // 
-            // button89
-            // 
-            this.button89.Location = new System.Drawing.Point(480, 279);
-            this.button89.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button89.Name = "button89";
-            this.button89.Size = new System.Drawing.Size(22, 32);
-            this.button89.TabIndex = 66;
-            this.button89.Tag = "BYTE,WORD,DWORD,QWORD";
-            this.button89.Text = "0";
-            this.button89.UseVisualStyleBackColor = true;
-            // 
-            // button90
-            // 
-            this.button90.Location = new System.Drawing.Point(508, 279);
-            this.button90.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button90.Name = "button90";
-            this.button90.Size = new System.Drawing.Size(22, 32);
-            this.button90.TabIndex = 65;
-            this.button90.Tag = "BYTE,WORD,DWORD,QWORD";
-            this.button90.Text = "0";
-            this.button90.UseVisualStyleBackColor = true;
-            // 
-            // button91
-            // 
-            this.button91.Location = new System.Drawing.Point(536, 279);
-            this.button91.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button91.Name = "button91";
-            this.button91.Size = new System.Drawing.Size(22, 32);
-            this.button91.TabIndex = 64;
-            this.button91.Tag = "BYTE,WORD,DWORD,QWORD";
-            this.button91.Text = "0";
-            this.button91.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(536, 320);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 25);
-            this.label1.TabIndex = 80;
-            this.label1.Text = "0";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(396, 320);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 25);
-            this.label2.TabIndex = 81;
-            this.label2.Text = "4";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(256, 320);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 25);
-            this.label3.TabIndex = 82;
-            this.label3.Text = "8";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(116, 320);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 25);
-            this.label4.TabIndex = 83;
-            this.label4.Text = "12";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(116, 230);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 25);
-            this.label5.TabIndex = 87;
-            this.label5.Text = "28";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(256, 230);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 25);
-            this.label6.TabIndex = 86;
-            this.label6.Text = "24";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(396, 230);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 25);
-            this.label7.TabIndex = 85;
-            this.label7.Text = "20";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(536, 230);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 25);
-            this.label8.TabIndex = 84;
-            this.label8.Text = "16";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(116, 146);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 25);
-            this.label9.TabIndex = 91;
-            this.label9.Text = "44";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(256, 146);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 25);
-            this.label10.TabIndex = 90;
-            this.label10.Text = "40";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(396, 146);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 25);
-            this.label11.TabIndex = 89;
-            this.label11.Text = "36";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(536, 146);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(32, 25);
-            this.label12.TabIndex = 88;
-            this.label12.Text = "32";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(116, 64);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 25);
-            this.label13.TabIndex = 95;
-            this.label13.Text = "60";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(256, 64);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 25);
-            this.label14.TabIndex = 94;
-            this.label14.Text = "56";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(396, 64);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(32, 25);
-            this.label15.TabIndex = 93;
-            this.label15.Text = "52";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(536, 64);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(32, 25);
-            this.label16.TabIndex = 92;
-            this.label16.Text = "48";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // programmerCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -1907,70 +1971,70 @@
         private System.Windows.Forms.RadioButton radioButton_Dword;
         private System.Windows.Forms.RadioButton radioButton_Word;
         private System.Windows.Forms.RadioButton radioButton_Byte;
-        private System.Windows.Forms.Button button76;
-        private System.Windows.Forms.Button button77;
-        private System.Windows.Forms.Button button78;
-        private System.Windows.Forms.Button button79;
-        private System.Windows.Forms.Button button80;
-        private System.Windows.Forms.Button button81;
-        private System.Windows.Forms.Button button82;
-        private System.Windows.Forms.Button button83;
-        private System.Windows.Forms.Button button84;
-        private System.Windows.Forms.Button button85;
-        private System.Windows.Forms.Button button86;
-        private System.Windows.Forms.Button button87;
-        private System.Windows.Forms.Button button88;
-        private System.Windows.Forms.Button button89;
-        private System.Windows.Forms.Button button90;
-        private System.Windows.Forms.Button button91;
-        private System.Windows.Forms.Button button60;
-        private System.Windows.Forms.Button button61;
-        private System.Windows.Forms.Button button62;
-        private System.Windows.Forms.Button button63;
-        private System.Windows.Forms.Button button64;
-        private System.Windows.Forms.Button button65;
-        private System.Windows.Forms.Button button66;
-        private System.Windows.Forms.Button button67;
-        private System.Windows.Forms.Button button68;
-        private System.Windows.Forms.Button button69;
-        private System.Windows.Forms.Button button70;
-        private System.Windows.Forms.Button button71;
-        private System.Windows.Forms.Button button72;
-        private System.Windows.Forms.Button button73;
-        private System.Windows.Forms.Button button74;
-        private System.Windows.Forms.Button button75;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.Button button47;
-        private System.Windows.Forms.Button button48;
-        private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Button button50;
-        private System.Windows.Forms.Button button51;
-        private System.Windows.Forms.Button button52;
-        private System.Windows.Forms.Button button53;
-        private System.Windows.Forms.Button button54;
-        private System.Windows.Forms.Button button55;
-        private System.Windows.Forms.Button button56;
-        private System.Windows.Forms.Button button57;
-        private System.Windows.Forms.Button button58;
-        private System.Windows.Forms.Button button59;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button button_bit14;
+        private System.Windows.Forms.Button button_bit13;
+        private System.Windows.Forms.Button button_bit12;
+        private System.Windows.Forms.Button button_bit15;
+        private System.Windows.Forms.Button button_bit11;
+        private System.Windows.Forms.Button button_bit10;
+        private System.Windows.Forms.Button button_bit9;
+        private System.Windows.Forms.Button button_bit8;
+        private System.Windows.Forms.Button button_bit7;
+        private System.Windows.Forms.Button button_bit6;
+        private System.Windows.Forms.Button button_bit5;
+        private System.Windows.Forms.Button button_bit4;
+        private System.Windows.Forms.Button button_bit3;
+        private System.Windows.Forms.Button button_bit2;
+        private System.Windows.Forms.Button button_bit1;
+        private System.Windows.Forms.Button button_bit0;
+        private System.Windows.Forms.Button button_bit30;
+        private System.Windows.Forms.Button button_bit29;
+        private System.Windows.Forms.Button button_bit28;
+        private System.Windows.Forms.Button button_bit31;
+        private System.Windows.Forms.Button button_bit27;
+        private System.Windows.Forms.Button button_bit26;
+        private System.Windows.Forms.Button button_bit25;
+        private System.Windows.Forms.Button button_bit24;
+        private System.Windows.Forms.Button button_bit23;
+        private System.Windows.Forms.Button button_bit22;
+        private System.Windows.Forms.Button button_bit21;
+        private System.Windows.Forms.Button button_bit20;
+        private System.Windows.Forms.Button button_bit19;
+        private System.Windows.Forms.Button button_bit18;
+        private System.Windows.Forms.Button button_bit17;
+        private System.Windows.Forms.Button button_bit16;
+        private System.Windows.Forms.Button button_bit46;
+        private System.Windows.Forms.Button button_bit45;
+        private System.Windows.Forms.Button button_bit44;
+        private System.Windows.Forms.Button button_bit47;
+        private System.Windows.Forms.Button button_bit43;
+        private System.Windows.Forms.Button button_bit42;
+        private System.Windows.Forms.Button button_bit41;
+        private System.Windows.Forms.Button button_bit40;
+        private System.Windows.Forms.Button button_bit39;
+        private System.Windows.Forms.Button button_bit38;
+        private System.Windows.Forms.Button button_bit37;
+        private System.Windows.Forms.Button button_bit36;
+        private System.Windows.Forms.Button button_bit35;
+        private System.Windows.Forms.Button button_bit34;
+        private System.Windows.Forms.Button button_bit33;
+        private System.Windows.Forms.Button button_bit32;
+        private System.Windows.Forms.Button button_bit62;
+        private System.Windows.Forms.Button button_bit61;
+        private System.Windows.Forms.Button button_bit60;
+        private System.Windows.Forms.Button button_bit63;
+        private System.Windows.Forms.Button button_bit59;
+        private System.Windows.Forms.Button button_bit58;
+        private System.Windows.Forms.Button button_bit57;
+        private System.Windows.Forms.Button button_bit56;
+        private System.Windows.Forms.Button button_bit55;
+        private System.Windows.Forms.Button button_bit54;
+        private System.Windows.Forms.Button button_bit53;
+        private System.Windows.Forms.Button button_bit52;
+        private System.Windows.Forms.Button button_bit51;
+        private System.Windows.Forms.Button button_bit50;
+        private System.Windows.Forms.Button button_bit49;
+        private System.Windows.Forms.Button button_bit48;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;

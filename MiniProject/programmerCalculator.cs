@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,8 @@ namespace MiniProject
 
         public static Base SelectedBase = Base.DEC;
         public static Type SelectedType = Type.DWORD;
+
+        public static BitArray bitArray = new BitArray(64, false);
 
         public programmerCalculator()
         {
@@ -137,6 +140,25 @@ namespace MiniProject
                 // 비트 전환 키패드의 버튼들을 Type에 맞게 활성, 비활성
                 Console.WriteLine(SelectedType.ToString());
             }
+        }
+
+        // 비트 키패드의 비트별 button을 눌렀을때 발생하는 이벤트 처리
+        private void BitButton_Clicked(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            string btnName = btn.Name.ToString(); // 클릭된 버튼의 Name 속성을 string으로 변환
+            string btnNum = new string(btn.Name.Where(char.IsDigit).ToArray()); // string에서 정수만 취한 후 저장
+            int bitIndex = int.Parse(btnNum); // string을 int로 parse
+
+            switch (btn.Text)
+            {
+                case "0":
+                    btn.Text = "1"; break;
+                case "1":
+                    btn.Text = "0"; break;
+            }
+
+            Console.WriteLine(bitIndex.ToString());
         }
 
         // 이벤트 발생시 진법에 따라 버튼을 활성/비활성화 하는 Fucntion
