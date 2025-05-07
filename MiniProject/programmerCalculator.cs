@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace MiniProject
@@ -153,15 +154,68 @@ namespace MiniProject
             switch (btn.Text)
             {
                 case "0":
-                    btn.Text = "1"; break;
+                    btn.Text = "1";
+                    bitArray[bitIndex] = true;
+                    break;
                 case "1":
-                    btn.Text = "0"; break;
+                    btn.Text = "0";
+                    bitArray[bitIndex] = false;
+                    break;
             }
 
-            Console.WriteLine(bitIndex.ToString());
+            UpdateBitArrayForBtn();
+            textBox_result.Text = BitArr2String(bitArray, SelectedBase);
         }
 
-        // 이벤트 발생시 진법에 따라 버튼을 활성/비활성화 하는 Fucntion
+        // 비트 키패드의 현재 값을 bitArray에 적용하는 Function
+        // 비트 키패드 -> bitArray
+        private void UpdateBitArrayForBtn()
+        {
+            foreach (Control ctrl in KeypadTabControl.TabPages[1].Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    string btnName = btn.Name.ToString(); // 클릭된 버튼의 Name 속성을 string으로 변환
+                    string btnNum = new string(btn.Name.Where(char.IsDigit).ToArray()); // string에서 정수만 취한 후 저장
+                    int bitIndex = int.Parse(btnNum); // string을 int로 parse
+
+                    switch (btn.Text)
+                    {
+                        case "0":
+                            bitArray[bitIndex] = false;
+                            break;
+                        case "1":
+                            bitArray[bitIndex] = true;
+                            break;
+                    }
+                }
+            }
+        }
+
+        // String으로 입력 받은 2진수를 비트 키패드에 적용하는 Function
+        // String -> bitArray -> 버튼키패드
+        private void UpdateBitButton(string inputString, Button btn)
+        {
+
+        }
+
+        // BitArray를 String으로 변환하는 Function
+        private string BitArr2String(BitArray bitArray, Base @base)
+        {
+            ConvertBaseClass cb = new ConvertBaseClass();
+            int len = bitArray.Length;
+            StringBuilder str = new StringBuilder();
+            for (int i = 0; i < len; i++)
+            {
+                str.Append(bitArray[i] ? "1" : "0");
+            }
+            string reversedStr = new string(str.ToString().Reverse().ToArray());
+
+            if (@base == Base.BIN) return reversedStr.TrimStart('0'); // 선택된 진법이 이미 2진법인 경우 변환한 값을 그냥 반환
+            else return cb.ConvertBase(Base.BIN, @base, reversedStr.TrimStart('0')); // 아니라면 해당하는 진법으로 변환하여 값 반환
+        }
+
+        // 이벤트 발생시 Tag에 따라 버튼을 활성/비활성화 하는 Fucntion
         private void ChangeButtonStatus(string @base, int pageNum)
         {
             foreach (Control ctrl in KeypadTabControl.TabPages[pageNum].Controls)
@@ -196,6 +250,36 @@ namespace MiniProject
                 {
                     int tagNum = int.Parse((string)txt.Tag);
                     txt.Text = convertedArray[tagNum];
+                }
+            }
+
+            /* 1. 텍스트 박스가 변경되면
+             * 2. 각진법에 알맞게 변환이 된다
+             * 3. string의 n번째 값을 n번째 버튼의 Text로 변경
+             * 3-1. string의 n번째 값을 bitArray의 n번에 저장
+             * 단, 4비트라 가정했을때 string[0]은 4번 비트를 나타낸다
+             * string을 반대로 뒤집으면?
+             */
+            string convertedBIN = convertedArray[3]; // 2진법으로 변환 된 값의 String
+            string reversedBIN = new string(convertedBIN.Reverse().ToArray()); // String을 반대로 뒤집어 bitIndex와 stringIndex를 맞춘다
+            int len = convertedBIN.Length;
+            foreach (Control ctrl in KeypadTabControl.TabPages[1].Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    string btnNum = new string(btn.Name.Where(char.IsDigit).ToArray()); // string에서 정수만 취한 후 저장
+                    int bitIndex = int.Parse(btnNum); // string을 int로 parse
+
+                    if (bitIndex < len) // 배열 범위 이내라면 값 복사
+                    {
+                        btn.Text = reversedBIN[bitIndex].ToString();
+                        bitArray[bitIndex] = reversedBIN[bitIndex] == '0' ? false : true;
+
+                    } else // 배열 범위 밖이라면 무조건 0으로 처리
+                    {
+                        btn.Text = "0";
+                        bitArray[bitIndex] = false;
+                    }
                 }
             }
         }
