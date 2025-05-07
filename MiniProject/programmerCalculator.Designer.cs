@@ -35,33 +35,33 @@
             this.radioButton_BIN = new System.Windows.Forms.RadioButton();
             this.KeypadTabControl = new System.Windows.Forms.TabControl();
             this.tabPageAll = new System.Windows.Forms.TabPage();
-            this.button30 = new System.Windows.Forms.Button();
+            this.button_equal = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button_writeZero = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button_writeF = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
+            this.button_plus = new System.Windows.Forms.Button();
             this.button_writeThree = new System.Windows.Forms.Button();
             this.button_writeTwo = new System.Windows.Forms.Button();
             this.button_writeOne = new System.Windows.Forms.Button();
             this.button_writeE = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
+            this.button_minus = new System.Windows.Forms.Button();
             this.button_writeSix = new System.Windows.Forms.Button();
             this.button_writeFive = new System.Windows.Forms.Button();
             this.button_writeFour = new System.Windows.Forms.Button();
             this.button_writeD = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.button_mul = new System.Windows.Forms.Button();
             this.button_writeNine = new System.Windows.Forms.Button();
             this.button_writeEight = new System.Windows.Forms.Button();
             this.button_writeSeven = new System.Windows.Forms.Button();
             this.button_writeC = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.button_div = new System.Windows.Forms.Button();
+            this.button_remainder = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button_writeB = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
+            this.button_BS = new System.Windows.Forms.Button();
+            this.button_Clear = new System.Windows.Forms.Button();
             this.button_rightShift = new System.Windows.Forms.Button();
             this.button_leftShift = new System.Windows.Forms.Button();
             this.button_writeA = new System.Windows.Forms.Button();
@@ -154,8 +154,8 @@
             this.textBox_view = new System.Windows.Forms.TextBox();
             this.textBox_result = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button_NOR = new System.Windows.Forms.Button();
             this.button_OR = new System.Windows.Forms.Button();
+            this.button_NOR = new System.Windows.Forms.Button();
             this.button_NOT = new System.Windows.Forms.Button();
             this.button_NAND = new System.Windows.Forms.Button();
             this.button_XOR = new System.Windows.Forms.Button();
@@ -245,33 +245,33 @@
             // 
             // tabPageAll
             // 
-            this.tabPageAll.Controls.Add(this.button30);
+            this.tabPageAll.Controls.Add(this.button_equal);
             this.tabPageAll.Controls.Add(this.button24);
             this.tabPageAll.Controls.Add(this.button_writeZero);
             this.tabPageAll.Controls.Add(this.button12);
             this.tabPageAll.Controls.Add(this.button_writeF);
-            this.tabPageAll.Controls.Add(this.button29);
+            this.tabPageAll.Controls.Add(this.button_plus);
             this.tabPageAll.Controls.Add(this.button_writeThree);
             this.tabPageAll.Controls.Add(this.button_writeTwo);
             this.tabPageAll.Controls.Add(this.button_writeOne);
             this.tabPageAll.Controls.Add(this.button_writeE);
-            this.tabPageAll.Controls.Add(this.button28);
+            this.tabPageAll.Controls.Add(this.button_minus);
             this.tabPageAll.Controls.Add(this.button_writeSix);
             this.tabPageAll.Controls.Add(this.button_writeFive);
             this.tabPageAll.Controls.Add(this.button_writeFour);
             this.tabPageAll.Controls.Add(this.button_writeD);
-            this.tabPageAll.Controls.Add(this.button27);
+            this.tabPageAll.Controls.Add(this.button_mul);
             this.tabPageAll.Controls.Add(this.button_writeNine);
             this.tabPageAll.Controls.Add(this.button_writeEight);
             this.tabPageAll.Controls.Add(this.button_writeSeven);
             this.tabPageAll.Controls.Add(this.button_writeC);
-            this.tabPageAll.Controls.Add(this.button26);
-            this.tabPageAll.Controls.Add(this.button20);
+            this.tabPageAll.Controls.Add(this.button_div);
+            this.tabPageAll.Controls.Add(this.button_remainder);
             this.tabPageAll.Controls.Add(this.button14);
             this.tabPageAll.Controls.Add(this.button8);
             this.tabPageAll.Controls.Add(this.button_writeB);
-            this.tabPageAll.Controls.Add(this.button25);
-            this.tabPageAll.Controls.Add(this.button19);
+            this.tabPageAll.Controls.Add(this.button_BS);
+            this.tabPageAll.Controls.Add(this.button_Clear);
             this.tabPageAll.Controls.Add(this.button_rightShift);
             this.tabPageAll.Controls.Add(this.button_leftShift);
             this.tabPageAll.Controls.Add(this.button_writeA);
@@ -284,15 +284,16 @@
             this.tabPageAll.Text = "전체 키패드";
             this.tabPageAll.UseVisualStyleBackColor = true;
             // 
-            // button30
+            // button_equal
             // 
-            this.button30.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.Location = new System.Drawing.Point(330, 211);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(75, 35);
-            this.button30.TabIndex = 10;
-            this.button30.Text = "=";
-            this.button30.UseVisualStyleBackColor = true;
+            this.button_equal.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_equal.Location = new System.Drawing.Point(330, 211);
+            this.button_equal.Name = "button_equal";
+            this.button_equal.Size = new System.Drawing.Size(75, 35);
+            this.button_equal.TabIndex = 10;
+            this.button_equal.Text = "=";
+            this.button_equal.UseVisualStyleBackColor = true;
+            this.button_equal.Click += new System.EventHandler(this.EqualButton_Clicked);
             // 
             // button24
             // 
@@ -315,6 +316,7 @@
             this.button_writeZero.Tag = "BIN,OCT,DEC,HEX";
             this.button_writeZero.Text = "0";
             this.button_writeZero.UseVisualStyleBackColor = true;
+            this.button_writeZero.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button12
             // 
@@ -336,16 +338,18 @@
             this.button_writeF.Tag = "HEX";
             this.button_writeF.Text = "F";
             this.button_writeF.UseVisualStyleBackColor = true;
+            this.button_writeF.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
-            // button29
+            // button_plus
             // 
-            this.button29.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.Location = new System.Drawing.Point(330, 170);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(75, 35);
-            this.button29.TabIndex = 9;
-            this.button29.Text = "+";
-            this.button29.UseVisualStyleBackColor = true;
+            this.button_plus.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_plus.Location = new System.Drawing.Point(330, 170);
+            this.button_plus.Name = "button_plus";
+            this.button_plus.Size = new System.Drawing.Size(75, 35);
+            this.button_plus.TabIndex = 9;
+            this.button_plus.Text = "+";
+            this.button_plus.UseVisualStyleBackColor = true;
+            this.button_plus.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // button_writeThree
             // 
@@ -357,6 +361,7 @@
             this.button_writeThree.Tag = "OCT,DEC,HEX";
             this.button_writeThree.Text = "3";
             this.button_writeThree.UseVisualStyleBackColor = true;
+            this.button_writeThree.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button_writeTwo
             // 
@@ -368,6 +373,7 @@
             this.button_writeTwo.Tag = "OCT,DEC,HEX";
             this.button_writeTwo.Text = "2";
             this.button_writeTwo.UseVisualStyleBackColor = true;
+            this.button_writeTwo.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button_writeOne
             // 
@@ -379,6 +385,7 @@
             this.button_writeOne.Tag = "BIN,OCT,DEC,HEX";
             this.button_writeOne.Text = "1";
             this.button_writeOne.UseVisualStyleBackColor = true;
+            this.button_writeOne.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button_writeE
             // 
@@ -390,16 +397,18 @@
             this.button_writeE.Tag = "HEX";
             this.button_writeE.Text = "E";
             this.button_writeE.UseVisualStyleBackColor = true;
+            this.button_writeE.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
-            // button28
+            // button_minus
             // 
-            this.button28.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.Location = new System.Drawing.Point(330, 129);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 35);
-            this.button28.TabIndex = 8;
-            this.button28.Text = "-";
-            this.button28.UseVisualStyleBackColor = true;
+            this.button_minus.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_minus.Location = new System.Drawing.Point(330, 129);
+            this.button_minus.Name = "button_minus";
+            this.button_minus.Size = new System.Drawing.Size(75, 35);
+            this.button_minus.TabIndex = 8;
+            this.button_minus.Text = "-";
+            this.button_minus.UseVisualStyleBackColor = true;
+            this.button_minus.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // button_writeSix
             // 
@@ -411,6 +420,7 @@
             this.button_writeSix.Tag = "OCT,DEC,HEX";
             this.button_writeSix.Text = "6";
             this.button_writeSix.UseVisualStyleBackColor = true;
+            this.button_writeSix.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button_writeFive
             // 
@@ -422,6 +432,7 @@
             this.button_writeFive.Tag = "OCT,DEC,HEX";
             this.button_writeFive.Text = "5";
             this.button_writeFive.UseVisualStyleBackColor = true;
+            this.button_writeFive.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button_writeFour
             // 
@@ -433,6 +444,7 @@
             this.button_writeFour.Tag = "OCT,DEC,HEX";
             this.button_writeFour.Text = "4";
             this.button_writeFour.UseVisualStyleBackColor = true;
+            this.button_writeFour.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button_writeD
             // 
@@ -444,16 +456,18 @@
             this.button_writeD.Tag = "HEX";
             this.button_writeD.Text = "D";
             this.button_writeD.UseVisualStyleBackColor = true;
+            this.button_writeD.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
-            // button27
+            // button_mul
             // 
-            this.button27.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.Location = new System.Drawing.Point(330, 88);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(75, 35);
-            this.button27.TabIndex = 7;
-            this.button27.Text = "×";
-            this.button27.UseVisualStyleBackColor = true;
+            this.button_mul.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_mul.Location = new System.Drawing.Point(330, 88);
+            this.button_mul.Name = "button_mul";
+            this.button_mul.Size = new System.Drawing.Size(75, 35);
+            this.button_mul.TabIndex = 7;
+            this.button_mul.Text = "×";
+            this.button_mul.UseVisualStyleBackColor = true;
+            this.button_mul.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // button_writeNine
             // 
@@ -465,6 +479,7 @@
             this.button_writeNine.Tag = "DEC,HEX";
             this.button_writeNine.Text = "9";
             this.button_writeNine.UseVisualStyleBackColor = true;
+            this.button_writeNine.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button_writeEight
             // 
@@ -476,6 +491,7 @@
             this.button_writeEight.Tag = "DEC,HEX";
             this.button_writeEight.Text = "8";
             this.button_writeEight.UseVisualStyleBackColor = true;
+            this.button_writeEight.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button_writeSeven
             // 
@@ -487,6 +503,7 @@
             this.button_writeSeven.Tag = "OCT,DEC,HEX";
             this.button_writeSeven.Text = "7";
             this.button_writeSeven.UseVisualStyleBackColor = true;
+            this.button_writeSeven.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // button_writeC
             // 
@@ -498,26 +515,29 @@
             this.button_writeC.Tag = "HEX";
             this.button_writeC.Text = "C";
             this.button_writeC.UseVisualStyleBackColor = true;
+            this.button_writeC.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
-            // button26
+            // button_div
             // 
-            this.button26.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.Location = new System.Drawing.Point(330, 47);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 35);
-            this.button26.TabIndex = 6;
-            this.button26.Text = "÷";
-            this.button26.UseVisualStyleBackColor = true;
+            this.button_div.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_div.Location = new System.Drawing.Point(330, 47);
+            this.button_div.Name = "button_div";
+            this.button_div.Size = new System.Drawing.Size(75, 35);
+            this.button_div.TabIndex = 6;
+            this.button_div.Text = "÷";
+            this.button_div.UseVisualStyleBackColor = true;
+            this.button_div.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
-            // button20
+            // button_remainder
             // 
-            this.button20.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(249, 47);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 35);
-            this.button20.TabIndex = 6;
-            this.button20.Text = "%";
-            this.button20.UseVisualStyleBackColor = true;
+            this.button_remainder.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_remainder.Location = new System.Drawing.Point(249, 47);
+            this.button_remainder.Name = "button_remainder";
+            this.button_remainder.Size = new System.Drawing.Size(75, 35);
+            this.button_remainder.TabIndex = 6;
+            this.button_remainder.Text = "%";
+            this.button_remainder.UseVisualStyleBackColor = true;
+            this.button_remainder.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // button14
             // 
@@ -549,26 +569,29 @@
             this.button_writeB.Tag = "HEX";
             this.button_writeB.Text = "B";
             this.button_writeB.UseVisualStyleBackColor = true;
+            this.button_writeB.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
-            // button25
+            // button_BS
             // 
-            this.button25.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.Location = new System.Drawing.Point(330, 6);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 35);
-            this.button25.TabIndex = 5;
-            this.button25.Text = "BS";
-            this.button25.UseVisualStyleBackColor = true;
+            this.button_BS.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_BS.Location = new System.Drawing.Point(330, 6);
+            this.button_BS.Name = "button_BS";
+            this.button_BS.Size = new System.Drawing.Size(75, 35);
+            this.button_BS.TabIndex = 5;
+            this.button_BS.Text = "BS";
+            this.button_BS.UseVisualStyleBackColor = true;
+            this.button_BS.Click += new System.EventHandler(this.button_BS_Click);
             // 
-            // button19
+            // button_Clear
             // 
-            this.button19.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(249, 6);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 35);
-            this.button19.TabIndex = 5;
-            this.button19.Text = "C";
-            this.button19.UseVisualStyleBackColor = true;
+            this.button_Clear.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Clear.Location = new System.Drawing.Point(249, 6);
+            this.button_Clear.Name = "button_Clear";
+            this.button_Clear.Size = new System.Drawing.Size(75, 35);
+            this.button_Clear.TabIndex = 5;
+            this.button_Clear.Text = "C";
+            this.button_Clear.UseVisualStyleBackColor = true;
+            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click);
             // 
             // button_rightShift
             // 
@@ -579,6 +602,7 @@
             this.button_rightShift.TabIndex = 5;
             this.button_rightShift.Text = ">>";
             this.button_rightShift.UseVisualStyleBackColor = true;
+            this.button_rightShift.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // button_leftShift
             // 
@@ -589,6 +613,7 @@
             this.button_leftShift.TabIndex = 5;
             this.button_leftShift.Text = "<<";
             this.button_leftShift.UseVisualStyleBackColor = true;
+            this.button_leftShift.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // button_writeA
             // 
@@ -600,6 +625,7 @@
             this.button_writeA.Tag = "HEX";
             this.button_writeA.Text = "A";
             this.button_writeA.UseVisualStyleBackColor = true;
+            this.button_writeA.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
             // tabPageBIN
             // 
@@ -1821,17 +1847,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "비트 연산";
             // 
-            // button_NOR
-            // 
-            this.button_NOR.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_NOR.Location = new System.Drawing.Point(58, 78);
-            this.button_NOR.Margin = new System.Windows.Forms.Padding(2);
-            this.button_NOR.Name = "button_NOR";
-            this.button_NOR.Size = new System.Drawing.Size(50, 25);
-            this.button_NOR.TabIndex = 5;
-            this.button_NOR.Text = "NOR";
-            this.button_NOR.UseVisualStyleBackColor = true;
-            // 
             // button_OR
             // 
             this.button_OR.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1842,6 +1857,19 @@
             this.button_OR.TabIndex = 4;
             this.button_OR.Text = "OR";
             this.button_OR.UseVisualStyleBackColor = true;
+            this.button_OR.Click += new System.EventHandler(this.OperationButton_Clicked);
+            // 
+            // button_NOR
+            // 
+            this.button_NOR.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_NOR.Location = new System.Drawing.Point(58, 78);
+            this.button_NOR.Margin = new System.Windows.Forms.Padding(2);
+            this.button_NOR.Name = "button_NOR";
+            this.button_NOR.Size = new System.Drawing.Size(50, 25);
+            this.button_NOR.TabIndex = 5;
+            this.button_NOR.Text = "NOR";
+            this.button_NOR.UseVisualStyleBackColor = true;
+            this.button_NOR.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // button_NOT
             // 
@@ -1864,6 +1892,7 @@
             this.button_NAND.TabIndex = 2;
             this.button_NAND.Text = "NAND";
             this.button_NAND.UseVisualStyleBackColor = true;
+            this.button_NAND.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // button_XOR
             // 
@@ -1875,6 +1904,7 @@
             this.button_XOR.TabIndex = 1;
             this.button_XOR.Text = "XOR";
             this.button_XOR.UseVisualStyleBackColor = true;
+            this.button_XOR.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // button_AND
             // 
@@ -1886,6 +1916,7 @@
             this.button_AND.TabIndex = 0;
             this.button_AND.Text = "AND";
             this.button_AND.UseVisualStyleBackColor = true;
+            this.button_AND.Click += new System.EventHandler(this.OperationButton_Clicked);
             // 
             // groupBox3
             // 
@@ -2032,33 +2063,33 @@
         private System.Windows.Forms.TabControl KeypadTabControl;
         private System.Windows.Forms.TabPage tabPageAll;
         private System.Windows.Forms.TabPage tabPageBIN;
-        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button_equal;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button_writeZero;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button_writeF;
-        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button button_plus;
         private System.Windows.Forms.Button button_writeThree;
         private System.Windows.Forms.Button button_writeTwo;
         private System.Windows.Forms.Button button_writeOne;
         private System.Windows.Forms.Button button_writeE;
-        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button_minus;
         private System.Windows.Forms.Button button_writeSix;
         private System.Windows.Forms.Button button_writeFive;
         private System.Windows.Forms.Button button_writeFour;
         private System.Windows.Forms.Button button_writeD;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button_mul;
         private System.Windows.Forms.Button button_writeNine;
         private System.Windows.Forms.Button button_writeEight;
         private System.Windows.Forms.Button button_writeSeven;
         private System.Windows.Forms.Button button_writeC;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button_div;
+        private System.Windows.Forms.Button button_remainder;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button_writeB;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button_BS;
+        private System.Windows.Forms.Button button_Clear;
         private System.Windows.Forms.Button button_rightShift;
         private System.Windows.Forms.Button button_leftShift;
         private System.Windows.Forms.Button button_writeA;

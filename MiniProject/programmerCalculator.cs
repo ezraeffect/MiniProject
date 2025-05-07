@@ -13,17 +13,14 @@ using System.Windows.Forms;
 
 namespace MiniProject
 {
-    /*  TODO
-     *  1. 실시간 진법 변환
-     *  2. 비트시프트
-     *  3. 비트연산 (AND, OR, NOT, NAND, NOR, XOR)
-     *  4. byte, WORD, DWORD, QWORD
-     * 
-     * 
-     * 
-     * 
-     * 
-     */
+    public enum Type : int // 자료형별 bit를 지정합니다.
+    {
+        BYTE = 8,   // 8bit (1 byte)
+        WORD = 16,  // 16bit (2 byte)
+        DWORD = 32, // 32bit (4 byte)
+        QWORD = 64  // 64bit (8 byte)
+    }
+
     public partial class programmerCalculator : Form
     {
         KeyboardInputHandler keyHandler = new KeyboardInputHandler();
@@ -134,10 +131,6 @@ namespace MiniProject
                 ChangeButtonStatus(rb.Tag?.ToString(), 1);
                 // 체크된 radioButton의 Status 저장
                 SelectedType = (Type)Enum.Parse(typeof(Type), rb.Tag?.ToString(), true);
-
-                /***** 기능 추가 *****/
-                // 비트 전환 키패드의 버튼들을 Type에 맞게 활성, 비활성
-                Console.WriteLine(SelectedType.ToString());
             }
         }
 
@@ -163,6 +156,46 @@ namespace MiniProject
 
             UpdateBitArrayForBtn();
             textBox_result.Text = BitArr2String(bitArray, SelectedBase);
+        }
+
+        private void OperationButton_Clicked(object sender, EventArgs e)
+        {
+            // 1. 부호 버튼을 누르면 textBox_result + "부호"를 textBox_view에 넣는다
+            Button btn = sender as Button;
+            if (textBox_result.Text != "0" || textBox_result.Text != "")
+            {
+                textBox_view.Text = textBox_result.Text + btn.Text;
+
+                // 2. equal 버튼 누르기 전까지 사칙연산 button, 진수변환 radioButton 비활성화
+                ChangeOperationButtonStatus(false);
+
+                // 3. textBox_result 텍스트 초기화
+                textBox_result.Clear();
+                textBox_result.Text = "0";
+            }
+        }
+
+        private void BaseButton_Clicked(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            string tag = btn.Tag?.ToString();
+            if (tag.Contains("HEX"))
+            {
+                if (textBox_result.Text == "0") textBox_result.Text = btn.Text;
+                else textBox_result.AppendText(btn.Text);
+            }
+        }
+
+        private void EqualButton_Clicked(object sender, EventArgs e)
+        {
+            CalculateBitClass calBit = new CalculateBitClass();
+            if (!string.IsNullOrEmpty(textBox_result.Text) && textBox_result.Text != "0")
+            {
+                textBox_view.AppendText(textBox_result.Text);
+                textBox_result.Text = calBit.CalculateWithOperation(textBox_view.Text, SelectedBase);
+
+                ChangeOperationButtonStatus(true);
+            }
         }
 
         // 폼에서 우클릭 눌렀을때 발생하는 이벤트 처리
@@ -198,14 +231,6 @@ namespace MiniProject
                 }
             }
         }
-
-        // String으로 입력 받은 2진수를 비트 키패드에 적용하는 Function
-        // String -> bitArray -> 버튼키패드
-        private void UpdateBitButton(string inputString, Button btn)
-        {
-
-        }
-
         // BitArray를 String으로 변환하는 Function
         private string BitArr2String(BitArray bitArray, Base @base)
         {
@@ -243,6 +268,31 @@ namespace MiniProject
                     btn.Enabled = validBases.Contains(@base);
                 }
             }
+        }
+
+        private void ChangeOperationButtonStatus(bool status)
+        {
+            radioButton_BIN.Enabled = status;
+            radioButton_OCT.Enabled = status;
+            radioButton_DEC.Enabled = status;
+            radioButton_HEX.Enabled = status;
+
+            button_plus.Enabled = status;
+            button_minus.Enabled = status;
+            button_mul.Enabled = status;
+            button_div.Enabled = status;
+
+            button_leftShift.Enabled = status;
+            button_rightShift.Enabled = status;
+
+            button_AND.Enabled = status;
+            button_OR.Enabled = status;
+            button_NOT.Enabled = status;
+            button_NAND.Enabled = status;
+            button_XOR.Enabled = status;
+            button_NOR.Enabled = status;
+
+            button_remainder.Enabled = status;
         }
 
         private void ResultTextBox_TextChanged(object sender, EventArgs e)
@@ -290,6 +340,27 @@ namespace MiniProject
                     }
                 }
             }
+        }
+
+        private void button_BS_Click(object sender, EventArgs e)
+        {
+            if (textBox_result.Text.Length > 1)
+            {
+                textBox_result.Text = textBox_result.Text.Substring(0, textBox_result.Text.Length - 1);
+            }
+            else if (textBox_result.Text.Length == 1)
+            {
+                // 1의 자리 수 일때 아예 지워지지 않도록 처리
+                textBox_result.Text = "0";
+            }
+        }
+
+        private void button_Clear_Click(object sender, EventArgs e)
+        {
+            textBox_view.Clear();
+            textBox_result.Clear();
+            textBox_result.Text = "0";
+            ChangeOperationButtonStatus(true);
         }
     }
 }

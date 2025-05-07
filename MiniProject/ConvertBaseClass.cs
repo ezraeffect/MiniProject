@@ -13,7 +13,6 @@ namespace MiniProject
         public string ConvertBase(Base from, Base to, string inputValue)
         {
             int fromValue = (int)from;
-            Console.WriteLine(inputValue);
             if (inputValue == null || inputValue == "0" || inputValue == "")
             {
                 return "0";
