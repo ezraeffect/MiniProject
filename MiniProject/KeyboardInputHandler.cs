@@ -83,23 +83,18 @@ namespace MiniProject
             switch (@base)
             {
                 case Base.BIN: // 2진수일때 입력
-                    Console.WriteLine("BIN");
                     charArray = new Keys[] { Keys.D0, Keys.D1 };
                     break;
                 case Base.OCT: // 8진수일때 입력
-                    Console.WriteLine("OCT");
                     charArray = new Keys[] { Keys.D0, Keys.D1, Keys.D2, Keys.D3, Keys.D4, Keys.D5, Keys.D6, Keys.D7 };
                     break;
                 case Base.DEC: // 10진수일때 입력
-                    Console.WriteLine("DEC");
                     charArray = new Keys[] { Keys.D0, Keys.D1, Keys.D2, Keys.D3, Keys.D4, Keys.D5, Keys.D6, Keys.D7, Keys.D8, Keys.D9 };
                     break;
                 case Base.HEX: // 16진수일때 입력
-                    Console.WriteLine("HEX");
                     charArray = new Keys[] { Keys.D0, Keys.D1, Keys.D2, Keys.D3, Keys.D4, Keys.D5, Keys.D6, Keys.D7, Keys.D8, Keys.D9, Keys.A, Keys.B, Keys.C, Keys.D, Keys.E, Keys.F };
                     break;
                 default: // 기본 값은 10진수
-                    Console.WriteLine("Default");
                     charArray = new Keys[] { Keys.D0, Keys.D1, Keys.D2, Keys.D3, Keys.D4, Keys.D5, Keys.D6, Keys.D7, Keys.D8, Keys.D9 };
                     break;
             }
