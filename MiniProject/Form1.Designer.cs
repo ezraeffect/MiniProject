@@ -56,8 +56,8 @@
             this.button_equl = new System.Windows.Forms.Button();
             this.button_writeDot = new System.Windows.Forms.Button();
             this.button_writeZero = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCopy = new System.Windows.Forms.Button();
+            this.btnPaste = new System.Windows.Forms.Button();
             this.pnlBody = new System.Windows.Forms.Panel();
             this.textBox_view = new System.Windows.Forms.TextBox();
             this.pnlTop.SuspendLayout();
@@ -77,10 +77,10 @@
             // lblTimer
             // 
             this.lblTimer.AutoSize = true;
-            this.lblTimer.Font = new System.Drawing.Font("굴림", 11F);
-            this.lblTimer.Location = new System.Drawing.Point(12, 16);
+            this.lblTimer.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.Location = new System.Drawing.Point(3, 3);
             this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(59, 22);
+            this.lblTimer.Size = new System.Drawing.Size(47, 22);
             this.lblTimer.TabIndex = 2;
             this.lblTimer.Text = "Timer";
             // 
@@ -103,7 +103,7 @@
             // button_backspace
             // 
             this.button_backspace.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_backspace.Location = new System.Drawing.Point(464, 77);
+            this.button_backspace.Location = new System.Drawing.Point(465, 87);
             this.button_backspace.Name = "button_backspace";
             this.button_backspace.Size = new System.Drawing.Size(141, 75);
             this.button_backspace.TabIndex = 8;
@@ -114,7 +114,7 @@
             // button_clear
             // 
             this.button_clear.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_clear.Location = new System.Drawing.Point(315, 77);
+            this.button_clear.Location = new System.Drawing.Point(316, 87);
             this.button_clear.Name = "button_clear";
             this.button_clear.Size = new System.Drawing.Size(145, 75);
             this.button_clear.TabIndex = 9;
@@ -125,7 +125,7 @@
             // button_clearEntry
             // 
             this.button_clearEntry.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_clearEntry.Location = new System.Drawing.Point(171, 77);
+            this.button_clearEntry.Location = new System.Drawing.Point(172, 87);
             this.button_clearEntry.Name = "button_clearEntry";
             this.button_clearEntry.Size = new System.Drawing.Size(140, 75);
             this.button_clearEntry.TabIndex = 10;
@@ -136,7 +136,7 @@
             // button_percent
             // 
             this.button_percent.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_percent.Location = new System.Drawing.Point(21, 77);
+            this.button_percent.Location = new System.Drawing.Point(22, 87);
             this.button_percent.Name = "button_percent";
             this.button_percent.Size = new System.Drawing.Size(137, 75);
             this.button_percent.TabIndex = 11;
@@ -146,7 +146,7 @@
             // button_div
             // 
             this.button_div.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_div.Location = new System.Drawing.Point(464, 158);
+            this.button_div.Location = new System.Drawing.Point(465, 168);
             this.button_div.Name = "button_div";
             this.button_div.Size = new System.Drawing.Size(141, 75);
             this.button_div.TabIndex = 12;
@@ -158,7 +158,7 @@
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button12.Location = new System.Drawing.Point(315, 158);
+            this.button12.Location = new System.Drawing.Point(316, 168);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(145, 75);
             this.button12.TabIndex = 13;
@@ -168,7 +168,7 @@
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button11.Location = new System.Drawing.Point(171, 158);
+            this.button11.Location = new System.Drawing.Point(172, 168);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(140, 75);
             this.button11.TabIndex = 14;
@@ -178,7 +178,7 @@
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button10.Location = new System.Drawing.Point(21, 158);
+            this.button10.Location = new System.Drawing.Point(22, 168);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(137, 75);
             this.button10.TabIndex = 15;
@@ -188,7 +188,7 @@
             // button_mul
             // 
             this.button_mul.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_mul.Location = new System.Drawing.Point(464, 239);
+            this.button_mul.Location = new System.Drawing.Point(465, 249);
             this.button_mul.Name = "button_mul";
             this.button_mul.Size = new System.Drawing.Size(141, 75);
             this.button_mul.TabIndex = 16;
@@ -200,7 +200,7 @@
             // button_writeNine
             // 
             this.button_writeNine.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeNine.Location = new System.Drawing.Point(315, 239);
+            this.button_writeNine.Location = new System.Drawing.Point(316, 249);
             this.button_writeNine.Name = "button_writeNine";
             this.button_writeNine.Size = new System.Drawing.Size(145, 75);
             this.button_writeNine.TabIndex = 17;
@@ -211,7 +211,7 @@
             // button_writeEight
             // 
             this.button_writeEight.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeEight.Location = new System.Drawing.Point(171, 239);
+            this.button_writeEight.Location = new System.Drawing.Point(172, 249);
             this.button_writeEight.Name = "button_writeEight";
             this.button_writeEight.Size = new System.Drawing.Size(140, 75);
             this.button_writeEight.TabIndex = 18;
@@ -222,7 +222,7 @@
             // button_writeSeven
             // 
             this.button_writeSeven.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeSeven.Location = new System.Drawing.Point(21, 239);
+            this.button_writeSeven.Location = new System.Drawing.Point(22, 249);
             this.button_writeSeven.Name = "button_writeSeven";
             this.button_writeSeven.Size = new System.Drawing.Size(137, 75);
             this.button_writeSeven.TabIndex = 19;
@@ -233,7 +233,7 @@
             // button_sub
             // 
             this.button_sub.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_sub.Location = new System.Drawing.Point(464, 320);
+            this.button_sub.Location = new System.Drawing.Point(465, 330);
             this.button_sub.Name = "button_sub";
             this.button_sub.Size = new System.Drawing.Size(141, 75);
             this.button_sub.TabIndex = 20;
@@ -245,7 +245,7 @@
             // button_writeSix
             // 
             this.button_writeSix.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeSix.Location = new System.Drawing.Point(315, 320);
+            this.button_writeSix.Location = new System.Drawing.Point(316, 330);
             this.button_writeSix.Name = "button_writeSix";
             this.button_writeSix.Size = new System.Drawing.Size(145, 75);
             this.button_writeSix.TabIndex = 21;
@@ -256,7 +256,7 @@
             // button_writeFive
             // 
             this.button_writeFive.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeFive.Location = new System.Drawing.Point(171, 320);
+            this.button_writeFive.Location = new System.Drawing.Point(172, 330);
             this.button_writeFive.Name = "button_writeFive";
             this.button_writeFive.Size = new System.Drawing.Size(140, 75);
             this.button_writeFive.TabIndex = 22;
@@ -267,7 +267,7 @@
             // button_writeFour
             // 
             this.button_writeFour.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeFour.Location = new System.Drawing.Point(21, 320);
+            this.button_writeFour.Location = new System.Drawing.Point(22, 330);
             this.button_writeFour.Name = "button_writeFour";
             this.button_writeFour.Size = new System.Drawing.Size(137, 75);
             this.button_writeFour.TabIndex = 23;
@@ -278,7 +278,7 @@
             // button_add
             // 
             this.button_add.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_add.Location = new System.Drawing.Point(464, 401);
+            this.button_add.Location = new System.Drawing.Point(465, 411);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(141, 75);
             this.button_add.TabIndex = 24;
@@ -290,7 +290,7 @@
             // button_writeThree
             // 
             this.button_writeThree.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeThree.Location = new System.Drawing.Point(315, 401);
+            this.button_writeThree.Location = new System.Drawing.Point(316, 411);
             this.button_writeThree.Name = "button_writeThree";
             this.button_writeThree.Size = new System.Drawing.Size(145, 75);
             this.button_writeThree.TabIndex = 25;
@@ -301,7 +301,7 @@
             // button_writeTwo
             // 
             this.button_writeTwo.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeTwo.Location = new System.Drawing.Point(171, 401);
+            this.button_writeTwo.Location = new System.Drawing.Point(172, 411);
             this.button_writeTwo.Name = "button_writeTwo";
             this.button_writeTwo.Size = new System.Drawing.Size(140, 75);
             this.button_writeTwo.TabIndex = 26;
@@ -312,7 +312,7 @@
             // button_writeOne
             // 
             this.button_writeOne.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeOne.Location = new System.Drawing.Point(21, 401);
+            this.button_writeOne.Location = new System.Drawing.Point(22, 411);
             this.button_writeOne.Name = "button_writeOne";
             this.button_writeOne.Size = new System.Drawing.Size(137, 75);
             this.button_writeOne.TabIndex = 27;
@@ -323,7 +323,7 @@
             // button_equl
             // 
             this.button_equl.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_equl.Location = new System.Drawing.Point(464, 482);
+            this.button_equl.Location = new System.Drawing.Point(465, 492);
             this.button_equl.Name = "button_equl";
             this.button_equl.Size = new System.Drawing.Size(141, 75);
             this.button_equl.TabIndex = 28;
@@ -334,7 +334,7 @@
             // button_writeDot
             // 
             this.button_writeDot.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeDot.Location = new System.Drawing.Point(315, 482);
+            this.button_writeDot.Location = new System.Drawing.Point(316, 492);
             this.button_writeDot.Name = "button_writeDot";
             this.button_writeDot.Size = new System.Drawing.Size(145, 75);
             this.button_writeDot.TabIndex = 29;
@@ -345,7 +345,7 @@
             // button_writeZero
             // 
             this.button_writeZero.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeZero.Location = new System.Drawing.Point(171, 482);
+            this.button_writeZero.Location = new System.Drawing.Point(172, 492);
             this.button_writeZero.Name = "button_writeZero";
             this.button_writeZero.Size = new System.Drawing.Size(140, 75);
             this.button_writeZero.TabIndex = 30;
@@ -353,28 +353,32 @@
             this.button_writeZero.UseVisualStyleBackColor = true;
             this.button_writeZero.Click += new System.EventHandler(this.NumberKeyPress_0to9_Event);
             // 
-            // button1
+            // btnCopy
             // 
-            this.button1.Location = new System.Drawing.Point(86, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 36);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCopy.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnCopy.Location = new System.Drawing.Point(316, 35);
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.Size = new System.Drawing.Size(145, 36);
+            this.btnCopy.TabIndex = 31;
+            this.btnCopy.Text = "복사";
+            this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnClick);
             // 
-            // button2
+            // btnPaste
             // 
-            this.button2.Location = new System.Drawing.Point(357, 35);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 36);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPaste.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPaste.Location = new System.Drawing.Point(465, 35);
+            this.btnPaste.Name = "btnPaste";
+            this.btnPaste.Size = new System.Drawing.Size(141, 36);
+            this.btnPaste.TabIndex = 32;
+            this.btnPaste.Text = "붙여넣기";
+            this.btnPaste.UseVisualStyleBackColor = true;
+            this.btnPaste.Click += new System.EventHandler(this.btnClick);
             // 
             // pnlBody
             // 
-            this.pnlBody.Controls.Add(this.button2);
-            this.pnlBody.Controls.Add(this.button1);
+            this.pnlBody.Controls.Add(this.btnPaste);
+            this.pnlBody.Controls.Add(this.btnCopy);
             this.pnlBody.Controls.Add(this.lblTimer);
             this.pnlBody.Controls.Add(this.button_writeZero);
             this.pnlBody.Controls.Add(this.button_writeDot);
@@ -466,8 +470,8 @@
         private System.Windows.Forms.Button button_equl;
         private System.Windows.Forms.Button button_writeDot;
         private System.Windows.Forms.Button button_writeZero;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCopy;
+        private System.Windows.Forms.Button btnPaste;
         private System.Windows.Forms.Panel pnlBody;
     }
 }
