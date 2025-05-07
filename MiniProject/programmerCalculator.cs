@@ -215,6 +215,18 @@ namespace MiniProject
             }
         }
 
+        private void NOTButton_Clicked(object sender, EventArgs e)
+        {
+            CalculateBitClass calBit = new CalculateBitClass();
+
+            textBox_view.Clear();
+            textBox_view.AppendText($"NOT({textBox_result.Text})");
+
+            string result = calBit.CalculateNotGateOoperation(textBox_result.Text, SelectedBase);
+            textBox_result.Clear();
+            textBox_result.AppendText(result);
+        }
+
         // 폼에서 우클릭 눌렀을때 발생하는 이벤트 처리
         private void OnMouseClick(object sender, MouseEventArgs e)
         {
@@ -398,7 +410,6 @@ namespace MiniProject
 
             if (sender is ToolStripMenuItem item)
             {
-                Console.WriteLine(item.Name);
                 switch (item.Name)
                 {
                     case "lightStyleItem":

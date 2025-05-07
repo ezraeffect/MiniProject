@@ -1984,6 +1984,7 @@
             this.button_NOT.TabIndex = 3;
             this.button_NOT.Text = "NOT";
             this.button_NOT.UseVisualStyleBackColor = true;
+            this.button_NOT.Click += new System.EventHandler(this.NOTButton_Clicked);
             // 
             // button_NAND
             // 
@@ -2109,13 +2110,13 @@
             this.jhStyleItem,
             this.switchFormItem});
             this.styleMenuStrip.Name = "styleMenuStrip";
-            this.styleMenuStrip.Size = new System.Drawing.Size(181, 136);
+            this.styleMenuStrip.Size = new System.Drawing.Size(150, 114);
             // 
             // lightStyleItem
             // 
             this.lightStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lightStyleItem.Name = "lightStyleItem";
-            this.lightStyleItem.Size = new System.Drawing.Size(180, 22);
+            this.lightStyleItem.Size = new System.Drawing.Size(149, 22);
             this.lightStyleItem.Text = "라이트 모드";
             this.lightStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
@@ -2123,7 +2124,7 @@
             // 
             this.darkStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.darkStyleItem.Name = "darkStyleItem";
-            this.darkStyleItem.Size = new System.Drawing.Size(180, 22);
+            this.darkStyleItem.Size = new System.Drawing.Size(149, 22);
             this.darkStyleItem.Text = "야간 모드";
             this.darkStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
@@ -2131,21 +2132,21 @@
             // 
             this.pantonStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pantonStyleItem.Name = "pantonStyleItem";
-            this.pantonStyleItem.Size = new System.Drawing.Size(180, 22);
+            this.pantonStyleItem.Size = new System.Drawing.Size(149, 22);
             this.pantonStyleItem.Text = "팬톤 모드";
             this.pantonStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
             // jhStyleItem
             // 
             this.jhStyleItem.Name = "jhStyleItem";
-            this.jhStyleItem.Size = new System.Drawing.Size(180, 22);
+            this.jhStyleItem.Size = new System.Drawing.Size(149, 22);
             this.jhStyleItem.Text = "오마카세 모드";
             this.jhStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
             // switchFormItem
             // 
             this.switchFormItem.Name = "switchFormItem";
-            this.switchFormItem.Size = new System.Drawing.Size(180, 22);
+            this.switchFormItem.Size = new System.Drawing.Size(149, 22);
             this.switchFormItem.Text = "일반 계산기";
             this.switchFormItem.Click += new System.EventHandler(this.SwitchFormEvent);
             // 

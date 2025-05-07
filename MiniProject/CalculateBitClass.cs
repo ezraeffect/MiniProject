@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MiniProject
 {
@@ -12,9 +13,6 @@ namespace MiniProject
         {
             ConvertBaseClass cb = new ConvertBaseClass();
             string[] tokenizeString = TokenizeExpression(str);
-            Console.WriteLine(tokenizeString[0]);
-            Console.WriteLine(tokenizeString[1]);
-            Console.WriteLine(tokenizeString[2]);
 
             string operaterString = tokenizeString[1];
 
@@ -61,8 +59,15 @@ namespace MiniProject
                     calResult = ~(leftOperand | rightOperand);
                     break;
             }
-            Console.WriteLine($"Result {leftOperand} {operaterString} {rightOperand} = {calResult}");
+            //Console.WriteLine($"Result {leftOperand} {operaterString} {rightOperand} = {calResult}");
             return cb.ConvertBase(Base.DEC, @base, calResult.ToString());
+        }
+
+        public string CalculateNotGateOoperation(string str, Base @base)
+        {
+            ConvertBaseClass cb = new ConvertBaseClass();
+            long result = ~long.Parse(cb.ConvertBase(@base, Base.DEC, str));
+            return result.ToString();
         }
 
         private string[] TokenizeExpression(string str)
