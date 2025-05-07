@@ -39,7 +39,7 @@
             this.button_equal = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button_writeZero = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.button_toggleSign = new System.Windows.Forms.Button();
             this.button_writeF = new System.Windows.Forms.Button();
             this.button_plus = new System.Windows.Forms.Button();
             this.button_writeThree = new System.Windows.Forms.Button();
@@ -252,7 +252,7 @@
             this.tabPageAll.Controls.Add(this.button_equal);
             this.tabPageAll.Controls.Add(this.button24);
             this.tabPageAll.Controls.Add(this.button_writeZero);
-            this.tabPageAll.Controls.Add(this.button12);
+            this.tabPageAll.Controls.Add(this.button_toggleSign);
             this.tabPageAll.Controls.Add(this.button_writeF);
             this.tabPageAll.Controls.Add(this.button_plus);
             this.tabPageAll.Controls.Add(this.button_writeThree);
@@ -325,16 +325,17 @@
             this.button_writeZero.UseVisualStyleBackColor = true;
             this.button_writeZero.Click += new System.EventHandler(this.BaseButton_Clicked);
             // 
-            // button12
+            // button_toggleSign
             // 
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(87, 211);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 35);
-            this.button12.TabIndex = 10;
-            this.button12.Text = "+/-";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button_toggleSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_toggleSign.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_toggleSign.Location = new System.Drawing.Point(87, 211);
+            this.button_toggleSign.Name = "button_toggleSign";
+            this.button_toggleSign.Size = new System.Drawing.Size(75, 35);
+            this.button_toggleSign.TabIndex = 10;
+            this.button_toggleSign.Text = "+/-";
+            this.button_toggleSign.UseVisualStyleBackColor = true;
+            this.button_toggleSign.Click += new System.EventHandler(this.button_toggleSign_Click);
             // 
             // button_writeF
             // 
@@ -2196,7 +2197,7 @@
         private System.Windows.Forms.Button button_equal;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button_writeZero;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button_toggleSign;
         private System.Windows.Forms.Button button_writeF;
         private System.Windows.Forms.Button button_plus;
         private System.Windows.Forms.Button button_writeThree;

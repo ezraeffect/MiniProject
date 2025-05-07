@@ -63,7 +63,7 @@ namespace MiniProject
                 if (number == -1) number = Array.IndexOf(numPadKeys, e.KeyCode); // 상단 숫자키 배열에서 Index를 찾지 못한다면, 넘패드 배열에서 Index를 가져온다  
                 return number.ToString();
             }
-            else return string.Empty;
+            else return null;
         }
 
         // GetHexString(KeyEventArgs e);  
@@ -127,7 +127,7 @@ namespace MiniProject
                 return returnStrArray[charIndex]; 
             }
 
-            else return string.Empty;
+            else return null;
         }
     }
 }

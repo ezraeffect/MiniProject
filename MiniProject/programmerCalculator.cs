@@ -91,6 +91,9 @@ namespace MiniProject
                     }
                     break;
 
+                case null:
+                    break;
+
                 default:
                     if (textBox_result.Text == "0") textBox_result.Text = keyString;
                     else textBox_result.AppendText(keyString);
@@ -400,6 +403,23 @@ namespace MiniProject
             textBox_result.Text = "0";
             ChangeOperationButtonStatus(true);
         }
+
+        private void button_toggleSign_Click(object sender, EventArgs e)
+        {
+            // 만약 textbox_result의 0번째 인덱스가 -라면
+            if (textBox_result.Text[0] == '-')
+            {
+                // 제거한다
+                textBox_result.Text =  textBox_result.Text.Remove(0, 1);
+            }
+            // 만약 textbox_result의 0번째 인덱스가 숫자라면
+            else if (char.IsDigit(textBox_result.Text[0]))
+            {
+                // 0번 인덱스에 -를 삽입한다
+                textBox_result.Text = textBox_result.Text.Insert(0, "-");
+            }
+       }
+
 
         private void ChangeStyleItem_Click(object sender, EventArgs e)
         {
