@@ -8,17 +8,27 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static MiniProject.KeyboardInputHandler;
 
 namespace MiniProject
 {
+    /*  TODO
+     *  1. 실시간 진법 변환
+     *  2. 비트시프트
+     *  3. 비트연산 (AND, OR, NOT, NAND, NOR, XOR)
+     *  4. byte, WORD, DWORD, QWORD
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
     public partial class programmerCalculator : Form
     {
         KeyboardInputHandler keyHandler = new KeyboardInputHandler();
-
         DataTable data = new DataTable();
 
-        public static KeyboardInputHandler.Base SelectedBase = KeyboardInputHandler.Base.DEC;
+        public static Base SelectedBase = Base.DEC;
+        public static Base CurrentBase;
 
         public programmerCalculator()
         {
@@ -35,6 +45,11 @@ namespace MiniProject
             radioButton_DEC.CheckedChanged += new EventHandler(BaseRadioButton_CheckedChanged);
             radioButton_OCT.CheckedChanged += new EventHandler(BaseRadioButton_CheckedChanged);
             radioButton_BIN.CheckedChanged += new EventHandler(BaseRadioButton_CheckedChanged);
+
+            textBox_result.TextChanged += new EventHandler(ResultTextBox_TextChanged);
+
+            // 버튼 초기 설정
+            ChangeButtonStatus("DEC");
         }
 
         private void programmerCalculator_KeyDown(object sender, KeyEventArgs e)
@@ -59,14 +74,21 @@ namespace MiniProject
                     break;
 
                 case "BS":
-                    if (textBox_result.Text.Length > 0)
+                    
+                    if (textBox_result.Text.Length > 1)
                     {
                         textBox_result.Text = textBox_result.Text.Substring(0, textBox_result.Text.Length - 1);
+                    }
+                    else if (textBox_result.Text.Length == 1)
+                    {
+                        // 1의 자리 수 일때 아예 지워지지 않도록 처리
+                        textBox_result.Text = "0";
                     }
                     break;
 
                 default:
-                    textBox_result.AppendText(keyString);
+                    if (textBox_result.Text == "0") textBox_result.Text = keyString;
+                    else textBox_result.AppendText(keyString);
                     break;
             }
         }
@@ -79,9 +101,31 @@ namespace MiniProject
             // radioButton의 모든 이벤트에 대해 가져오므로 체크 되었을때 동작 수행 하도록
             if (rb.Checked)
             {
+                // 체크 된 radioButton의 tag를 가져와 string으로 변환
                 tagString = rb.Tag?.ToString();
+                // tag에 해당하는 button을 활성화/비활성화
                 ChangeButtonStatus(rb.Tag?.ToString());
+                // 체크된 radioButton의 Status 저장
                 SelectedBase = (Base)Enum.Parse(typeof(Base), rb.Tag?.ToString(), true);
+
+                // 진법 변환
+                switch (SelectedBase)
+                {
+                    case Base.BIN:
+                        textBox_result.Text = textBox_BIN.Text; break;
+                    case Base.OCT:
+                        textBox_result.Text = textBox_OCT.Text; break;
+                    case Base.HEX:
+                        textBox_result.Text = textBox_HEX.Text; break;
+                    case Base.DEC:
+                        textBox_result.Text = textBox_DEC.Text; break;
+                }
+
+                // 만약에 체크박스가 바뀌는 이벤트가 발생하면.
+                // A : 바뀌기 이전의 가장 최근의 Base
+                // B : 이벤트 발생 이후의 Base
+                // A에서 B로 진수 변환 후 Result TextBox에 대입
+
             }
         }
 
@@ -107,5 +151,38 @@ namespace MiniProject
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConvertBaseClass cb = new ConvertBaseClass();
+
+            string[] convertedArray = cb.ConvertAllBase(SelectedBase, textBox_result.Text);
+
+            foreach (Control ctrl in groupBox1.Controls)
+            {
+                if (ctrl is TextBox txt)
+                {
+                    int tagNum = int.Parse((string)txt.Tag);
+                    txt.Text = convertedArray[tagNum];
+                }
+            }
+        }
+
+        private void ResultTextBox_TextChanged(object sender, EventArgs e)
+        {
+            ConvertBaseClass cb = new ConvertBaseClass();
+
+            string[] convertedArray = cb.ConvertAllBase(SelectedBase, textBox_result.Text);
+
+            foreach (Control ctrl in groupBox1.Controls)
+            {
+                if (ctrl is TextBox txt)
+                {
+                    int tagNum = int.Parse((string)txt.Tag);
+                    txt.Text = convertedArray[tagNum];
+                }
+            }
+        }
+
     }
 }

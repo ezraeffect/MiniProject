@@ -10,6 +10,14 @@ using System.Windows.Forms;
  */
 namespace MiniProject
 {
+    public enum Base:int // 진법을 지정합니다.
+    {
+        BIN = 2,
+        OCT = 8,
+        DEC = 10,
+        HEX = 16
+    }
+
     public class KeyboardInputHandler
     {
         // GetKeyString(KeyEventArgs e);  
@@ -63,14 +71,6 @@ namespace MiniProject
         // - KeyValue를 비교하여 알맞은 String을 반환한다.  
         // - 16진수 계산을 위한 A,B,C,D,E,F 추가  
 
-        public enum Base // 진법을 지정합니다.
-        {
-            BIN,
-            OCT,
-            DEC,
-            HEX
-        }
-
         public string GetBaseKeyString(KeyEventArgs e, Base @base)
         {
             // Using Only Debug  
@@ -83,18 +83,23 @@ namespace MiniProject
             switch (@base)
             {
                 case Base.BIN: // 2진수일때 입력
+                    Console.WriteLine("BIN");
                     charArray = new Keys[] { Keys.D0, Keys.D1 };
                     break;
                 case Base.OCT: // 8진수일때 입력
+                    Console.WriteLine("OCT");
                     charArray = new Keys[] { Keys.D0, Keys.D1, Keys.D2, Keys.D3, Keys.D4, Keys.D5, Keys.D6, Keys.D7 };
                     break;
                 case Base.DEC: // 10진수일때 입력
+                    Console.WriteLine("DEC");
                     charArray = new Keys[] { Keys.D0, Keys.D1, Keys.D2, Keys.D3, Keys.D4, Keys.D5, Keys.D6, Keys.D7, Keys.D8, Keys.D9 };
                     break;
                 case Base.HEX: // 16진수일때 입력
+                    Console.WriteLine("HEX");
                     charArray = new Keys[] { Keys.D0, Keys.D1, Keys.D2, Keys.D3, Keys.D4, Keys.D5, Keys.D6, Keys.D7, Keys.D8, Keys.D9, Keys.A, Keys.B, Keys.C, Keys.D, Keys.E, Keys.F };
                     break;
                 default: // 기본 값은 10진수
+                    Console.WriteLine("Default");
                     charArray = new Keys[] { Keys.D0, Keys.D1, Keys.D2, Keys.D3, Keys.D4, Keys.D5, Keys.D6, Keys.D7, Keys.D8, Keys.D9 };
                     break;
             }
