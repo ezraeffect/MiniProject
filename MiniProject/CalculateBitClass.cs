@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace MiniProject
 {
     internal class CalculateBitClass
     {
+        // 사칙 연산 및 Bit Shift, Logic Gate 연산 Fucntion
         public string CalculateWithOperation(string str, Base @base)
         {
             ConvertBaseClass cb = new ConvertBaseClass();
@@ -71,6 +73,7 @@ namespace MiniProject
             
         }
 
+        // NOT Gate 연산 Function
         public string CalculateNotGateOoperation(string str, Base @base)
         {
             ConvertBaseClass cb = new ConvertBaseClass();
@@ -78,6 +81,7 @@ namespace MiniProject
             return result.ToString();
         }
 
+        // 계산식을 토큰으로 분리 Function
         private string[] TokenizeExpression(string str)
         {
             StringBuilder sb = new StringBuilder();
@@ -108,6 +112,77 @@ namespace MiniProject
             string[] result = tokens.ToArray();
 
             return result;
+        }
+
+        // BitArray 값을 TabControl 내부의 버튼 Text로 적용하는 Function
+        // BitArray -> 비트 키패드
+        public void UpdateBitArrayBtn(TabControl tabCtrl, BitArray bitArr, Base @base)
+        {
+            string convertedBIN = BitArrayToString(bitArr, @base); // 2진법으로 변환 된 값의 String
+            string reversedBIN = new string(convertedBIN.Reverse().ToArray()); // String을 반대로 뒤집어 bitIndex와 stringIndex를 맞춘다
+            int len = convertedBIN.Length;
+            foreach (Control ctrl in tabCtrl.TabPages[1].Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    string btnNum = new string(btn.Name.Where(char.IsDigit).ToArray()); // string에서 정수만 취한 후 저장
+                    int bitIndex = int.Parse(btnNum); // string을 int로 parse
+
+                    if (bitIndex < len) // 배열 범위 이내라면 값 복사
+                    {
+                        btn.Text = reversedBIN[bitIndex].ToString();
+                        bitArr[bitIndex] = reversedBIN[bitIndex] == '0' ? false : true;
+
+                    }
+                    else // 배열 범위 밖이라면 무조건 0으로 처리
+                    {
+                        btn.Text = "0";
+                        bitArr[bitIndex] = false;
+                    }
+                }
+            }
+        }
+
+        // BitArray를 String으로 변환하는 Function
+        // BitArray -> String
+        public string BitArrayToString(BitArray bitArray, Base @base)
+        {
+            ConvertBaseClass cb = new ConvertBaseClass();
+            int len = bitArray.Length;
+            StringBuilder str = new StringBuilder();
+            for (int i = 0; i < len; i++)
+            {
+                str.Append(bitArray[i] ? "1" : "0");
+            }
+            string reversedStr = new string(str.ToString().Reverse().ToArray());
+
+            if (@base == Base.BIN) return reversedStr.TrimStart('0'); // 선택된 진법이 이미 2진법인 경우 변환한 값을 그냥 반환
+            else return cb.ConvertBase(Base.BIN, @base, reversedStr.TrimStart('0')); // 아니라면 해당하는 진법으로 변환하여 값 반환
+        }
+
+        // 비트 키패드의 현재 값을 bitArray에 적용하는 Function
+        // 비트 키패드 -> bitArray
+        public void KeypadValueToBitArray(TabControl tabCtrl, BitArray bitArr)
+        {
+            foreach (Control ctrl in tabCtrl.TabPages[1].Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    string btnName = btn.Name.ToString(); // 클릭된 버튼의 Name 속성을 string으로 변환
+                    string btnNum = new string(btn.Name.Where(char.IsDigit).ToArray()); // string에서 정수만 취한 후 저장
+                    int bitIndex = int.Parse(btnNum); // string을 int로 parse
+
+                    switch (btn.Text)
+                    {
+                        case "0":
+                            bitArr[bitIndex] = false;
+                            break;
+                        case "1":
+                            bitArr[bitIndex] = true;
+                            break;
+                    }
+                }
+            }
         }
     }
 }
