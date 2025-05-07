@@ -6,10 +6,13 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 namespace MiniProject
 {
@@ -375,6 +378,63 @@ namespace MiniProject
             textBox_result.Clear();
             textBox_result.Text = "0";
             ChangeOperationButtonStatus(true);
+        }
+
+        private void ChangeStyleItem_Click(object sender, EventArgs e)
+        {
+            Color cBackground = Color.Transparent;
+            Color cFont = Color.Black;
+            Color cButton = Color.Transparent;
+            Color cHighlight = Color.Gray;
+
+            if (sender is ToolStripMenuItem item)
+            {
+                Console.WriteLine(item.Name);
+                switch (item.Name)
+                {
+                    case "lightStyleItem":
+                        cBackground = System.Drawing.SystemColors.Control;
+                        cFont = Color.Black;
+                        cButton = System.Drawing.Color.Transparent;
+                        cHighlight = System.Drawing.Color.Transparent;
+                        break;
+                    case "darkStyleItem":
+                        cBackground = ColorTranslator.FromHtml("#1e1e1e");
+                        cFont = ColorTranslator.FromHtml("#cccccc");
+                        cButton = ColorTranslator.FromHtml("#373737");
+                        cHighlight = ColorTranslator.FromHtml("#320064");
+                        break;
+                    case "pantonStyleItem":
+                        cBackground = ColorTranslator.FromHtml("#E4C7B7");
+                        cFont = ColorTranslator.FromHtml("#56443F");
+                        cButton = ColorTranslator.FromHtml("#F1F0E2");
+                        cHighlight = ColorTranslator.FromHtml("#A47864");
+                        break;
+                    case "jhStyleItem":
+                        cBackground = ColorTranslator.FromHtml("#FBC1AE");
+                        cFont = ColorTranslator.FromHtml("#495F77");
+                        cButton = ColorTranslator.FromHtml("#F7E1C5");
+                        cHighlight = ColorTranslator.FromHtml("#BBCBD2");
+                        break;
+
+                }
+            }
+            ApplyColors(this, cBackground, cFont, cButton, cHighlight);
+        }
+
+        void ApplyColors(Control control, Color backColor, Color foreColor, Color btnColor, Color highlightColor)
+        {
+            control.BackColor = backColor;
+            control.ForeColor = foreColor;
+            if (control is Button)
+                if (control.Name == "button_equal")
+                    control.BackColor = highlightColor;
+                else control.BackColor = btnColor;
+            
+            foreach (Control child in control.Controls)
+            {
+                ApplyColors(child, backColor, foreColor,btnColor, highlightColor);
+            }
         }
     }
 }

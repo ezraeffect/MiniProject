@@ -169,6 +169,7 @@
             this.lightStyleItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkStyleItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pantonStyleItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jhStyleItem = new System.Windows.Forms.ToolStripMenuItem();
             this.KeypadTabControl.SuspendLayout();
             this.tabPageAll.SuspendLayout();
             this.tabPageBIN.SuspendLayout();
@@ -245,6 +246,7 @@
             // 
             // tabPageAll
             // 
+            this.tabPageAll.BackColor = System.Drawing.Color.Transparent;
             this.tabPageAll.Controls.Add(this.button_equal);
             this.tabPageAll.Controls.Add(this.button24);
             this.tabPageAll.Controls.Add(this.button_writeZero);
@@ -282,22 +284,24 @@
             this.tabPageAll.Size = new System.Drawing.Size(413, 256);
             this.tabPageAll.TabIndex = 0;
             this.tabPageAll.Text = "전체 키패드";
-            this.tabPageAll.UseVisualStyleBackColor = true;
             // 
             // button_equal
             // 
+            this.button_equal.BackColor = System.Drawing.Color.Transparent;
+            this.button_equal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_equal.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_equal.Location = new System.Drawing.Point(330, 211);
             this.button_equal.Name = "button_equal";
             this.button_equal.Size = new System.Drawing.Size(75, 35);
             this.button_equal.TabIndex = 10;
             this.button_equal.Text = "=";
-            this.button_equal.UseVisualStyleBackColor = true;
+            this.button_equal.UseVisualStyleBackColor = false;
             this.button_equal.Click += new System.EventHandler(this.EqualButton_Clicked);
             // 
             // button24
             // 
             this.button24.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button24.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button24.Location = new System.Drawing.Point(249, 211);
             this.button24.Name = "button24";
@@ -308,6 +312,7 @@
             // 
             // button_writeZero
             // 
+            this.button_writeZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeZero.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeZero.Location = new System.Drawing.Point(168, 211);
             this.button_writeZero.Name = "button_writeZero";
@@ -320,6 +325,7 @@
             // 
             // button12
             // 
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.Location = new System.Drawing.Point(87, 211);
             this.button12.Name = "button12";
@@ -330,6 +336,7 @@
             // 
             // button_writeF
             // 
+            this.button_writeF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeF.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeF.Location = new System.Drawing.Point(6, 211);
             this.button_writeF.Name = "button_writeF";
@@ -342,6 +349,7 @@
             // 
             // button_plus
             // 
+            this.button_plus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_plus.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_plus.Location = new System.Drawing.Point(330, 170);
             this.button_plus.Name = "button_plus";
@@ -353,6 +361,7 @@
             // 
             // button_writeThree
             // 
+            this.button_writeThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeThree.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeThree.Location = new System.Drawing.Point(249, 170);
             this.button_writeThree.Name = "button_writeThree";
@@ -365,6 +374,7 @@
             // 
             // button_writeTwo
             // 
+            this.button_writeTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeTwo.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeTwo.Location = new System.Drawing.Point(168, 170);
             this.button_writeTwo.Name = "button_writeTwo";
@@ -377,6 +387,7 @@
             // 
             // button_writeOne
             // 
+            this.button_writeOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeOne.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeOne.Location = new System.Drawing.Point(87, 170);
             this.button_writeOne.Name = "button_writeOne";
@@ -389,6 +400,7 @@
             // 
             // button_writeE
             // 
+            this.button_writeE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeE.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeE.Location = new System.Drawing.Point(6, 170);
             this.button_writeE.Name = "button_writeE";
@@ -401,6 +413,7 @@
             // 
             // button_minus
             // 
+            this.button_minus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_minus.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_minus.Location = new System.Drawing.Point(330, 129);
             this.button_minus.Name = "button_minus";
@@ -412,6 +425,7 @@
             // 
             // button_writeSix
             // 
+            this.button_writeSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeSix.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeSix.Location = new System.Drawing.Point(249, 129);
             this.button_writeSix.Name = "button_writeSix";
@@ -424,6 +438,7 @@
             // 
             // button_writeFive
             // 
+            this.button_writeFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeFive.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeFive.Location = new System.Drawing.Point(168, 129);
             this.button_writeFive.Name = "button_writeFive";
@@ -436,6 +451,7 @@
             // 
             // button_writeFour
             // 
+            this.button_writeFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeFour.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeFour.Location = new System.Drawing.Point(87, 129);
             this.button_writeFour.Name = "button_writeFour";
@@ -448,6 +464,7 @@
             // 
             // button_writeD
             // 
+            this.button_writeD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeD.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeD.Location = new System.Drawing.Point(6, 129);
             this.button_writeD.Name = "button_writeD";
@@ -460,6 +477,7 @@
             // 
             // button_mul
             // 
+            this.button_mul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_mul.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_mul.Location = new System.Drawing.Point(330, 88);
             this.button_mul.Name = "button_mul";
@@ -471,6 +489,7 @@
             // 
             // button_writeNine
             // 
+            this.button_writeNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeNine.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeNine.Location = new System.Drawing.Point(249, 88);
             this.button_writeNine.Name = "button_writeNine";
@@ -483,6 +502,7 @@
             // 
             // button_writeEight
             // 
+            this.button_writeEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeEight.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeEight.Location = new System.Drawing.Point(168, 88);
             this.button_writeEight.Name = "button_writeEight";
@@ -495,6 +515,7 @@
             // 
             // button_writeSeven
             // 
+            this.button_writeSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeSeven.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeSeven.Location = new System.Drawing.Point(87, 88);
             this.button_writeSeven.Name = "button_writeSeven";
@@ -507,6 +528,7 @@
             // 
             // button_writeC
             // 
+            this.button_writeC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeC.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeC.Location = new System.Drawing.Point(6, 88);
             this.button_writeC.Name = "button_writeC";
@@ -519,6 +541,7 @@
             // 
             // button_div
             // 
+            this.button_div.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_div.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_div.Location = new System.Drawing.Point(330, 47);
             this.button_div.Name = "button_div";
@@ -530,6 +553,7 @@
             // 
             // button_remainder
             // 
+            this.button_remainder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_remainder.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_remainder.Location = new System.Drawing.Point(249, 47);
             this.button_remainder.Name = "button_remainder";
@@ -541,6 +565,7 @@
             // 
             // button14
             // 
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.Location = new System.Drawing.Point(168, 47);
             this.button14.Name = "button14";
@@ -551,6 +576,7 @@
             // 
             // button8
             // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(87, 47);
             this.button8.Name = "button8";
@@ -561,6 +587,7 @@
             // 
             // button_writeB
             // 
+            this.button_writeB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeB.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeB.Location = new System.Drawing.Point(6, 47);
             this.button_writeB.Name = "button_writeB";
@@ -573,6 +600,7 @@
             // 
             // button_BS
             // 
+            this.button_BS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_BS.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_BS.Location = new System.Drawing.Point(330, 6);
             this.button_BS.Name = "button_BS";
@@ -584,6 +612,7 @@
             // 
             // button_Clear
             // 
+            this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Clear.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Clear.Location = new System.Drawing.Point(249, 6);
             this.button_Clear.Name = "button_Clear";
@@ -595,6 +624,7 @@
             // 
             // button_rightShift
             // 
+            this.button_rightShift.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_rightShift.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_rightShift.Location = new System.Drawing.Point(168, 6);
             this.button_rightShift.Name = "button_rightShift";
@@ -606,6 +636,7 @@
             // 
             // button_leftShift
             // 
+            this.button_leftShift.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_leftShift.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_leftShift.Location = new System.Drawing.Point(87, 6);
             this.button_leftShift.Name = "button_leftShift";
@@ -617,6 +648,7 @@
             // 
             // button_writeA
             // 
+            this.button_writeA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_writeA.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_writeA.Location = new System.Drawing.Point(6, 6);
             this.button_writeA.Name = "button_writeA";
@@ -709,7 +741,7 @@
             this.tabPageBIN.Controls.Add(this.button_bit50);
             this.tabPageBIN.Controls.Add(this.button_bit49);
             this.tabPageBIN.Controls.Add(this.button_bit48);
-            this.tabPageBIN.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPageBIN.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageBIN.Location = new System.Drawing.Point(4, 24);
             this.tabPageBIN.Name = "tabPageBIN";
             this.tabPageBIN.Padding = new System.Windows.Forms.Padding(3);
@@ -771,7 +803,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(81, 97);
+            this.label9.Location = new System.Drawing.Point(81, 101);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(19, 15);
@@ -783,7 +815,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(179, 97);
+            this.label10.Location = new System.Drawing.Point(179, 101);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(19, 15);
@@ -795,7 +827,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(277, 97);
+            this.label11.Location = new System.Drawing.Point(277, 101);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(19, 15);
@@ -807,7 +839,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(375, 97);
+            this.label12.Location = new System.Drawing.Point(375, 101);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(19, 15);
@@ -819,7 +851,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(81, 153);
+            this.label5.Location = new System.Drawing.Point(81, 157);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 15);
@@ -831,7 +863,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(179, 153);
+            this.label6.Location = new System.Drawing.Point(179, 157);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(19, 15);
@@ -843,7 +875,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(277, 153);
+            this.label7.Location = new System.Drawing.Point(277, 157);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(19, 15);
@@ -855,7 +887,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(375, 153);
+            this.label8.Location = new System.Drawing.Point(375, 157);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(19, 15);
@@ -913,11 +945,12 @@
             // 
             // button_bit14
             // 
-            this.button_bit14.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit14.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit14.Location = new System.Drawing.Point(42, 186);
             this.button_bit14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit14.Name = "button_bit14";
-            this.button_bit14.Size = new System.Drawing.Size(15, 21);
+            this.button_bit14.Size = new System.Drawing.Size(15, 25);
             this.button_bit14.TabIndex = 79;
             this.button_bit14.Tag = "WORD,DWORD,QWORD";
             this.button_bit14.Text = "0";
@@ -926,11 +959,12 @@
             // 
             // button_bit13
             // 
-            this.button_bit13.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit13.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit13.Location = new System.Drawing.Point(62, 186);
             this.button_bit13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit13.Name = "button_bit13";
-            this.button_bit13.Size = new System.Drawing.Size(15, 21);
+            this.button_bit13.Size = new System.Drawing.Size(15, 25);
             this.button_bit13.TabIndex = 78;
             this.button_bit13.Tag = "WORD,DWORD,QWORD";
             this.button_bit13.Text = "0";
@@ -939,11 +973,12 @@
             // 
             // button_bit12
             // 
-            this.button_bit12.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit12.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit12.Location = new System.Drawing.Point(81, 186);
             this.button_bit12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit12.Name = "button_bit12";
-            this.button_bit12.Size = new System.Drawing.Size(15, 21);
+            this.button_bit12.Size = new System.Drawing.Size(15, 25);
             this.button_bit12.TabIndex = 77;
             this.button_bit12.Tag = "WORD,DWORD,QWORD";
             this.button_bit12.Text = "0";
@@ -952,11 +987,12 @@
             // 
             // button_bit15
             // 
-            this.button_bit15.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit15.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit15.Location = new System.Drawing.Point(22, 186);
             this.button_bit15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit15.Name = "button_bit15";
-            this.button_bit15.Size = new System.Drawing.Size(15, 21);
+            this.button_bit15.Size = new System.Drawing.Size(15, 25);
             this.button_bit15.TabIndex = 76;
             this.button_bit15.Tag = "WORD,DWORD,QWORD";
             this.button_bit15.Text = "0";
@@ -965,11 +1001,12 @@
             // 
             // button_bit11
             // 
-            this.button_bit11.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit11.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit11.Location = new System.Drawing.Point(120, 186);
             this.button_bit11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit11.Name = "button_bit11";
-            this.button_bit11.Size = new System.Drawing.Size(15, 21);
+            this.button_bit11.Size = new System.Drawing.Size(15, 25);
             this.button_bit11.TabIndex = 75;
             this.button_bit11.Tag = "WORD,DWORD,QWORD";
             this.button_bit11.Text = "0";
@@ -978,11 +1015,12 @@
             // 
             // button_bit10
             // 
-            this.button_bit10.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit10.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit10.Location = new System.Drawing.Point(140, 186);
             this.button_bit10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit10.Name = "button_bit10";
-            this.button_bit10.Size = new System.Drawing.Size(15, 21);
+            this.button_bit10.Size = new System.Drawing.Size(15, 25);
             this.button_bit10.TabIndex = 74;
             this.button_bit10.Tag = "WORD,DWORD,QWORD";
             this.button_bit10.Text = "0";
@@ -991,11 +1029,12 @@
             // 
             // button_bit9
             // 
-            this.button_bit9.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit9.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit9.Location = new System.Drawing.Point(160, 186);
             this.button_bit9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit9.Name = "button_bit9";
-            this.button_bit9.Size = new System.Drawing.Size(15, 21);
+            this.button_bit9.Size = new System.Drawing.Size(15, 25);
             this.button_bit9.TabIndex = 73;
             this.button_bit9.Tag = "WORD,DWORD,QWORD";
             this.button_bit9.Text = "0";
@@ -1004,11 +1043,12 @@
             // 
             // button_bit8
             // 
-            this.button_bit8.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit8.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit8.Location = new System.Drawing.Point(179, 186);
             this.button_bit8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit8.Name = "button_bit8";
-            this.button_bit8.Size = new System.Drawing.Size(15, 21);
+            this.button_bit8.Size = new System.Drawing.Size(15, 25);
             this.button_bit8.TabIndex = 72;
             this.button_bit8.Tag = "WORD,DWORD,QWORD";
             this.button_bit8.Text = "0";
@@ -1017,11 +1057,12 @@
             // 
             // button_bit7
             // 
-            this.button_bit7.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit7.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit7.Location = new System.Drawing.Point(218, 186);
             this.button_bit7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit7.Name = "button_bit7";
-            this.button_bit7.Size = new System.Drawing.Size(15, 21);
+            this.button_bit7.Size = new System.Drawing.Size(15, 25);
             this.button_bit7.TabIndex = 71;
             this.button_bit7.Tag = "BYTE,WORD,DWORD,QWORD";
             this.button_bit7.Text = "0";
@@ -1030,11 +1071,12 @@
             // 
             // button_bit6
             // 
-            this.button_bit6.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit6.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit6.Location = new System.Drawing.Point(238, 186);
             this.button_bit6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit6.Name = "button_bit6";
-            this.button_bit6.Size = new System.Drawing.Size(15, 21);
+            this.button_bit6.Size = new System.Drawing.Size(15, 25);
             this.button_bit6.TabIndex = 70;
             this.button_bit6.Tag = "BYTE,WORD,DWORD,QWORD";
             this.button_bit6.Text = "0";
@@ -1043,11 +1085,12 @@
             // 
             // button_bit5
             // 
-            this.button_bit5.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit5.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit5.Location = new System.Drawing.Point(258, 186);
             this.button_bit5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit5.Name = "button_bit5";
-            this.button_bit5.Size = new System.Drawing.Size(15, 21);
+            this.button_bit5.Size = new System.Drawing.Size(15, 25);
             this.button_bit5.TabIndex = 69;
             this.button_bit5.Tag = "BYTE,WORD,DWORD,QWORD";
             this.button_bit5.Text = "0";
@@ -1056,11 +1099,12 @@
             // 
             // button_bit4
             // 
-            this.button_bit4.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit4.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit4.Location = new System.Drawing.Point(277, 186);
             this.button_bit4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit4.Name = "button_bit4";
-            this.button_bit4.Size = new System.Drawing.Size(15, 21);
+            this.button_bit4.Size = new System.Drawing.Size(15, 25);
             this.button_bit4.TabIndex = 68;
             this.button_bit4.Tag = "BYTE,WORD,DWORD,QWORD";
             this.button_bit4.Text = "0";
@@ -1069,11 +1113,12 @@
             // 
             // button_bit3
             // 
-            this.button_bit3.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit3.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit3.Location = new System.Drawing.Point(316, 186);
             this.button_bit3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit3.Name = "button_bit3";
-            this.button_bit3.Size = new System.Drawing.Size(15, 21);
+            this.button_bit3.Size = new System.Drawing.Size(15, 25);
             this.button_bit3.TabIndex = 67;
             this.button_bit3.Tag = "BYTE,WORD,DWORD,QWORD";
             this.button_bit3.Text = "0";
@@ -1082,11 +1127,12 @@
             // 
             // button_bit2
             // 
-            this.button_bit2.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit2.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit2.Location = new System.Drawing.Point(336, 186);
             this.button_bit2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit2.Name = "button_bit2";
-            this.button_bit2.Size = new System.Drawing.Size(15, 21);
+            this.button_bit2.Size = new System.Drawing.Size(15, 25);
             this.button_bit2.TabIndex = 66;
             this.button_bit2.Tag = "BYTE,WORD,DWORD,QWORD";
             this.button_bit2.Text = "0";
@@ -1095,11 +1141,12 @@
             // 
             // button_bit1
             // 
-            this.button_bit1.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit1.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit1.Location = new System.Drawing.Point(356, 186);
             this.button_bit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit1.Name = "button_bit1";
-            this.button_bit1.Size = new System.Drawing.Size(15, 21);
+            this.button_bit1.Size = new System.Drawing.Size(15, 25);
             this.button_bit1.TabIndex = 65;
             this.button_bit1.Tag = "BYTE,WORD,DWORD,QWORD";
             this.button_bit1.Text = "0";
@@ -1108,11 +1155,12 @@
             // 
             // button_bit0
             // 
-            this.button_bit0.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit0.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit0.Location = new System.Drawing.Point(375, 186);
             this.button_bit0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit0.Name = "button_bit0";
-            this.button_bit0.Size = new System.Drawing.Size(15, 21);
+            this.button_bit0.Size = new System.Drawing.Size(15, 25);
             this.button_bit0.TabIndex = 64;
             this.button_bit0.Tag = "BYTE,WORD,DWORD,QWORD";
             this.button_bit0.Text = "0";
@@ -1121,11 +1169,12 @@
             // 
             // button_bit30
             // 
-            this.button_bit30.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit30.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit30.Location = new System.Drawing.Point(42, 129);
             this.button_bit30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit30.Name = "button_bit30";
-            this.button_bit30.Size = new System.Drawing.Size(15, 21);
+            this.button_bit30.Size = new System.Drawing.Size(15, 25);
             this.button_bit30.TabIndex = 63;
             this.button_bit30.Tag = "DWORD,QWORD";
             this.button_bit30.Text = "0";
@@ -1134,11 +1183,12 @@
             // 
             // button_bit29
             // 
-            this.button_bit29.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit29.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit29.Location = new System.Drawing.Point(62, 129);
             this.button_bit29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit29.Name = "button_bit29";
-            this.button_bit29.Size = new System.Drawing.Size(15, 21);
+            this.button_bit29.Size = new System.Drawing.Size(15, 25);
             this.button_bit29.TabIndex = 62;
             this.button_bit29.Tag = "DWORD,QWORD";
             this.button_bit29.Text = "0";
@@ -1147,11 +1197,12 @@
             // 
             // button_bit28
             // 
-            this.button_bit28.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit28.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit28.Location = new System.Drawing.Point(81, 129);
             this.button_bit28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit28.Name = "button_bit28";
-            this.button_bit28.Size = new System.Drawing.Size(15, 21);
+            this.button_bit28.Size = new System.Drawing.Size(15, 25);
             this.button_bit28.TabIndex = 61;
             this.button_bit28.Tag = "DWORD,QWORD";
             this.button_bit28.Text = "0";
@@ -1160,11 +1211,12 @@
             // 
             // button_bit31
             // 
-            this.button_bit31.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit31.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit31.Location = new System.Drawing.Point(22, 129);
             this.button_bit31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit31.Name = "button_bit31";
-            this.button_bit31.Size = new System.Drawing.Size(15, 21);
+            this.button_bit31.Size = new System.Drawing.Size(15, 25);
             this.button_bit31.TabIndex = 60;
             this.button_bit31.Tag = "DWORD,QWORD";
             this.button_bit31.Text = "0";
@@ -1173,11 +1225,12 @@
             // 
             // button_bit27
             // 
-            this.button_bit27.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit27.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit27.Location = new System.Drawing.Point(120, 129);
             this.button_bit27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit27.Name = "button_bit27";
-            this.button_bit27.Size = new System.Drawing.Size(15, 21);
+            this.button_bit27.Size = new System.Drawing.Size(15, 25);
             this.button_bit27.TabIndex = 59;
             this.button_bit27.Tag = "DWORD,QWORD";
             this.button_bit27.Text = "0";
@@ -1186,11 +1239,12 @@
             // 
             // button_bit26
             // 
-            this.button_bit26.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit26.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit26.Location = new System.Drawing.Point(140, 129);
             this.button_bit26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit26.Name = "button_bit26";
-            this.button_bit26.Size = new System.Drawing.Size(15, 21);
+            this.button_bit26.Size = new System.Drawing.Size(15, 25);
             this.button_bit26.TabIndex = 58;
             this.button_bit26.Tag = "DWORD,QWORD";
             this.button_bit26.Text = "0";
@@ -1199,11 +1253,12 @@
             // 
             // button_bit25
             // 
-            this.button_bit25.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit25.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit25.Location = new System.Drawing.Point(160, 129);
             this.button_bit25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit25.Name = "button_bit25";
-            this.button_bit25.Size = new System.Drawing.Size(15, 21);
+            this.button_bit25.Size = new System.Drawing.Size(15, 25);
             this.button_bit25.TabIndex = 57;
             this.button_bit25.Tag = "DWORD,QWORD";
             this.button_bit25.Text = "0";
@@ -1212,11 +1267,12 @@
             // 
             // button_bit24
             // 
-            this.button_bit24.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit24.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit24.Location = new System.Drawing.Point(179, 129);
             this.button_bit24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit24.Name = "button_bit24";
-            this.button_bit24.Size = new System.Drawing.Size(15, 21);
+            this.button_bit24.Size = new System.Drawing.Size(15, 25);
             this.button_bit24.TabIndex = 56;
             this.button_bit24.Tag = "DWORD,QWORD";
             this.button_bit24.Text = "0";
@@ -1225,11 +1281,12 @@
             // 
             // button_bit23
             // 
-            this.button_bit23.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit23.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit23.Location = new System.Drawing.Point(218, 129);
             this.button_bit23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit23.Name = "button_bit23";
-            this.button_bit23.Size = new System.Drawing.Size(15, 21);
+            this.button_bit23.Size = new System.Drawing.Size(15, 25);
             this.button_bit23.TabIndex = 55;
             this.button_bit23.Tag = "DWORD,QWORD";
             this.button_bit23.Text = "0";
@@ -1238,11 +1295,12 @@
             // 
             // button_bit22
             // 
-            this.button_bit22.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit22.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit22.Location = new System.Drawing.Point(238, 129);
             this.button_bit22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit22.Name = "button_bit22";
-            this.button_bit22.Size = new System.Drawing.Size(15, 21);
+            this.button_bit22.Size = new System.Drawing.Size(15, 25);
             this.button_bit22.TabIndex = 54;
             this.button_bit22.Tag = "DWORD,QWORD";
             this.button_bit22.Text = "0";
@@ -1251,11 +1309,12 @@
             // 
             // button_bit21
             // 
-            this.button_bit21.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit21.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit21.Location = new System.Drawing.Point(258, 129);
             this.button_bit21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit21.Name = "button_bit21";
-            this.button_bit21.Size = new System.Drawing.Size(15, 21);
+            this.button_bit21.Size = new System.Drawing.Size(15, 25);
             this.button_bit21.TabIndex = 53;
             this.button_bit21.Tag = "DWORD,QWORD";
             this.button_bit21.Text = "0";
@@ -1264,11 +1323,12 @@
             // 
             // button_bit20
             // 
-            this.button_bit20.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit20.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit20.Location = new System.Drawing.Point(277, 129);
             this.button_bit20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit20.Name = "button_bit20";
-            this.button_bit20.Size = new System.Drawing.Size(15, 21);
+            this.button_bit20.Size = new System.Drawing.Size(15, 25);
             this.button_bit20.TabIndex = 52;
             this.button_bit20.Tag = "DWORD,QWORD";
             this.button_bit20.Text = "0";
@@ -1277,11 +1337,12 @@
             // 
             // button_bit19
             // 
-            this.button_bit19.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit19.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit19.Location = new System.Drawing.Point(316, 129);
             this.button_bit19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit19.Name = "button_bit19";
-            this.button_bit19.Size = new System.Drawing.Size(15, 21);
+            this.button_bit19.Size = new System.Drawing.Size(15, 25);
             this.button_bit19.TabIndex = 51;
             this.button_bit19.Tag = "DWORD,QWORD";
             this.button_bit19.Text = "0";
@@ -1290,11 +1351,12 @@
             // 
             // button_bit18
             // 
-            this.button_bit18.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit18.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit18.Location = new System.Drawing.Point(336, 129);
             this.button_bit18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit18.Name = "button_bit18";
-            this.button_bit18.Size = new System.Drawing.Size(15, 21);
+            this.button_bit18.Size = new System.Drawing.Size(15, 25);
             this.button_bit18.TabIndex = 50;
             this.button_bit18.Tag = "DWORD,QWORD";
             this.button_bit18.Text = "0";
@@ -1303,11 +1365,12 @@
             // 
             // button_bit17
             // 
-            this.button_bit17.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit17.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit17.Location = new System.Drawing.Point(356, 129);
             this.button_bit17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit17.Name = "button_bit17";
-            this.button_bit17.Size = new System.Drawing.Size(15, 21);
+            this.button_bit17.Size = new System.Drawing.Size(15, 25);
             this.button_bit17.TabIndex = 49;
             this.button_bit17.Tag = "DWORD,QWORD";
             this.button_bit17.Text = "0";
@@ -1316,11 +1379,12 @@
             // 
             // button_bit16
             // 
-            this.button_bit16.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit16.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit16.Location = new System.Drawing.Point(375, 129);
             this.button_bit16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit16.Name = "button_bit16";
-            this.button_bit16.Size = new System.Drawing.Size(15, 21);
+            this.button_bit16.Size = new System.Drawing.Size(15, 25);
             this.button_bit16.TabIndex = 48;
             this.button_bit16.Tag = "DWORD,QWORD";
             this.button_bit16.Text = "0";
@@ -1329,11 +1393,12 @@
             // 
             // button_bit46
             // 
-            this.button_bit46.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit46.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit46.Location = new System.Drawing.Point(42, 73);
             this.button_bit46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit46.Name = "button_bit46";
-            this.button_bit46.Size = new System.Drawing.Size(15, 21);
+            this.button_bit46.Size = new System.Drawing.Size(15, 25);
             this.button_bit46.TabIndex = 47;
             this.button_bit46.Tag = "QWORD";
             this.button_bit46.Text = "0";
@@ -1342,11 +1407,12 @@
             // 
             // button_bit45
             // 
-            this.button_bit45.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit45.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit45.Location = new System.Drawing.Point(62, 73);
             this.button_bit45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit45.Name = "button_bit45";
-            this.button_bit45.Size = new System.Drawing.Size(15, 21);
+            this.button_bit45.Size = new System.Drawing.Size(15, 25);
             this.button_bit45.TabIndex = 46;
             this.button_bit45.Tag = "QWORD";
             this.button_bit45.Text = "0";
@@ -1355,11 +1421,12 @@
             // 
             // button_bit44
             // 
-            this.button_bit44.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit44.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit44.Location = new System.Drawing.Point(81, 73);
             this.button_bit44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit44.Name = "button_bit44";
-            this.button_bit44.Size = new System.Drawing.Size(15, 21);
+            this.button_bit44.Size = new System.Drawing.Size(15, 25);
             this.button_bit44.TabIndex = 45;
             this.button_bit44.Tag = "QWORD";
             this.button_bit44.Text = "0";
@@ -1368,11 +1435,12 @@
             // 
             // button_bit47
             // 
-            this.button_bit47.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit47.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit47.Location = new System.Drawing.Point(22, 73);
             this.button_bit47.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit47.Name = "button_bit47";
-            this.button_bit47.Size = new System.Drawing.Size(15, 21);
+            this.button_bit47.Size = new System.Drawing.Size(15, 25);
             this.button_bit47.TabIndex = 44;
             this.button_bit47.Tag = "QWORD";
             this.button_bit47.Text = "0";
@@ -1381,11 +1449,12 @@
             // 
             // button_bit43
             // 
-            this.button_bit43.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit43.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit43.Location = new System.Drawing.Point(120, 73);
             this.button_bit43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit43.Name = "button_bit43";
-            this.button_bit43.Size = new System.Drawing.Size(15, 21);
+            this.button_bit43.Size = new System.Drawing.Size(15, 25);
             this.button_bit43.TabIndex = 43;
             this.button_bit43.Tag = "QWORD";
             this.button_bit43.Text = "0";
@@ -1394,11 +1463,12 @@
             // 
             // button_bit42
             // 
-            this.button_bit42.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit42.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit42.Location = new System.Drawing.Point(140, 73);
             this.button_bit42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit42.Name = "button_bit42";
-            this.button_bit42.Size = new System.Drawing.Size(15, 21);
+            this.button_bit42.Size = new System.Drawing.Size(15, 25);
             this.button_bit42.TabIndex = 42;
             this.button_bit42.Tag = "QWORD";
             this.button_bit42.Text = "0";
@@ -1407,11 +1477,12 @@
             // 
             // button_bit41
             // 
-            this.button_bit41.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit41.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit41.Location = new System.Drawing.Point(160, 73);
             this.button_bit41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit41.Name = "button_bit41";
-            this.button_bit41.Size = new System.Drawing.Size(15, 21);
+            this.button_bit41.Size = new System.Drawing.Size(15, 25);
             this.button_bit41.TabIndex = 41;
             this.button_bit41.Tag = "QWORD";
             this.button_bit41.Text = "0";
@@ -1420,11 +1491,12 @@
             // 
             // button_bit40
             // 
-            this.button_bit40.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit40.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit40.Location = new System.Drawing.Point(179, 73);
             this.button_bit40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit40.Name = "button_bit40";
-            this.button_bit40.Size = new System.Drawing.Size(15, 21);
+            this.button_bit40.Size = new System.Drawing.Size(15, 25);
             this.button_bit40.TabIndex = 40;
             this.button_bit40.Tag = "QWORD";
             this.button_bit40.Text = "0";
@@ -1433,11 +1505,12 @@
             // 
             // button_bit39
             // 
-            this.button_bit39.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit39.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit39.Location = new System.Drawing.Point(218, 73);
             this.button_bit39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit39.Name = "button_bit39";
-            this.button_bit39.Size = new System.Drawing.Size(15, 21);
+            this.button_bit39.Size = new System.Drawing.Size(15, 25);
             this.button_bit39.TabIndex = 39;
             this.button_bit39.Tag = "QWORD";
             this.button_bit39.Text = "0";
@@ -1446,11 +1519,12 @@
             // 
             // button_bit38
             // 
-            this.button_bit38.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit38.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit38.Location = new System.Drawing.Point(238, 73);
             this.button_bit38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit38.Name = "button_bit38";
-            this.button_bit38.Size = new System.Drawing.Size(15, 21);
+            this.button_bit38.Size = new System.Drawing.Size(15, 25);
             this.button_bit38.TabIndex = 38;
             this.button_bit38.Tag = "QWORD";
             this.button_bit38.Text = "0";
@@ -1459,11 +1533,12 @@
             // 
             // button_bit37
             // 
-            this.button_bit37.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit37.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit37.Location = new System.Drawing.Point(258, 73);
             this.button_bit37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit37.Name = "button_bit37";
-            this.button_bit37.Size = new System.Drawing.Size(15, 21);
+            this.button_bit37.Size = new System.Drawing.Size(15, 25);
             this.button_bit37.TabIndex = 37;
             this.button_bit37.Tag = "QWORD";
             this.button_bit37.Text = "0";
@@ -1472,11 +1547,12 @@
             // 
             // button_bit36
             // 
-            this.button_bit36.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit36.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit36.Location = new System.Drawing.Point(277, 73);
             this.button_bit36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit36.Name = "button_bit36";
-            this.button_bit36.Size = new System.Drawing.Size(15, 21);
+            this.button_bit36.Size = new System.Drawing.Size(15, 25);
             this.button_bit36.TabIndex = 36;
             this.button_bit36.Tag = "QWORD";
             this.button_bit36.Text = "0";
@@ -1485,11 +1561,12 @@
             // 
             // button_bit35
             // 
-            this.button_bit35.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit35.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit35.Location = new System.Drawing.Point(316, 73);
             this.button_bit35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit35.Name = "button_bit35";
-            this.button_bit35.Size = new System.Drawing.Size(15, 21);
+            this.button_bit35.Size = new System.Drawing.Size(15, 25);
             this.button_bit35.TabIndex = 35;
             this.button_bit35.Tag = "QWORD";
             this.button_bit35.Text = "0";
@@ -1498,11 +1575,12 @@
             // 
             // button_bit34
             // 
-            this.button_bit34.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit34.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit34.Location = new System.Drawing.Point(336, 73);
             this.button_bit34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit34.Name = "button_bit34";
-            this.button_bit34.Size = new System.Drawing.Size(15, 21);
+            this.button_bit34.Size = new System.Drawing.Size(15, 25);
             this.button_bit34.TabIndex = 34;
             this.button_bit34.Tag = "QWORD";
             this.button_bit34.Text = "0";
@@ -1511,11 +1589,12 @@
             // 
             // button_bit33
             // 
-            this.button_bit33.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit33.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit33.Location = new System.Drawing.Point(356, 73);
             this.button_bit33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit33.Name = "button_bit33";
-            this.button_bit33.Size = new System.Drawing.Size(15, 21);
+            this.button_bit33.Size = new System.Drawing.Size(15, 25);
             this.button_bit33.TabIndex = 33;
             this.button_bit33.Tag = "QWORD";
             this.button_bit33.Text = "0";
@@ -1524,11 +1603,12 @@
             // 
             // button_bit32
             // 
-            this.button_bit32.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit32.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit32.Location = new System.Drawing.Point(375, 73);
             this.button_bit32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 33);
             this.button_bit32.Name = "button_bit32";
-            this.button_bit32.Size = new System.Drawing.Size(15, 21);
+            this.button_bit32.Size = new System.Drawing.Size(15, 25);
             this.button_bit32.TabIndex = 32;
             this.button_bit32.Tag = "QWORD";
             this.button_bit32.Text = "0";
@@ -1537,11 +1617,12 @@
             // 
             // button_bit62
             // 
-            this.button_bit62.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit62.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit62.Location = new System.Drawing.Point(42, 16);
             this.button_bit62.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit62.Name = "button_bit62";
-            this.button_bit62.Size = new System.Drawing.Size(15, 21);
+            this.button_bit62.Size = new System.Drawing.Size(15, 25);
             this.button_bit62.TabIndex = 31;
             this.button_bit62.Tag = "QWORD";
             this.button_bit62.Text = "0";
@@ -1550,11 +1631,12 @@
             // 
             // button_bit61
             // 
-            this.button_bit61.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit61.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit61.Location = new System.Drawing.Point(62, 16);
             this.button_bit61.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit61.Name = "button_bit61";
-            this.button_bit61.Size = new System.Drawing.Size(15, 21);
+            this.button_bit61.Size = new System.Drawing.Size(15, 25);
             this.button_bit61.TabIndex = 30;
             this.button_bit61.Tag = "QWORD";
             this.button_bit61.Text = "0";
@@ -1563,24 +1645,27 @@
             // 
             // button_bit60
             // 
-            this.button_bit60.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit60.BackColor = System.Drawing.Color.Transparent;
+            this.button_bit60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit60.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit60.Location = new System.Drawing.Point(81, 16);
             this.button_bit60.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit60.Name = "button_bit60";
-            this.button_bit60.Size = new System.Drawing.Size(15, 21);
+            this.button_bit60.Size = new System.Drawing.Size(15, 25);
             this.button_bit60.TabIndex = 29;
             this.button_bit60.Tag = "QWORD";
             this.button_bit60.Text = "0";
-            this.button_bit60.UseVisualStyleBackColor = true;
+            this.button_bit60.UseVisualStyleBackColor = false;
             this.button_bit60.Click += new System.EventHandler(this.BitButton_Clicked);
             // 
             // button_bit63
             // 
-            this.button_bit63.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit63.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit63.Location = new System.Drawing.Point(22, 16);
             this.button_bit63.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit63.Name = "button_bit63";
-            this.button_bit63.Size = new System.Drawing.Size(15, 21);
+            this.button_bit63.Size = new System.Drawing.Size(15, 25);
             this.button_bit63.TabIndex = 28;
             this.button_bit63.Tag = "QWORD";
             this.button_bit63.Text = "0";
@@ -1589,11 +1674,12 @@
             // 
             // button_bit59
             // 
-            this.button_bit59.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit59.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit59.Location = new System.Drawing.Point(120, 16);
             this.button_bit59.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit59.Name = "button_bit59";
-            this.button_bit59.Size = new System.Drawing.Size(15, 21);
+            this.button_bit59.Size = new System.Drawing.Size(15, 25);
             this.button_bit59.TabIndex = 27;
             this.button_bit59.Tag = "QWORD";
             this.button_bit59.Text = "0";
@@ -1602,11 +1688,12 @@
             // 
             // button_bit58
             // 
-            this.button_bit58.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit58.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit58.Location = new System.Drawing.Point(140, 16);
             this.button_bit58.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit58.Name = "button_bit58";
-            this.button_bit58.Size = new System.Drawing.Size(15, 21);
+            this.button_bit58.Size = new System.Drawing.Size(15, 25);
             this.button_bit58.TabIndex = 26;
             this.button_bit58.Tag = "QWORD";
             this.button_bit58.Text = "0";
@@ -1615,11 +1702,12 @@
             // 
             // button_bit57
             // 
-            this.button_bit57.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit57.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit57.Location = new System.Drawing.Point(160, 16);
             this.button_bit57.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit57.Name = "button_bit57";
-            this.button_bit57.Size = new System.Drawing.Size(15, 21);
+            this.button_bit57.Size = new System.Drawing.Size(15, 25);
             this.button_bit57.TabIndex = 25;
             this.button_bit57.Tag = "QWORD";
             this.button_bit57.Text = "0";
@@ -1628,11 +1716,12 @@
             // 
             // button_bit56
             // 
-            this.button_bit56.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit56.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit56.Location = new System.Drawing.Point(179, 16);
             this.button_bit56.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit56.Name = "button_bit56";
-            this.button_bit56.Size = new System.Drawing.Size(15, 21);
+            this.button_bit56.Size = new System.Drawing.Size(15, 25);
             this.button_bit56.TabIndex = 24;
             this.button_bit56.Tag = "QWORD";
             this.button_bit56.Text = "0";
@@ -1641,11 +1730,12 @@
             // 
             // button_bit55
             // 
-            this.button_bit55.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit55.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit55.Location = new System.Drawing.Point(218, 16);
             this.button_bit55.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit55.Name = "button_bit55";
-            this.button_bit55.Size = new System.Drawing.Size(15, 21);
+            this.button_bit55.Size = new System.Drawing.Size(15, 25);
             this.button_bit55.TabIndex = 23;
             this.button_bit55.Tag = "QWORD";
             this.button_bit55.Text = "0";
@@ -1654,11 +1744,12 @@
             // 
             // button_bit54
             // 
-            this.button_bit54.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit54.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit54.Location = new System.Drawing.Point(238, 16);
             this.button_bit54.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit54.Name = "button_bit54";
-            this.button_bit54.Size = new System.Drawing.Size(15, 21);
+            this.button_bit54.Size = new System.Drawing.Size(15, 25);
             this.button_bit54.TabIndex = 22;
             this.button_bit54.Tag = "QWORD";
             this.button_bit54.Text = "0";
@@ -1667,11 +1758,12 @@
             // 
             // button_bit53
             // 
-            this.button_bit53.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit53.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit53.Location = new System.Drawing.Point(258, 16);
             this.button_bit53.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit53.Name = "button_bit53";
-            this.button_bit53.Size = new System.Drawing.Size(15, 21);
+            this.button_bit53.Size = new System.Drawing.Size(15, 25);
             this.button_bit53.TabIndex = 21;
             this.button_bit53.Tag = "QWORD";
             this.button_bit53.Text = "0";
@@ -1680,11 +1772,12 @@
             // 
             // button_bit52
             // 
-            this.button_bit52.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit52.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit52.Location = new System.Drawing.Point(277, 16);
             this.button_bit52.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit52.Name = "button_bit52";
-            this.button_bit52.Size = new System.Drawing.Size(15, 21);
+            this.button_bit52.Size = new System.Drawing.Size(15, 25);
             this.button_bit52.TabIndex = 20;
             this.button_bit52.Tag = "QWORD";
             this.button_bit52.Text = "0";
@@ -1693,11 +1786,12 @@
             // 
             // button_bit51
             // 
-            this.button_bit51.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit51.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit51.Location = new System.Drawing.Point(316, 16);
             this.button_bit51.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit51.Name = "button_bit51";
-            this.button_bit51.Size = new System.Drawing.Size(15, 21);
+            this.button_bit51.Size = new System.Drawing.Size(15, 25);
             this.button_bit51.TabIndex = 19;
             this.button_bit51.Tag = "QWORD";
             this.button_bit51.Text = "0";
@@ -1706,11 +1800,12 @@
             // 
             // button_bit50
             // 
-            this.button_bit50.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit50.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit50.Location = new System.Drawing.Point(336, 16);
             this.button_bit50.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit50.Name = "button_bit50";
-            this.button_bit50.Size = new System.Drawing.Size(15, 21);
+            this.button_bit50.Size = new System.Drawing.Size(15, 25);
             this.button_bit50.TabIndex = 18;
             this.button_bit50.Tag = "QWORD";
             this.button_bit50.Text = "0";
@@ -1719,11 +1814,12 @@
             // 
             // button_bit49
             // 
-            this.button_bit49.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit49.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit49.Location = new System.Drawing.Point(356, 16);
             this.button_bit49.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit49.Name = "button_bit49";
-            this.button_bit49.Size = new System.Drawing.Size(15, 21);
+            this.button_bit49.Size = new System.Drawing.Size(15, 25);
             this.button_bit49.TabIndex = 17;
             this.button_bit49.Tag = "QWORD";
             this.button_bit49.Text = "0";
@@ -1732,11 +1828,12 @@
             // 
             // button_bit48
             // 
-            this.button_bit48.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bit48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bit48.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bit48.Location = new System.Drawing.Point(375, 16);
             this.button_bit48.Margin = new System.Windows.Forms.Padding(2, 13, 14, 33);
             this.button_bit48.Name = "button_bit48";
-            this.button_bit48.Size = new System.Drawing.Size(15, 21);
+            this.button_bit48.Size = new System.Drawing.Size(15, 25);
             this.button_bit48.TabIndex = 16;
             this.button_bit48.Tag = "QWORD";
             this.button_bit48.Text = "0";
@@ -1831,6 +1928,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.button_OR);
             this.groupBox2.Controls.Add(this.button_NOR);
             this.groupBox2.Controls.Add(this.button_NOT);
@@ -1849,6 +1947,7 @@
             // 
             // button_OR
             // 
+            this.button_OR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_OR.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_OR.Location = new System.Drawing.Point(58, 20);
             this.button_OR.Margin = new System.Windows.Forms.Padding(2);
@@ -1861,6 +1960,7 @@
             // 
             // button_NOR
             // 
+            this.button_NOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_NOR.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_NOR.Location = new System.Drawing.Point(58, 78);
             this.button_NOR.Margin = new System.Windows.Forms.Padding(2);
@@ -1873,6 +1973,7 @@
             // 
             // button_NOT
             // 
+            this.button_NOT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_NOT.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_NOT.Location = new System.Drawing.Point(58, 49);
             this.button_NOT.Margin = new System.Windows.Forms.Padding(2);
@@ -1884,7 +1985,8 @@
             // 
             // button_NAND
             // 
-            this.button_NAND.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_NAND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_NAND.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_NAND.Location = new System.Drawing.Point(4, 49);
             this.button_NAND.Margin = new System.Windows.Forms.Padding(2);
             this.button_NAND.Name = "button_NAND";
@@ -1896,6 +1998,7 @@
             // 
             // button_XOR
             // 
+            this.button_XOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_XOR.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_XOR.Location = new System.Drawing.Point(4, 78);
             this.button_XOR.Margin = new System.Windows.Forms.Padding(2);
@@ -1908,6 +2011,7 @@
             // 
             // button_AND
             // 
+            this.button_AND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_AND.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_AND.Location = new System.Drawing.Point(4, 20);
             this.button_AND.Margin = new System.Windows.Forms.Padding(2);
@@ -1967,6 +2071,7 @@
             // radioButton_Word
             // 
             this.radioButton_Word.AutoSize = true;
+            this.radioButton_Word.BackColor = System.Drawing.Color.Transparent;
             this.radioButton_Word.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_Word.Location = new System.Drawing.Point(8, 50);
             this.radioButton_Word.Margin = new System.Windows.Forms.Padding(2);
@@ -1975,7 +2080,7 @@
             this.radioButton_Word.TabIndex = 1;
             this.radioButton_Word.Tag = "WORD";
             this.radioButton_Word.Text = "WORD";
-            this.radioButton_Word.UseVisualStyleBackColor = true;
+            this.radioButton_Word.UseVisualStyleBackColor = false;
             this.radioButton_Word.CheckedChanged += new System.EventHandler(this.TypeRadioButton_CheckedChanged);
             // 
             // radioButton_Byte
@@ -1998,35 +2103,47 @@
             this.styleMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lightStyleItem,
             this.darkStyleItem,
-            this.pantonStyleItem});
+            this.pantonStyleItem,
+            this.jhStyleItem});
             this.styleMenuStrip.Name = "styleMenuStrip";
-            this.styleMenuStrip.Size = new System.Drawing.Size(138, 70);
+            this.styleMenuStrip.Size = new System.Drawing.Size(150, 92);
             // 
             // lightStyleItem
             // 
             this.lightStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lightStyleItem.Name = "lightStyleItem";
-            this.lightStyleItem.Size = new System.Drawing.Size(137, 22);
+            this.lightStyleItem.Size = new System.Drawing.Size(149, 22);
             this.lightStyleItem.Text = "라이트 모드";
+            this.lightStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
             // darkStyleItem
             // 
             this.darkStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.darkStyleItem.Name = "darkStyleItem";
-            this.darkStyleItem.Size = new System.Drawing.Size(137, 22);
+            this.darkStyleItem.Size = new System.Drawing.Size(149, 22);
             this.darkStyleItem.Text = "야간 모드";
+            this.darkStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
             // pantonStyleItem
             // 
             this.pantonStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pantonStyleItem.Name = "pantonStyleItem";
-            this.pantonStyleItem.Size = new System.Drawing.Size(137, 22);
+            this.pantonStyleItem.Size = new System.Drawing.Size(149, 22);
             this.pantonStyleItem.Text = "팬톤 모드";
+            this.pantonStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
+            // 
+            // jhStyleItem
+            // 
+            this.jhStyleItem.Name = "jhStyleItem";
+            this.jhStyleItem.Size = new System.Drawing.Size(149, 22);
+            this.jhStyleItem.Text = "오마카세 모드";
+            this.jhStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
             // programmerCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(441, 539);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -2034,6 +2151,7 @@
             this.Controls.Add(this.textBox_view);
             this.Controls.Add(this.KeypadTabControl);
             this.Controls.Add(this.groupBox1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.KeyPreview = true;
             this.Name = "programmerCalculator";
             this.Text = "programmerCalculator";
@@ -2196,5 +2314,6 @@
         private System.Windows.Forms.ToolStripMenuItem lightStyleItem;
         private System.Windows.Forms.ToolStripMenuItem darkStyleItem;
         private System.Windows.Forms.ToolStripMenuItem pantonStyleItem;
+        private System.Windows.Forms.ToolStripMenuItem jhStyleItem;
     }
 }
