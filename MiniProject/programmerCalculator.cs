@@ -224,6 +224,15 @@ namespace MiniProject
             }
         }
 
+        // 일반 계산기 클릭 이벤트 처리
+        private void SwitchFormEvent(object sender, EventArgs e)
+        {
+            normalCalculator normal = new normalCalculator();
+            this.Hide();
+            normal.ShowDialog();
+            this.Close();
+        }
+
         // 비트 키패드의 현재 값을 bitArray에 적용하는 Function
         // 비트 키패드 -> bitArray
         private void UpdateBitArrayForBtn()

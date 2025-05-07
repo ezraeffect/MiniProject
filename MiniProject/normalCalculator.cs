@@ -174,10 +174,17 @@ namespace MiniProject
         {
             lblTimer.Text = DateTime.Now.ToString();  // lblTimer에 현재 날짜시간 표시,
         }
+
+
         #endregion
 
-        
-
+        private void SwitchFormEvent(object sender, EventArgs e)
+        {
+            programmerCalculator programmer = new programmerCalculator();
+            this.Hide();
+            programmer.ShowDialog();
+            this.Close();
+        }
     }
 
 

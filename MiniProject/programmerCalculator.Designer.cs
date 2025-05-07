@@ -171,6 +171,7 @@
             this.darkStyleItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pantonStyleItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jhStyleItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.switchFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.KeypadTabControl.SuspendLayout();
             this.tabPageAll.SuspendLayout();
             this.tabPageBIN.SuspendLayout();
@@ -2105,15 +2106,16 @@
             this.lightStyleItem,
             this.darkStyleItem,
             this.pantonStyleItem,
-            this.jhStyleItem});
+            this.jhStyleItem,
+            this.switchFormItem});
             this.styleMenuStrip.Name = "styleMenuStrip";
-            this.styleMenuStrip.Size = new System.Drawing.Size(150, 92);
+            this.styleMenuStrip.Size = new System.Drawing.Size(181, 136);
             // 
             // lightStyleItem
             // 
             this.lightStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lightStyleItem.Name = "lightStyleItem";
-            this.lightStyleItem.Size = new System.Drawing.Size(149, 22);
+            this.lightStyleItem.Size = new System.Drawing.Size(180, 22);
             this.lightStyleItem.Text = "라이트 모드";
             this.lightStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
@@ -2121,7 +2123,7 @@
             // 
             this.darkStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.darkStyleItem.Name = "darkStyleItem";
-            this.darkStyleItem.Size = new System.Drawing.Size(149, 22);
+            this.darkStyleItem.Size = new System.Drawing.Size(180, 22);
             this.darkStyleItem.Text = "야간 모드";
             this.darkStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
@@ -2129,16 +2131,23 @@
             // 
             this.pantonStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pantonStyleItem.Name = "pantonStyleItem";
-            this.pantonStyleItem.Size = new System.Drawing.Size(149, 22);
+            this.pantonStyleItem.Size = new System.Drawing.Size(180, 22);
             this.pantonStyleItem.Text = "팬톤 모드";
             this.pantonStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
             // 
             // jhStyleItem
             // 
             this.jhStyleItem.Name = "jhStyleItem";
-            this.jhStyleItem.Size = new System.Drawing.Size(149, 22);
+            this.jhStyleItem.Size = new System.Drawing.Size(180, 22);
             this.jhStyleItem.Text = "오마카세 모드";
             this.jhStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
+            // 
+            // switchFormItem
+            // 
+            this.switchFormItem.Name = "switchFormItem";
+            this.switchFormItem.Size = new System.Drawing.Size(180, 22);
+            this.switchFormItem.Text = "일반 계산기";
+            this.switchFormItem.Click += new System.EventHandler(this.SwitchFormEvent);
             // 
             // programmerCalculator
             // 
@@ -2317,5 +2326,6 @@
         private System.Windows.Forms.ToolStripMenuItem darkStyleItem;
         private System.Windows.Forms.ToolStripMenuItem pantonStyleItem;
         private System.Windows.Forms.ToolStripMenuItem jhStyleItem;
+        private System.Windows.Forms.ToolStripMenuItem switchFormItem;
     }
 }

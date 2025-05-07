@@ -59,6 +59,7 @@
             this.button_writeDot = new System.Windows.Forms.Button();
             this.button_writeZero = new System.Windows.Forms.Button();
             this.pnlBody = new System.Windows.Forms.Panel();
+            this.button_callProgrammer = new System.Windows.Forms.Button();
             this.pnlTop.SuspendLayout();
             this.pnlBody.SuspendLayout();
             this.SuspendLayout();
@@ -396,6 +397,7 @@
             // 
             // pnlBody
             // 
+            this.pnlBody.Controls.Add(this.button_callProgrammer);
             this.pnlBody.Controls.Add(this.lblTimer);
             this.pnlBody.Controls.Add(this.button_writeZero);
             this.pnlBody.Controls.Add(this.button_writeDot);
@@ -426,6 +428,17 @@
             this.pnlBody.Name = "pnlBody";
             this.pnlBody.Size = new System.Drawing.Size(435, 386);
             this.pnlBody.TabIndex = 32;
+            // 
+            // button_callProgrammer
+            // 
+            this.button_callProgrammer.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold);
+            this.button_callProgrammer.Location = new System.Drawing.Point(15, 328);
+            this.button_callProgrammer.Name = "button_callProgrammer";
+            this.button_callProgrammer.Size = new System.Drawing.Size(96, 50);
+            this.button_callProgrammer.TabIndex = 33;
+            this.button_callProgrammer.Text = "프로그래머\r\n계산기";
+            this.button_callProgrammer.UseVisualStyleBackColor = true;
+            this.button_callProgrammer.Click += new System.EventHandler(this.SwitchFormEvent);
             // 
             // normalCalculator
             // 
@@ -478,6 +491,7 @@
         private System.Windows.Forms.Button button_writeDot;
         private System.Windows.Forms.Button button_writeZero;
         private System.Windows.Forms.Panel pnlBody;
+        private System.Windows.Forms.Button button_callProgrammer;
     }
 }
 
