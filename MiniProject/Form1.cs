@@ -12,6 +12,8 @@ namespace MiniProject
 {
     public partial class Form1 : Form
     {
+        private Timer timer = new Timer();
+
         /// <summary>
         /// 계산기 키 입력을 처리하는 Class
         /// 숫자패드 0~9, 소숫점, 사책연산, 이퀄, C, CE 초기화
@@ -20,6 +22,9 @@ namespace MiniProject
         public Form1()
         {
             InitializeComponent();
+
+            this.Load += new EventHandler(Form1_Load);
+            timer1.Tick += new EventHandler(timer1_Tick);
 
             calkeypressprocess.ResetCalculation(DisplayCallBack);
 
@@ -60,10 +65,14 @@ namespace MiniProject
         {
             calkeypressprocess.BackspaceProcess(DisplayCallBack);
         }
+        private void button_percent_Click(object sender, EventArgs e)
+        {
+            //calkeypressprocess.PercentProcess(DisplayCallBack);
+        }
 
         #endregion
 
-        #region 2. 사칙연산자 키 '+', '-', '*', '/' 키 이벤트 처리 루틴
+        #region 2. 사칙연산자 키 '+', '-', '*', '/', '%'키 이벤트 처리 루틴
 
         // 사칙연산 키 "+", "-", "*", "/" 눌렸을 때 처리되는 이벤트 함수
         void button4kindOperatorPress_Event(object sender, EventArgs e)
@@ -154,6 +163,23 @@ namespace MiniProject
 
         }
 
+        #region 현재 날짜 시간 표시
+        void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Interval = 1000;
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTimer.Text = DateTime.Now.ToString();  // lblTimer에 현재 날짜시간 표시,
+        }
+        #endregion
+
+        
+
     }
+
+
 }
 

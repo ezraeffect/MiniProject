@@ -17,7 +17,9 @@ namespace MiniProject
         _plus,
         _minus,
         _multiple,
-        _divide
+        _divide,
+        _percent
+            
     }
 
     /// <summary>
@@ -81,7 +83,7 @@ namespace MiniProject
         // 숫자 입력 후 연산자를 입력한 경우 계산하는 경우
         public abstract bool Calculation(decimal leftNumberA);
 
-        // 숫자 -> 연산자 -> 숫자 입력후 이퀄(=) 누를 경우 계산하는 함수
+        // 숫자 -> 연산자 -> 숫자 입력후 이퀄(=) 누를 경우 산하는 함수
         public abstract bool Calculation(decimal leftNumberA, decimal rightNumberB);
 
         #endregion
@@ -300,6 +302,53 @@ namespace MiniProject
                 return true;
             }
             catch (Exception ex)
+            {
+                return false;
+            }
+        }
+    }
+
+    #endregion
+
+    #region 5. 퍼센트(%) 기능 Class
+    public class Percent : Calc2NumberClass
+    {
+        // 숫자 입력 후 연산자를 입력한 경우 계산하는 경우
+        public override bool Calculation()
+        {
+            try
+            {
+                // 아무일도 하지 않는다.
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        
+        public override bool Calculation(decimal leftNumberA)
+        {
+            try
+            {
+                calResult = leftNumberA / 100 ;
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public override bool Calculation(decimal leftNumberA, decimal rightNumberB)
+        {
+            try
+            {
+                calResult = (leftNumberA * rightNumberB) / 100;
+                return true;
+            }
+            catch
             {
                 return false;
             }
