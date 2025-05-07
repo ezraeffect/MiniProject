@@ -29,20 +29,20 @@ namespace MiniProject
             //textBox_result.Text = "0";
         }
 
-        #region 1. 숫자키 '0'~'9', 소숫점, 백스페이스 키 이벤트 처리 루틴
+        #region 1. 숫자키 '0'~'9', 소수점, 백스페이스 키 이벤트 처리 루틴
 
         ///<summary>
         // 숫자키 "0"~"9"가 눌렸을 때 처리되는 이벤트 함수
         void NumberKeyPress_0to9_Event(object sender, EventArgs e)
         {
             string strNumber = "";
-            strNumber = (sender as Button).Text;  // sender가 버튼으로 형변환
+            strNumber = (sender as Button).Text;  // sender가 버튼으로 "as" 형변환
 
             calkeypressprocess.AddNumber(strNumber, DisplayCallBack);
         }
 
         /// <summary>
-        /// 소숫점이 입력되었을 때 처리되는 이벤트 함수
+        /// 소수점이 입력되었을 때 처리되는 이벤트 함수
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -117,6 +117,8 @@ namespace MiniProject
 
         /// <summary>
         /// 키 입력후 계산기 화면 정보를 Display하는 CallBack 함수
+        /// 1) 계산 진행중인 바로 전 단계의 History 정보
+        /// 2) 현재 입력중인 값 또는 계산 결과값 표시
         /// </summary>
         /// <param name="calHistory"></param> 1) 계산 진행중인 바로 전 단계의 History 정보
         /// <param name="calDisplayInfo"></param> 2) 현재 입력중인 값 또는 계산 결과 값 표시
@@ -124,7 +126,32 @@ namespace MiniProject
         {
             textBox_result.Text = calDisplayInfo;
             textBox_view.Text = calHistory;
-        
+
+            #region 입력한 숫자의 길이별로 화면에 표시되는 Font의 크기를 조정한다.
+            if (textBox_result.Text.Length <= 12)
+            {
+                if (textBox_result.Font.Size != 30)
+                {
+                    textBox_result.Font = new System.Drawing.Font("Arial", 30);
+                }
+            }
+            else if (textBox_result.Text.Length >= 13 && textBox_result.Text.Length <= 16)
+            {
+                if (textBox_result.Font.Size != 25)
+                {
+                    textBox_result.Font = new System.Drawing.Font("Arial", 25);
+                }
+            }
+            else
+            {
+                if (textBox_result.Font.Size != 18)
+                {
+                    textBox_result.Font = new System.Drawing.Font("Arial", 18);
+                }
+            }
+
+            #endregion
+
         }
 
     }
