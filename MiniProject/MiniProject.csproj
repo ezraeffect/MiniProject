@@ -53,19 +53,13 @@
     <Compile Include="CalculateBitClass.cs" />
     <Compile Include="CalKeyPressProcess.cs" />
     <Compile Include="ConvertBaseClass.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KeyboardInputHandler.cs" />
     <Compile Include="normalCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="normalCalculator.Designer.cs">
       <DependentUpon>normalCalculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="KeyboardInputHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="programmerCalculator.cs">
       <SubType>Form</SubType>
@@ -74,9 +68,6 @@
       <DependentUpon>programmerCalculator.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="normalCalculator.resx">
       <DependentUpon>normalCalculator.cs</DependentUpon>
     </EmbeddedResource>
