@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button_mclear = new System.Windows.Forms.Button();
-            this.button_mRecall = new System.Windows.Forms.Button();
-            this.button_mplus = new System.Windows.Forms.Button();
-            this.button_mMinus = new System.Windows.Forms.Button();
-            this.button_m = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.pnlTop = new System.Windows.Forms.Panel();
+            this.lblTimer = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.textBox_result = new System.Windows.Forms.TextBox();
             this.button_backspace = new System.Windows.Forms.Button();
             this.button_clear = new System.Windows.Forms.Button();
             this.button_clearEntry = new System.Windows.Forms.Button();
@@ -56,69 +56,54 @@
             this.button_equl = new System.Windows.Forms.Button();
             this.button_writeDot = new System.Windows.Forms.Button();
             this.button_writeZero = new System.Windows.Forms.Button();
-            this.button_toggleSign = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.pnlBody = new System.Windows.Forms.Panel();
-            this.pnlTop = new System.Windows.Forms.Panel();
-            this.textBox_result = new System.Windows.Forms.Label();
-            this.textBox_view = new System.Windows.Forms.Label();
-            this.pnlBody.SuspendLayout();
+            this.textBox_view = new System.Windows.Forms.TextBox();
             this.pnlTop.SuspendLayout();
+            this.pnlBody.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button_mclear
+            // pnlTop
             // 
-            this.button_mclear.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_mclear.Location = new System.Drawing.Point(12, 18);
-            this.button_mclear.Name = "button_mclear";
-            this.button_mclear.Size = new System.Drawing.Size(114, 75);
-            this.button_mclear.TabIndex = 0;
-            this.button_mclear.Text = "MC";
-            this.button_mclear.UseVisualStyleBackColor = true;
+            this.pnlTop.Controls.Add(this.textBox_view);
+            this.pnlTop.Controls.Add(this.textBox_result);
+            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Name = "pnlTop";
+            this.pnlTop.Size = new System.Drawing.Size(622, 163);
+            this.pnlTop.TabIndex = 31;
             // 
-            // button_mRecall
+            // lblTimer
             // 
-            this.button_mRecall.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_mRecall.Location = new System.Drawing.Point(130, 18);
-            this.button_mRecall.Name = "button_mRecall";
-            this.button_mRecall.Size = new System.Drawing.Size(114, 75);
-            this.button_mRecall.TabIndex = 1;
-            this.button_mRecall.Text = "MR";
-            this.button_mRecall.UseVisualStyleBackColor = true;
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("굴림", 11F);
+            this.lblTimer.Location = new System.Drawing.Point(12, 16);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(59, 22);
+            this.lblTimer.TabIndex = 2;
+            this.lblTimer.Text = "Timer";
             // 
-            // button_mplus
+            // timer1
             // 
-            this.button_mplus.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_mplus.Location = new System.Drawing.Point(248, 18);
-            this.button_mplus.Name = "button_mplus";
-            this.button_mplus.Size = new System.Drawing.Size(114, 75);
-            this.button_mplus.TabIndex = 2;
-            this.button_mplus.Text = "M+";
-            this.button_mplus.UseVisualStyleBackColor = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button_mMinus
+            // textBox_result
             // 
-            this.button_mMinus.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_mMinus.Location = new System.Drawing.Point(366, 18);
-            this.button_mMinus.Name = "button_mMinus";
-            this.button_mMinus.Size = new System.Drawing.Size(114, 75);
-            this.button_mMinus.TabIndex = 3;
-            this.button_mMinus.Text = "M-";
-            this.button_mMinus.UseVisualStyleBackColor = true;
-            // 
-            // button_m
-            // 
-            this.button_m.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_m.Location = new System.Drawing.Point(484, 18);
-            this.button_m.Name = "button_m";
-            this.button_m.Size = new System.Drawing.Size(114, 75);
-            this.button_m.TabIndex = 4;
-            this.button_m.Text = "M";
-            this.button_m.UseVisualStyleBackColor = true;
+            this.textBox_result.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_result.Location = new System.Drawing.Point(3, 67);
+            this.textBox_result.Multiline = true;
+            this.textBox_result.Name = "textBox_result";
+            this.textBox_result.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox_result.Size = new System.Drawing.Size(607, 93);
+            this.textBox_result.TabIndex = 3;
+            this.textBox_result.Text = "123,456,789";
+            this.textBox_result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button_backspace
             // 
             this.button_backspace.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_backspace.Location = new System.Drawing.Point(455, 99);
+            this.button_backspace.Location = new System.Drawing.Point(464, 77);
             this.button_backspace.Name = "button_backspace";
             this.button_backspace.Size = new System.Drawing.Size(141, 75);
             this.button_backspace.TabIndex = 8;
@@ -129,7 +114,7 @@
             // button_clear
             // 
             this.button_clear.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_clear.Location = new System.Drawing.Point(306, 99);
+            this.button_clear.Location = new System.Drawing.Point(315, 77);
             this.button_clear.Name = "button_clear";
             this.button_clear.Size = new System.Drawing.Size(145, 75);
             this.button_clear.TabIndex = 9;
@@ -140,7 +125,7 @@
             // button_clearEntry
             // 
             this.button_clearEntry.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_clearEntry.Location = new System.Drawing.Point(162, 99);
+            this.button_clearEntry.Location = new System.Drawing.Point(171, 77);
             this.button_clearEntry.Name = "button_clearEntry";
             this.button_clearEntry.Size = new System.Drawing.Size(140, 75);
             this.button_clearEntry.TabIndex = 10;
@@ -151,7 +136,7 @@
             // button_percent
             // 
             this.button_percent.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_percent.Location = new System.Drawing.Point(12, 99);
+            this.button_percent.Location = new System.Drawing.Point(21, 77);
             this.button_percent.Name = "button_percent";
             this.button_percent.Size = new System.Drawing.Size(137, 75);
             this.button_percent.TabIndex = 11;
@@ -161,7 +146,7 @@
             // button_div
             // 
             this.button_div.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_div.Location = new System.Drawing.Point(455, 180);
+            this.button_div.Location = new System.Drawing.Point(464, 158);
             this.button_div.Name = "button_div";
             this.button_div.Size = new System.Drawing.Size(141, 75);
             this.button_div.TabIndex = 12;
@@ -173,7 +158,7 @@
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button12.Location = new System.Drawing.Point(306, 180);
+            this.button12.Location = new System.Drawing.Point(315, 158);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(145, 75);
             this.button12.TabIndex = 13;
@@ -183,7 +168,7 @@
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button11.Location = new System.Drawing.Point(162, 180);
+            this.button11.Location = new System.Drawing.Point(171, 158);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(140, 75);
             this.button11.TabIndex = 14;
@@ -193,7 +178,7 @@
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button10.Location = new System.Drawing.Point(12, 180);
+            this.button10.Location = new System.Drawing.Point(21, 158);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(137, 75);
             this.button10.TabIndex = 15;
@@ -203,7 +188,7 @@
             // button_mul
             // 
             this.button_mul.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_mul.Location = new System.Drawing.Point(455, 261);
+            this.button_mul.Location = new System.Drawing.Point(464, 239);
             this.button_mul.Name = "button_mul";
             this.button_mul.Size = new System.Drawing.Size(141, 75);
             this.button_mul.TabIndex = 16;
@@ -215,7 +200,7 @@
             // button_writeNine
             // 
             this.button_writeNine.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeNine.Location = new System.Drawing.Point(306, 261);
+            this.button_writeNine.Location = new System.Drawing.Point(315, 239);
             this.button_writeNine.Name = "button_writeNine";
             this.button_writeNine.Size = new System.Drawing.Size(145, 75);
             this.button_writeNine.TabIndex = 17;
@@ -226,7 +211,7 @@
             // button_writeEight
             // 
             this.button_writeEight.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeEight.Location = new System.Drawing.Point(162, 261);
+            this.button_writeEight.Location = new System.Drawing.Point(171, 239);
             this.button_writeEight.Name = "button_writeEight";
             this.button_writeEight.Size = new System.Drawing.Size(140, 75);
             this.button_writeEight.TabIndex = 18;
@@ -237,7 +222,7 @@
             // button_writeSeven
             // 
             this.button_writeSeven.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeSeven.Location = new System.Drawing.Point(12, 261);
+            this.button_writeSeven.Location = new System.Drawing.Point(21, 239);
             this.button_writeSeven.Name = "button_writeSeven";
             this.button_writeSeven.Size = new System.Drawing.Size(137, 75);
             this.button_writeSeven.TabIndex = 19;
@@ -248,7 +233,7 @@
             // button_sub
             // 
             this.button_sub.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_sub.Location = new System.Drawing.Point(455, 342);
+            this.button_sub.Location = new System.Drawing.Point(464, 320);
             this.button_sub.Name = "button_sub";
             this.button_sub.Size = new System.Drawing.Size(141, 75);
             this.button_sub.TabIndex = 20;
@@ -260,7 +245,7 @@
             // button_writeSix
             // 
             this.button_writeSix.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeSix.Location = new System.Drawing.Point(306, 342);
+            this.button_writeSix.Location = new System.Drawing.Point(315, 320);
             this.button_writeSix.Name = "button_writeSix";
             this.button_writeSix.Size = new System.Drawing.Size(145, 75);
             this.button_writeSix.TabIndex = 21;
@@ -271,7 +256,7 @@
             // button_writeFive
             // 
             this.button_writeFive.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeFive.Location = new System.Drawing.Point(162, 342);
+            this.button_writeFive.Location = new System.Drawing.Point(171, 320);
             this.button_writeFive.Name = "button_writeFive";
             this.button_writeFive.Size = new System.Drawing.Size(140, 75);
             this.button_writeFive.TabIndex = 22;
@@ -282,7 +267,7 @@
             // button_writeFour
             // 
             this.button_writeFour.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeFour.Location = new System.Drawing.Point(12, 342);
+            this.button_writeFour.Location = new System.Drawing.Point(21, 320);
             this.button_writeFour.Name = "button_writeFour";
             this.button_writeFour.Size = new System.Drawing.Size(137, 75);
             this.button_writeFour.TabIndex = 23;
@@ -293,7 +278,7 @@
             // button_add
             // 
             this.button_add.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_add.Location = new System.Drawing.Point(455, 423);
+            this.button_add.Location = new System.Drawing.Point(464, 401);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(141, 75);
             this.button_add.TabIndex = 24;
@@ -305,7 +290,7 @@
             // button_writeThree
             // 
             this.button_writeThree.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeThree.Location = new System.Drawing.Point(306, 423);
+            this.button_writeThree.Location = new System.Drawing.Point(315, 401);
             this.button_writeThree.Name = "button_writeThree";
             this.button_writeThree.Size = new System.Drawing.Size(145, 75);
             this.button_writeThree.TabIndex = 25;
@@ -316,7 +301,7 @@
             // button_writeTwo
             // 
             this.button_writeTwo.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeTwo.Location = new System.Drawing.Point(162, 423);
+            this.button_writeTwo.Location = new System.Drawing.Point(171, 401);
             this.button_writeTwo.Name = "button_writeTwo";
             this.button_writeTwo.Size = new System.Drawing.Size(140, 75);
             this.button_writeTwo.TabIndex = 26;
@@ -327,7 +312,7 @@
             // button_writeOne
             // 
             this.button_writeOne.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeOne.Location = new System.Drawing.Point(12, 423);
+            this.button_writeOne.Location = new System.Drawing.Point(21, 401);
             this.button_writeOne.Name = "button_writeOne";
             this.button_writeOne.Size = new System.Drawing.Size(137, 75);
             this.button_writeOne.TabIndex = 27;
@@ -338,7 +323,7 @@
             // button_equl
             // 
             this.button_equl.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_equl.Location = new System.Drawing.Point(455, 504);
+            this.button_equl.Location = new System.Drawing.Point(464, 482);
             this.button_equl.Name = "button_equl";
             this.button_equl.Size = new System.Drawing.Size(141, 75);
             this.button_equl.TabIndex = 28;
@@ -349,7 +334,7 @@
             // button_writeDot
             // 
             this.button_writeDot.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeDot.Location = new System.Drawing.Point(306, 504);
+            this.button_writeDot.Location = new System.Drawing.Point(315, 482);
             this.button_writeDot.Name = "button_writeDot";
             this.button_writeDot.Size = new System.Drawing.Size(145, 75);
             this.button_writeDot.TabIndex = 29;
@@ -360,7 +345,7 @@
             // button_writeZero
             // 
             this.button_writeZero.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_writeZero.Location = new System.Drawing.Point(162, 504);
+            this.button_writeZero.Location = new System.Drawing.Point(171, 482);
             this.button_writeZero.Name = "button_writeZero";
             this.button_writeZero.Size = new System.Drawing.Size(140, 75);
             this.button_writeZero.TabIndex = 30;
@@ -368,19 +353,29 @@
             this.button_writeZero.UseVisualStyleBackColor = true;
             this.button_writeZero.Click += new System.EventHandler(this.NumberKeyPress_0to9_Event);
             // 
-            // button_toggleSign
+            // button1
             // 
-            this.button_toggleSign.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_toggleSign.Location = new System.Drawing.Point(12, 504);
-            this.button_toggleSign.Name = "button_toggleSign";
-            this.button_toggleSign.Size = new System.Drawing.Size(137, 75);
-            this.button_toggleSign.TabIndex = 31;
-            this.button_toggleSign.Text = "+/-";
-            this.button_toggleSign.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(86, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 36);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(357, 35);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(189, 36);
+            this.button2.TabIndex = 32;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // pnlBody
             // 
-            this.pnlBody.Controls.Add(this.button_toggleSign);
+            this.pnlBody.Controls.Add(this.button2);
+            this.pnlBody.Controls.Add(this.button1);
+            this.pnlBody.Controls.Add(this.lblTimer);
             this.pnlBody.Controls.Add(this.button_writeZero);
             this.pnlBody.Controls.Add(this.button_writeDot);
             this.pnlBody.Controls.Add(this.button_equl);
@@ -404,71 +399,50 @@
             this.pnlBody.Controls.Add(this.button_clearEntry);
             this.pnlBody.Controls.Add(this.button_clear);
             this.pnlBody.Controls.Add(this.button_backspace);
-            this.pnlBody.Controls.Add(this.button_m);
-            this.pnlBody.Controls.Add(this.button_mMinus);
-            this.pnlBody.Controls.Add(this.button_mplus);
-            this.pnlBody.Controls.Add(this.button_mRecall);
-            this.pnlBody.Controls.Add(this.button_mclear);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Location = new System.Drawing.Point(0, 150);
+            this.pnlBody.Location = new System.Drawing.Point(0, 163);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(610, 592);
+            this.pnlBody.Size = new System.Drawing.Size(622, 579);
             this.pnlBody.TabIndex = 32;
-            // 
-            // pnlTop
-            // 
-            this.pnlTop.Controls.Add(this.textBox_result);
-            this.pnlTop.Controls.Add(this.textBox_view);
-            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(610, 150);
-            this.pnlTop.TabIndex = 31;
-            // 
-            // textBox_result
-            // 
-            this.textBox_result.Font = new System.Drawing.Font("Arial", 30F);
-            this.textBox_result.Location = new System.Drawing.Point(5, 61);
-            this.textBox_result.Name = "textBox_result";
-            this.textBox_result.Size = new System.Drawing.Size(602, 89);
-            this.textBox_result.TabIndex = 1;
-            this.textBox_result.Text = "123,456,789";
-            this.textBox_result.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox_view
             // 
-            this.textBox_view.Font = new System.Drawing.Font("굴림", 11F);
-            this.textBox_view.Location = new System.Drawing.Point(0, 0);
+            this.textBox_view.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_view.Location = new System.Drawing.Point(3, 10);
+            this.textBox_view.Multiline = true;
             this.textBox_view.Name = "textBox_view";
-            this.textBox_view.Size = new System.Drawing.Size(607, 52);
-            this.textBox_view.TabIndex = 0;
-            this.textBox_view.Text = "123,456+789=";
-            this.textBox_view.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.textBox_view.ReadOnly = true;
+            this.textBox_view.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox_view.Size = new System.Drawing.Size(607, 50);
+            this.textBox_view.TabIndex = 4;
+            this.textBox_view.Text = "123,456+789";
+            this.textBox_view.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 742);
+            this.ClientSize = new System.Drawing.Size(622, 742);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.pnlBody.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
+            this.pnlBody.ResumeLayout(false);
+            this.pnlBody.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button_mclear;
-        private System.Windows.Forms.Button button_mRecall;
-        private System.Windows.Forms.Button button_mplus;
-        private System.Windows.Forms.Button button_mMinus;
-        private System.Windows.Forms.Button button_m;
+        private System.Windows.Forms.Panel pnlTop;
+        private System.Windows.Forms.Label lblTimer;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox textBox_result;
+        private System.Windows.Forms.TextBox textBox_view;
         private System.Windows.Forms.Button button_backspace;
         private System.Windows.Forms.Button button_clear;
         private System.Windows.Forms.Button button_clearEntry;
@@ -492,11 +466,9 @@
         private System.Windows.Forms.Button button_equl;
         private System.Windows.Forms.Button button_writeDot;
         private System.Windows.Forms.Button button_writeZero;
-        private System.Windows.Forms.Button button_toggleSign;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel pnlBody;
-        private System.Windows.Forms.Panel pnlTop;
-        private System.Windows.Forms.Label textBox_result;
-        private System.Windows.Forms.Label textBox_view;
     }
 }
 
