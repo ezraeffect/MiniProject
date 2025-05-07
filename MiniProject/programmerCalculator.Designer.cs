@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(programmerCalculator));
             this.radioButton_HEX = new System.Windows.Forms.RadioButton();
             this.radioButton_DEC = new System.Windows.Forms.RadioButton();
             this.radioButton_OCT = new System.Windows.Forms.RadioButton();
@@ -2152,9 +2153,10 @@
             this.Controls.Add(this.KeypadTabControl);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "programmerCalculator";
-            this.Text = "programmerCalculator";
+            this.Text = "프로그래밍 계산기";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.programmerCalculator_KeyDown);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.OnMouseClick);
             this.KeypadTabControl.ResumeLayout(false);
