@@ -60,8 +60,14 @@
             this.button_writeZero = new System.Windows.Forms.Button();
             this.pnlBody = new System.Windows.Forms.Panel();
             this.button_callProgrammer = new System.Windows.Forms.Button();
+            this.styleMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.lightStyleItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darkStyleItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pantonStyleItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jhStyleItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlTop.SuspendLayout();
             this.pnlBody.SuspendLayout();
+            this.styleMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTop
@@ -70,16 +76,16 @@
             this.pnlTop.Controls.Add(this.textBox_result);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(2);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(435, 109);
+            this.pnlTop.Size = new System.Drawing.Size(434, 109);
             this.pnlTop.TabIndex = 31;
             // 
             // textBox_view
             // 
             this.textBox_view.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_view.Location = new System.Drawing.Point(2, 7);
-            this.textBox_view.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_view.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_view.Multiline = true;
             this.textBox_view.Name = "textBox_view";
             this.textBox_view.ReadOnly = true;
@@ -93,7 +99,7 @@
             // 
             this.textBox_result.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_result.Location = new System.Drawing.Point(2, 45);
-            this.textBox_result.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_result.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_result.Multiline = true;
             this.textBox_result.Name = "textBox_result";
             this.textBox_result.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -121,7 +127,7 @@
             // 
             this.button_backspace.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_backspace.Location = new System.Drawing.Point(326, 58);
-            this.button_backspace.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_backspace.Margin = new System.Windows.Forms.Padding(2);
             this.button_backspace.Name = "button_backspace";
             this.button_backspace.Size = new System.Drawing.Size(99, 50);
             this.button_backspace.TabIndex = 8;
@@ -133,7 +139,7 @@
             // 
             this.button_clear.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_clear.Location = new System.Drawing.Point(221, 58);
-            this.button_clear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_clear.Margin = new System.Windows.Forms.Padding(2);
             this.button_clear.Name = "button_clear";
             this.button_clear.Size = new System.Drawing.Size(102, 50);
             this.button_clear.TabIndex = 9;
@@ -145,7 +151,7 @@
             // 
             this.button_clearEntry.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_clearEntry.Location = new System.Drawing.Point(120, 58);
-            this.button_clearEntry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_clearEntry.Margin = new System.Windows.Forms.Padding(2);
             this.button_clearEntry.Name = "button_clearEntry";
             this.button_clearEntry.Size = new System.Drawing.Size(98, 50);
             this.button_clearEntry.TabIndex = 10;
@@ -157,7 +163,7 @@
             // 
             this.button_percent.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_percent.Location = new System.Drawing.Point(15, 58);
-            this.button_percent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_percent.Margin = new System.Windows.Forms.Padding(2);
             this.button_percent.Name = "button_percent";
             this.button_percent.Size = new System.Drawing.Size(96, 50);
             this.button_percent.TabIndex = 11;
@@ -170,7 +176,7 @@
             // 
             this.button_div.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_div.Location = new System.Drawing.Point(326, 112);
-            this.button_div.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_div.Margin = new System.Windows.Forms.Padding(2);
             this.button_div.Name = "button_div";
             this.button_div.Size = new System.Drawing.Size(99, 50);
             this.button_div.TabIndex = 12;
@@ -183,7 +189,7 @@
             // 
             this.button12.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button12.Location = new System.Drawing.Point(221, 112);
-            this.button12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button12.Margin = new System.Windows.Forms.Padding(2);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(102, 50);
             this.button12.TabIndex = 13;
@@ -194,7 +200,7 @@
             // 
             this.button11.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button11.Location = new System.Drawing.Point(120, 112);
-            this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button11.Margin = new System.Windows.Forms.Padding(2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(98, 50);
             this.button11.TabIndex = 14;
@@ -205,7 +211,7 @@
             // 
             this.button10.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button10.Location = new System.Drawing.Point(15, 112);
-            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(96, 50);
             this.button10.TabIndex = 15;
@@ -216,7 +222,7 @@
             // 
             this.button_mul.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_mul.Location = new System.Drawing.Point(326, 166);
-            this.button_mul.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_mul.Margin = new System.Windows.Forms.Padding(2);
             this.button_mul.Name = "button_mul";
             this.button_mul.Size = new System.Drawing.Size(99, 50);
             this.button_mul.TabIndex = 16;
@@ -229,7 +235,7 @@
             // 
             this.button_writeNine.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeNine.Location = new System.Drawing.Point(221, 166);
-            this.button_writeNine.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeNine.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeNine.Name = "button_writeNine";
             this.button_writeNine.Size = new System.Drawing.Size(102, 50);
             this.button_writeNine.TabIndex = 17;
@@ -241,7 +247,7 @@
             // 
             this.button_writeEight.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeEight.Location = new System.Drawing.Point(120, 166);
-            this.button_writeEight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeEight.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeEight.Name = "button_writeEight";
             this.button_writeEight.Size = new System.Drawing.Size(98, 50);
             this.button_writeEight.TabIndex = 18;
@@ -253,7 +259,7 @@
             // 
             this.button_writeSeven.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeSeven.Location = new System.Drawing.Point(15, 166);
-            this.button_writeSeven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeSeven.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeSeven.Name = "button_writeSeven";
             this.button_writeSeven.Size = new System.Drawing.Size(96, 50);
             this.button_writeSeven.TabIndex = 19;
@@ -265,7 +271,7 @@
             // 
             this.button_sub.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_sub.Location = new System.Drawing.Point(326, 220);
-            this.button_sub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_sub.Margin = new System.Windows.Forms.Padding(2);
             this.button_sub.Name = "button_sub";
             this.button_sub.Size = new System.Drawing.Size(99, 50);
             this.button_sub.TabIndex = 20;
@@ -278,7 +284,7 @@
             // 
             this.button_writeSix.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeSix.Location = new System.Drawing.Point(221, 220);
-            this.button_writeSix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeSix.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeSix.Name = "button_writeSix";
             this.button_writeSix.Size = new System.Drawing.Size(102, 50);
             this.button_writeSix.TabIndex = 21;
@@ -290,7 +296,7 @@
             // 
             this.button_writeFive.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeFive.Location = new System.Drawing.Point(120, 220);
-            this.button_writeFive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeFive.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeFive.Name = "button_writeFive";
             this.button_writeFive.Size = new System.Drawing.Size(98, 50);
             this.button_writeFive.TabIndex = 22;
@@ -302,7 +308,7 @@
             // 
             this.button_writeFour.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeFour.Location = new System.Drawing.Point(15, 220);
-            this.button_writeFour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeFour.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeFour.Name = "button_writeFour";
             this.button_writeFour.Size = new System.Drawing.Size(96, 50);
             this.button_writeFour.TabIndex = 23;
@@ -314,7 +320,7 @@
             // 
             this.button_add.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_add.Location = new System.Drawing.Point(326, 274);
-            this.button_add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_add.Margin = new System.Windows.Forms.Padding(2);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(99, 50);
             this.button_add.TabIndex = 24;
@@ -327,7 +333,7 @@
             // 
             this.button_writeThree.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeThree.Location = new System.Drawing.Point(221, 274);
-            this.button_writeThree.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeThree.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeThree.Name = "button_writeThree";
             this.button_writeThree.Size = new System.Drawing.Size(102, 50);
             this.button_writeThree.TabIndex = 25;
@@ -339,7 +345,7 @@
             // 
             this.button_writeTwo.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeTwo.Location = new System.Drawing.Point(120, 274);
-            this.button_writeTwo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeTwo.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeTwo.Name = "button_writeTwo";
             this.button_writeTwo.Size = new System.Drawing.Size(98, 50);
             this.button_writeTwo.TabIndex = 26;
@@ -351,7 +357,7 @@
             // 
             this.button_writeOne.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeOne.Location = new System.Drawing.Point(15, 274);
-            this.button_writeOne.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeOne.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeOne.Name = "button_writeOne";
             this.button_writeOne.Size = new System.Drawing.Size(96, 50);
             this.button_writeOne.TabIndex = 27;
@@ -363,7 +369,7 @@
             // 
             this.button_equl.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_equl.Location = new System.Drawing.Point(326, 328);
-            this.button_equl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_equl.Margin = new System.Windows.Forms.Padding(2);
             this.button_equl.Name = "button_equl";
             this.button_equl.Size = new System.Drawing.Size(99, 50);
             this.button_equl.TabIndex = 28;
@@ -375,7 +381,7 @@
             // 
             this.button_writeDot.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeDot.Location = new System.Drawing.Point(221, 328);
-            this.button_writeDot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeDot.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeDot.Name = "button_writeDot";
             this.button_writeDot.Size = new System.Drawing.Size(102, 50);
             this.button_writeDot.TabIndex = 29;
@@ -387,7 +393,7 @@
             // 
             this.button_writeZero.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_writeZero.Location = new System.Drawing.Point(120, 328);
-            this.button_writeZero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_writeZero.Margin = new System.Windows.Forms.Padding(2);
             this.button_writeZero.Name = "button_writeZero";
             this.button_writeZero.Size = new System.Drawing.Size(98, 50);
             this.button_writeZero.TabIndex = 30;
@@ -424,10 +430,11 @@
             this.pnlBody.Controls.Add(this.button_backspace);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.Location = new System.Drawing.Point(0, 109);
-            this.pnlBody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBody.Margin = new System.Windows.Forms.Padding(2);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(435, 386);
+            this.pnlBody.Size = new System.Drawing.Size(434, 386);
             this.pnlBody.TabIndex = 32;
+            this.pnlBody.MouseClick += new System.Windows.Forms.MouseEventHandler(this.OnMouseClick);
             // 
             // button_callProgrammer
             // 
@@ -440,16 +447,58 @@
             this.button_callProgrammer.UseVisualStyleBackColor = true;
             this.button_callProgrammer.Click += new System.EventHandler(this.SwitchFormEvent);
             // 
+            // styleMenuStrip
+            // 
+            this.styleMenuStrip.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.styleMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lightStyleItem,
+            this.darkStyleItem,
+            this.pantonStyleItem,
+            this.jhStyleItem});
+            this.styleMenuStrip.Name = "styleMenuStrip";
+            this.styleMenuStrip.Size = new System.Drawing.Size(150, 92);
+            // 
+            // lightStyleItem
+            // 
+            this.lightStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lightStyleItem.Name = "lightStyleItem";
+            this.lightStyleItem.Size = new System.Drawing.Size(149, 22);
+            this.lightStyleItem.Text = "라이트 모드";
+            this.lightStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
+            // 
+            // darkStyleItem
+            // 
+            this.darkStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.darkStyleItem.Name = "darkStyleItem";
+            this.darkStyleItem.Size = new System.Drawing.Size(149, 22);
+            this.darkStyleItem.Text = "야간 모드";
+            this.darkStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
+            // 
+            // pantonStyleItem
+            // 
+            this.pantonStyleItem.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pantonStyleItem.Name = "pantonStyleItem";
+            this.pantonStyleItem.Size = new System.Drawing.Size(149, 22);
+            this.pantonStyleItem.Text = "팬톤 모드";
+            this.pantonStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
+            // 
+            // jhStyleItem
+            // 
+            this.jhStyleItem.Name = "jhStyleItem";
+            this.jhStyleItem.Size = new System.Drawing.Size(149, 22);
+            this.jhStyleItem.Text = "오마카세 모드";
+            this.jhStyleItem.Click += new System.EventHandler(this.ChangeStyleItem_Click);
+            // 
             // normalCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 495);
+            this.ClientSize = new System.Drawing.Size(434, 495);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "normalCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "계산기";
@@ -457,6 +506,7 @@
             this.pnlTop.PerformLayout();
             this.pnlBody.ResumeLayout(false);
             this.pnlBody.PerformLayout();
+            this.styleMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -492,6 +542,11 @@
         private System.Windows.Forms.Button button_writeZero;
         private System.Windows.Forms.Panel pnlBody;
         private System.Windows.Forms.Button button_callProgrammer;
+        private System.Windows.Forms.ContextMenuStrip styleMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem lightStyleItem;
+        private System.Windows.Forms.ToolStripMenuItem darkStyleItem;
+        private System.Windows.Forms.ToolStripMenuItem pantonStyleItem;
+        private System.Windows.Forms.ToolStripMenuItem jhStyleItem;
     }
 }
 

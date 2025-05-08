@@ -185,6 +185,73 @@ namespace MiniProject
             programmer.ShowDialog();
             this.Close();
         }
+
+        // 폼에서 우클릭 눌렀을때 발생하는 이벤트 처리
+        private void OnMouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                styleMenuStrip.Show(this, e.Location);
+            }
+        }
+
+        // Form 색상 변경 이벤트 처리
+        private void ChangeStyleItem_Click(object sender, EventArgs e)
+        {
+            Color cBackground = Color.Transparent;
+            Color cFont = Color.Black;
+            Color cButton = Color.Transparent;
+            Color cHighlight = Color.Gray;
+
+            if (sender is ToolStripMenuItem item)
+            {
+                switch (item.Name)
+                {
+                    case "lightStyleItem":
+                        cBackground = System.Drawing.SystemColors.Control;
+                        cFont = Color.Black;
+                        cButton = System.Drawing.Color.Transparent;
+                        cHighlight = System.Drawing.Color.Transparent;
+                        break;
+                    case "darkStyleItem":
+                        cBackground = ColorTranslator.FromHtml("#1e1e1e");
+                        cFont = ColorTranslator.FromHtml("#cccccc");
+                        cButton = ColorTranslator.FromHtml("#373737");
+                        cHighlight = ColorTranslator.FromHtml("#320064");
+                        break;
+                    case "pantonStyleItem":
+                        cBackground = ColorTranslator.FromHtml("#E4C7B7");
+                        cFont = ColorTranslator.FromHtml("#56443F");
+                        cButton = ColorTranslator.FromHtml("#F1F0E2");
+                        cHighlight = ColorTranslator.FromHtml("#A47864");
+                        break;
+                    case "jhStyleItem":
+                        cBackground = ColorTranslator.FromHtml("#FBC1AE");
+                        cFont = ColorTranslator.FromHtml("#495F77");
+                        cButton = ColorTranslator.FromHtml("#F7E1C5");
+                        cHighlight = ColorTranslator.FromHtml("#BBCBD2");
+                        break;
+
+                }
+            }
+            ApplyColors(this, cBackground, cFont, cButton, cHighlight);
+        }
+
+        // Form 내부의 모든 객체의 색상을 변경
+        void ApplyColors(Control control, Color backColor, Color foreColor, Color btnColor, Color highlightColor)
+        {
+            control.BackColor = backColor;
+            control.ForeColor = foreColor;
+            if (control is Button)
+                if (control.Name == "button_equl") // Equal 버튼만 하이라이트 색상으로 변경
+                    control.BackColor = highlightColor;
+                else control.BackColor = btnColor;
+
+            foreach (Control child in control.Controls)
+            {
+                ApplyColors(child, backColor, foreColor, btnColor, highlightColor);
+            }
+        }
     }
 
 
