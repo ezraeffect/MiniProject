@@ -106,6 +106,8 @@ namespace MiniProject
         private void BaseRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton rb = sender as RadioButton;
+            CalculateBitClass cb = new CalculateBitClass();
+
             string tagString;
             // radioButton의 모든 이벤트에 대해 가져오므로 체크 되었을때 동작 수행 하도록
             if (rb.Checked)
@@ -129,6 +131,10 @@ namespace MiniProject
                     case Base.DEC:
                         textBox_result.Text = textBox_DEC.Text; break;
                 }
+
+                bitArray = cb.StringToBitArray(textBox_result.Text, SelectedBase);
+                cb.UpdateBitArrayBtn(KeypadTabControl, bitArray); // bitArray의 값을 Button에 적용
+
             }
         }
 
@@ -155,6 +161,7 @@ namespace MiniProject
                     bitArray.Set(i, false);
                 }
 
+               
                 cb.UpdateBitArrayBtn(KeypadTabControl, bitArray); // bitArray의 값을 Button에 적용
                 string convertedBIN = cb.BitArrayToString(bitArray, SelectedBase); // 2진법으로 변환 된 값의 String
                 bitArray = cb.KeypadValueToBitArray(KeypadTabControl, bitArray);
@@ -327,7 +334,8 @@ namespace MiniProject
                 }
             }
 
-            //cBit.UpdateBitArrayBtn(KeypadTabControl, bitArray, SelectedBase);
+            bitArray = cBit.StringToBitArray(textBox_result.Text, SelectedBase);
+            cBit.UpdateBitArrayBtn(KeypadTabControl, bitArray);
         }
 
         // Backspace 버튼 이벤트 처리

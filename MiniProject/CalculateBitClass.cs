@@ -195,6 +195,22 @@ namespace MiniProject
             return bitArr;
         }
 
+        public BitArray StringToBitArray(string str, Base currentBase)
+        {
+            ConvertBaseClass cb  = new ConvertBaseClass();
+
+            BitArray bitArray = new BitArray(64);
+
+            string binaryString = cb.ConvertBase(currentBase, Base.BIN, str);
+
+            for (int i = 0; i < binaryString.Length; i++)
+            {
+                bitArray[binaryString.Length - 1 - i] = binaryString[i] == '1';
+            }
+
+            return bitArray;
+        }
+
         // BitArray를 Console에 출력하는 Function
         // !!!! USE ONLY DEBUG !!!!
         public void PrintBitArray(BitArray bitArray)
